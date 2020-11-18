@@ -1,6 +1,7 @@
 # Table of contents
 
 * [开发技术集锦](README.md)
+* [开发感悟](kai-fa-gan-wu.md)
 * [编程语言](bian-cheng-yu-yan/README.md)
   * [C\#](bian-cheng-yu-yan/c.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
