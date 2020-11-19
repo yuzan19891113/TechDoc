@@ -1,6 +1,6 @@
-# GPU调试工具连接 android
+# RenderDoc调试工具连接 android
 
-## renderdoc, snapdragon profiler
+## renderdoc
 
  [https://renderdoc.org/docs/how/how\_android\_capture.html](https://renderdoc.org/docs/how/how_android_capture.html)  
 1 使用android studio下载手机对应版本的android sdk  
