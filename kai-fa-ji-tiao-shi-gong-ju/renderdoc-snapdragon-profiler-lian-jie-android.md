@@ -1,4 +1,4 @@
-# RenderDoc调试工具连接 android
+# RenderDoc
 
 ## renderdoc
 
