@@ -4,6 +4,8 @@
 * [开发感悟](kai-fa-gan-wu.md)
 * [编程语言](bian-cheng-yu-yan/README.md)
   * [C\#](bian-cheng-yu-yan/c.md)
+* [开发及调试工具](kai-fa-ji-tiao-shi-gong-ju/README.md)
+  * [renderdoc, snapdragon profiler连接 android](kai-fa-ji-tiao-shi-gong-ju/renderdoc-snapdragon-profiler-lian-jie-android.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
   * [场景优化](tong-yong-xuan-ran-ji-shu/chang-jing-you-hua/README.md)
     * [远景Imposter调研](tong-yong-xuan-ran-ji-shu/chang-jing-you-hua/yuan-jing-imposter-tiao-yan.md)
