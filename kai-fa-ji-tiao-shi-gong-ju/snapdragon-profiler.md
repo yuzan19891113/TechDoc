@@ -48,6 +48,8 @@ new trace capture可以抓取一段时间内的调用信息，先选择包，再
 
 a.     选择要截取的包名，然后在要截取的时机点Take Snapshot
 
+* 双击点击查看pixel history，找到对应的draw call ，分析shader, texture , vb, ib ,cb
+
 ![](http://tapd.oa.com/tfl/captures/2018-10/tapd_10124081_base64_1540286519_69.png)
 
 b.     遇到如下Program 为Binary的解决方法：
