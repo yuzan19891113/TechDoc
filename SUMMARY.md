@@ -16,4 +16,5 @@
   * [Unity使用技巧](qqspeed/unity-shi-yong-ji-qiao.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi.md)
   * [QQSpeed开发](qqspeed/qqspeed-kai-fa.md)
+  * [热更工具xlua vs IFix](qqspeed/re-geng-gong-ju-xlua-vs-ifix.md)
 
