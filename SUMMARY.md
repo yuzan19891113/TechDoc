@@ -14,7 +14,8 @@
     * [植被的交互调研](tong-yong-xuan-ran-ji-shu/huan-jing-jiao-hu/zhi-bei-de-jiao-hu-tiao-yan.md)
 * [Unity](qqspeed/README.md)
   * [Unity使用技巧](qqspeed/unity-shi-yong-ji-qiao.md)
-  * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi.md)
-  * [QQSpeed开发](qqspeed/qqspeed-kai-fa.md)
-  * [热更工具xlua vs IFix](qqspeed/re-geng-gong-ju-xlua-vs-ifix.md)
+  * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
+    * [遮挡剔除\(PVS\)](qqspeed/unity-ji-ben-zhi-shi/zhe-dang-ti-chu-pvs.md)
+  * [QQSpeed开发](qqspeed/qqspeed-kai-fa/README.md)
+    * [热更工具xlua vs IFix](qqspeed/qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix.md)
 

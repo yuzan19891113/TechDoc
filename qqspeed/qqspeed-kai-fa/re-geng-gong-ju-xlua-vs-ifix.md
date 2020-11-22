@@ -42,16 +42,16 @@ private int OnSystemInit(GameEvent e)
   
  2.修改c\#等编译完成之后，点击iFix---Patch，即可在 \Tools\TDR\_res\Databin\Client!! 目录下生成  DllName.patch.bytes!! \(比如NssMain.patch.bytes\) 这个补丁
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../../.gitbook/assets/image%20%281%29.png)
 
   
  3.本地测试方式（基本不需要使用）： 在没有修改bug时，编译项目，编译成功后点击 iFix---Process Assembly-CSharp!! ，备份还未改bug的程序集
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../../.gitbook/assets/image%20%282%29.png)
 
 在c\#上修改bug，把修改过的方法打上 \[IFix.Patch\]!! 标签，改好以后编译成功后，点击  iFix---Patch!! ，保存生成的补丁 点击iFix---Revert Assembly-CSharp\(For test only\)!!，选择刚才备份的dll做还原
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/image%20%283%29.png)
 
 运行游戏，测试补丁是否生效，可以将Assembly-CSharp.patch.bytes改名和还原来控制是否加载补丁 也可以直接Inject在手机上测试!!  
  4.发布流程，使用蓝盾任务生成和提交patch，在124表配上对应的bytes安排发布  
