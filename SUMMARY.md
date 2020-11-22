@@ -9,6 +9,7 @@
   * [RenderDoc](kai-fa-ji-tiao-shi-gong-ju/renderdoc-snapdragon-profiler-lian-jie-android.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
   * [场景优化](tong-yong-xuan-ran-ji-shu/chang-jing-you-hua/README.md)
+    * [遮挡剔除](tong-yong-xuan-ran-ji-shu/chang-jing-you-hua/zhe-dang-ti-chu.md)
     * [远景Imposter调研](tong-yong-xuan-ran-ji-shu/chang-jing-you-hua/yuan-jing-imposter-tiao-yan.md)
   * [环境交互](tong-yong-xuan-ran-ji-shu/huan-jing-jiao-hu/README.md)
     * [植被的交互调研](tong-yong-xuan-ran-ji-shu/huan-jing-jiao-hu/zhi-bei-de-jiao-hu-tiao-yan.md)
