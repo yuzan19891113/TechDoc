@@ -7,6 +7,7 @@
 5. 回到unity编辑器，XLua-generate code 去compile code
 6. inject to editor
 7. 调试，运行游戏，查看log，是否有error, lua（解释语言\),需要运行时才能知道错误
-8. 提交lua,启动蓝盾构建lua bytes单
-9.  通知服务器更新对应的xlua热更bytes
+8. 如果有错误，不关游戏，直接修改lua， generate code -&gt;重载所有热更新脚本
+9. 提交lua,启动蓝盾构建lua bytes单
+10.  通知服务器更新对应的xlua热更bytes
 
