@@ -16,7 +16,9 @@
 * [Unity](qqspeed/README.md)
   * [Unity使用技巧](qqspeed/unity-shi-yong-ji-qiao.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
+    * [静态合批vs 动态合批](qqspeed/unity-ji-ben-zhi-shi/jing-tai-he-pi-vs-dong-tai-he-pi.md)
     * [遮挡剔除\(PVS\)](qqspeed/unity-ji-ben-zhi-shi/zhe-dang-ti-chu-pvs.md)
   * [QQSpeed开发](qqspeed/qqspeed-kai-fa/README.md)
     * [热更工具xlua vs IFix](qqspeed/qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix.md)
+    * [XLua热更路程](qqspeed/qqspeed-kai-fa/xlua-re-geng-lu-cheng.md)
 
