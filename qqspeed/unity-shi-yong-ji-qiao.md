@@ -5,6 +5,7 @@
 * unity执行不到对应代码：出现null，导致不能执行到流程
 * unity 在非editor代码开发中如果是仅仅editor使用，函数体内部需要加unityeditor宏
 * Unity某些script奇怪的变为disable，可以考虑脚本是不是有些函数会变null
+* 查找脚本引用的资源的方法，找出脚本metadata里的guid,然后全文件夹搜索
 
 
 
