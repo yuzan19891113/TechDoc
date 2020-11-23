@@ -9,5 +9,6 @@
 7. 调试，运行游戏，查看log，是否有error, lua（解释语言\),需要运行时才能知道错误
 8. 如果有错误，不关游戏，直接修改lua， generate code -&gt;重载所有热更新脚本
 9. 提交lua,启动蓝盾构建lua bytes单
-10.  通知服务器更新对应的xlua热更bytes
+10. 更新热更的excel 任务单
+11.  通知服务器更新对应的xlua热更bytes
 
