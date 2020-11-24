@@ -4,6 +4,12 @@
 
 c\#热更工具xlua，可以不修改原生c\#代码的情况下，通过xlua注入dll的内部，修改dll内部的函数，ILspy反编译工具可以查看dll的函数，因为c\#极易被反编译，所以使用Dotfuscator来混淆代码，防止反编译。 xlua原理： 使用Mono.Cecil为打\[Hotfix\]标签的类注入钩子，可以为_**所有业务型代码自动插桩**_。如果发现lua补丁，就使用反射的方法为相应钩子赋值（xlua.hotfix方法） 当执行该函数时，发现钩子不为空，就执行钩子并返回
 
+lua框架和c\#游戏框架有一个一一对应的关系，使得每一次修改都能遵循相关的规范，能将相应的xlua热更产生的luabytes打到对应的dll上
+
+![](../../.gitbook/assets/image%20%284%29.png)
+
+**登录游戏服务器，点击进入游戏的时候，会通过数据档下载好最新的Lua脚本，此时通过GameMain:InitDevFramework\( \)初始化Lua系统开发框架**
+
 当需要调试手机时，通过UnityEngine.Networking.PlayerConnection，playerconnection, editorconnection 可以建立起push lua到手机的简易调试框架，可以方便在手机上实时调试。EditorConnection.instance.Send
 
 ## IFix
