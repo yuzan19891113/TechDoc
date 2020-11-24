@@ -16,6 +16,7 @@
 * [Unity](qqspeed/README.md)
   * [Unity使用技巧](qqspeed/unity-shi-yong-ji-qiao.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
+    * [OnRenderImage](qqspeed/unity-ji-ben-zhi-shi/onrenderimage.md)
     * [URP VS SRP](qqspeed/unity-ji-ben-zhi-shi/urp-vs-srp.md)
     * [Prefab](qqspeed/unity-ji-ben-zhi-shi/prefab.md)
     * [AssetBundle\(AB\)](qqspeed/unity-ji-ben-zhi-shi/assetbundle-ab.md)
