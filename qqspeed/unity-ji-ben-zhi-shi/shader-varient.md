@@ -36,7 +36,7 @@ shader\_feature 和 multi\_complie 是两个很相似的预编译指令，在Edi
 
 **区别在于：**
 
-如果使用shader\_feature，build时没有用到的变体会被删除，不会打出来。也就是说，在build以后环境里，运行代码Material.EnableKeyword\("B"\)可能不起作用，因为没有Material在使用变体B，所以变体B没有被build出来，运行时也找不到变体B。
+**如果使用shader\_feature，build时没有用到的变体会被删除，不会打出来。也就是说，在build以后环境里，运行代码Material.EnableKeyword\("B"\)可能不起作用，因为没有Material在使用变体B，所以变体B没有被build出来，运行时也找不到变体B。**
 
 如果想解决这个问题，可以采取以下办法中的其中一种：
 
