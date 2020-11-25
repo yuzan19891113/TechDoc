@@ -1,6 +1,8 @@
 # OnRenderImage
 
-属于后期脚本需要重载的部分
+OnRenderImage\(RenderTexture Src, RenderTexture Dest\)
+
+属于后期脚本需要重载的部分, dest == null表示输出直接是back buffer
 
 需要添加tag,并且需要挂在camera同级目录下
 
