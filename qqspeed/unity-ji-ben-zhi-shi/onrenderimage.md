@@ -10,3 +10,5 @@
 public class EffectsToRT : MonoBehaviour
 ```
 
+因为onRenderImage位于posteffect流程中，可能camera.render不会生效
+
