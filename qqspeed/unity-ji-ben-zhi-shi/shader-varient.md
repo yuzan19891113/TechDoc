@@ -89,5 +89,5 @@ return fixed4(0,0,0,1);
 * local Keyword仍有数量限制，每个Shader最多可以包含64个local Keyword
 * 因为这种Keyword是局部的，Material.EnableKeyword仍是有效的，但对Shader.EnableKeyword或CommandBuffer.EnableShaderKeyword这种全局开关说拜拜
 * 当你既声明了一个全局的Keyword A ，同时又声明了一个同名的、局部的Keyword A，那么优先认为Keyword A是局部的。
-* cginc里不能加\#pragma,因为unity只会扫描shader本体文件，不会扫描cginc文件
+* cginc里不能加\#pragma,因为unity只会扫描shader本体文件，不会扫描cginc文件,同样道理也适用于改cginc不会刷新unity,需要改到包含shader本体才行。
 
