@@ -16,6 +16,7 @@
 * [Unity](qqspeed/README.md)
   * [Unity使用技巧](qqspeed/unity-shi-yong-ji-qiao.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
+    * [GameObject](qqspeed/unity-ji-ben-zhi-shi/gameobject.md)
     * [Coroutine](qqspeed/unity-ji-ben-zhi-shi/coroutine.md)
     * [Camera](qqspeed/unity-ji-ben-zhi-shi/camera.md)
     * [Shader variants and keywords](qqspeed/unity-ji-ben-zhi-shi/shader-variants-and-keywords.md)
