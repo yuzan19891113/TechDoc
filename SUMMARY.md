@@ -16,6 +16,7 @@
 * [Unity](qqspeed/README.md)
   * [Unity使用技巧](qqspeed/unity-shi-yong-ji-qiao.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
+    * [Shader variants and keywords](qqspeed/unity-ji-ben-zhi-shi/shader-variants-and-keywords.md)
     * [Sample State](qqspeed/unity-ji-ben-zhi-shi/sample-state.md)
     * [Render](qqspeed/unity-ji-ben-zhi-shi/render.md)
     * [Shader](qqspeed/unity-ji-ben-zhi-shi/shader/README.md)
@@ -29,6 +30,8 @@
     * [静态合批vs 动态合批](qqspeed/unity-ji-ben-zhi-shi/jing-tai-he-pi-vs-dong-tai-he-pi.md)
     * [PVS（可烘培的遮挡裁减\)](qqspeed/unity-ji-ben-zhi-shi/zhe-dang-ti-chu-pvs.md)
   * [QQSpeed开发](qqspeed/qqspeed-kai-fa/README.md)
+    * [开发日记](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/README.md)
+      * [老特效线性与Gammar对比](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/lao-te-xiao-xian-xing-yu-gammar-dui-bi.md)
     * [热更工具xlua vs IFix](qqspeed/qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix.md)
     * [XLua热更路程](qqspeed/qqspeed-kai-fa/xlua-re-geng-lu-cheng.md)
 
