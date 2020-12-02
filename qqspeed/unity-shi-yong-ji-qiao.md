@@ -7,6 +7,7 @@
 * Unity某些script奇怪的变为disable，可以考虑脚本是不是有些函数会变null
 * 查找脚本引用的资源的方法，找出脚本metadata里的guid,然后全文件夹搜索
 * editui.beginChangecheck, endchangecheck判断属性是否发生了变化，如果是monobehaviour,数据发生变化时会调用onvalidiate\(\)
+* 脚本与类同名时才能识别
 
 
 
