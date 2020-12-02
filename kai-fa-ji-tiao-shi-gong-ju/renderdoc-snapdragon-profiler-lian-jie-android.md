@@ -14,14 +14,10 @@
 2）确认手机调试权限全部开启，文件\(数据\)传输格式，有可能android 8版本不行，需要android 9才行  
 9 如果总是启动不了，可以反复拔插usb线，就可以正确截帧了  
   
-renderdoc：unity编辑器安装与使用
-
-[https://docs.unity3d.com/Manual/RenderDocIntegration.htm](https://docs.unity3d.com/Manual/RenderDocIntegration.html)  
+renderdoc：unity编辑器安装与使用  
 [https://gameinstitute.qq.com/community/detail/126627](https://gameinstitute.qq.com/community/detail/126627)  
 pc编辑器版可以看pixel history, debug pixel,手机端不行，如果编辑器启动loadrenderdoc失败，可以使用rendoc启动unity然后那个捕捉的图标就可以显示了  
 RenderDoc可以方便导出mesh, texture数据从而对游戏进行破解，本身是开源的，[https://renderdoc.org/docs/python\_api/index.html](https://renderdoc.org/docs/python_api/index.html)
-
-
 
 ![RenderDoc](../.gitbook/assets/image.png)
 

@@ -6,7 +6,7 @@
 
 关闭协程：stopcoroutine
 
-协程例子
+**协程例子**
 
 ```text
 void Update()
@@ -36,5 +36,51 @@ IEnumerator MoveTank()
     }
 ```
 
+**协程可以根据条件来结束**
 
+```text
+IEnumerator WaitFiveSeconds()
+    {
+        // Pause the game
+        Time.timeScale = 0;
+
+        yield return new WaitForSecondsRealtime(5);
+
+        print("You can't stop me");
+    }
+```
+
+**或者根据时间来结束**
+
+```text
+int fuel=500;
+
+    void Start()
+    {
+        StartCoroutine(CheckFuel());
+    }
+
+    private void Update()
+    {
+        fuel--;
+    }
+
+    IEnumerator CheckFuel()
+    {
+        yield return new WaitUntil(IsEmpty);
+        print("tank is empty");
+    }
+
+    bool IsEmpty()
+    {
+        if (fuel > 0)
+        {
+            return false;
+        }
+        else 
+        {
+            return true;
+        }
+    }
+```
 
