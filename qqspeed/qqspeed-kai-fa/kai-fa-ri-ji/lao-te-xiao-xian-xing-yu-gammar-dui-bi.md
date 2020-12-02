@@ -16,7 +16,11 @@ Lab空间差异
 
 图片
 
-![Lab&#x7A7A;&#x95F4;&#x5DEE;&#x5F02;&#x5DE6;&#x5230;&#x53F3;&#x4F9D;&#x6B21;&#x4E3A;L,a,b&#x5206;&#x91CF;&#x7684;&#x5DEE;&#x5F02;](../../../.gitbook/assets/image%20%287%29.png)
+![Lab&#x7A7A;&#x95F4;&#xFF1A;&#x5DE6;&#x5230;&#x53F3;&#x4F9D;&#x6B21;&#x4E3A;L,a,b&#x5206;&#x91CF;&#x7684;&#x5DEE;&#x5F02;\(b&#x5206;&#x91CF;&#x63A5;&#x8FD1;&#x4E8E;0&#xFF0C;&#x5DEE;&#x5F02;&#x90FD;&#x662F;&#x6574;&#x4F53;&#x5355;&#x5411;&#x7684;\)](../../../.gitbook/assets/image%20%287%29.png)
+
+HSV空间差异
+
+![HSV&#x7A7A;&#x95F4;&#xFF1A;&#x5DE6;&#x81F3;&#x53F3;&#x5206;&#x522B;&#x662F;&#x662F;H,S,V&#x5206;&#x91CF;&#x5DEE;&#x5F02;\(&#x4E09;&#x4E2A;&#x996D;&#x91CF;&#x90FD;&#x6709;&#x5DEE;&#x5F02;&#xFF0C;&#x5E76;&#x4E14;&#x5DEE;&#x5F02;&#x975E;&#x5355;&#x5411;\)](../../../.gitbook/assets/image%20%288%29.png)
 
 
 
