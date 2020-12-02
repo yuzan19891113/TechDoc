@@ -8,6 +8,7 @@
   * [Snapdragon Profiler](kai-fa-ji-tiao-shi-gong-ju/snapdragon-profiler.md)
   * [RenderDoc](kai-fa-ji-tiao-shi-gong-ju/renderdoc-snapdragon-profiler-lian-jie-android.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
+  * [Lab颜色空间](tong-yong-xuan-ran-ji-shu/lab-yan-se-kong-jian.md)
   * [场景优化](tong-yong-xuan-ran-ji-shu/chang-jing-you-hua/README.md)
     * [遮挡剔除](tong-yong-xuan-ran-ji-shu/chang-jing-you-hua/zhe-dang-ti-chu.md)
     * [远景Imposter调研](tong-yong-xuan-ran-ji-shu/chang-jing-you-hua/yuan-jing-imposter-tiao-yan.md)
