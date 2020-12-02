@@ -37,5 +37,5 @@
     * [开发日记](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/README.md)
       * [老特效线性与Gammar对比](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/lao-te-xiao-xian-xing-yu-gammar-dui-bi.md)
     * [热更工具xlua vs IFix](qqspeed/qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix.md)
-    * [XLua热更路程](qqspeed/qqspeed-kai-fa/xlua-re-geng-lu-cheng.md)
+    * [XLua热更步骤](qqspeed/qqspeed-kai-fa/xlua-re-geng-lu-cheng.md)
 

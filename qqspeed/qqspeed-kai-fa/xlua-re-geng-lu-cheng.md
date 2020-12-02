@@ -1,4 +1,4 @@
-# XLua热更路程
+# XLua热更步骤
 
 1. 打开LuaPefect\(nssclient\_preview/nssunityproj/luaperfect.exe
 2. 去掉asset目录
