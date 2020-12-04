@@ -10,8 +10,6 @@ All of Unity’s built-in Materials have a Meta Pass, and the **Standard Shader*
 
 **烘培的 lightmap需要考虑abedo**
 
-
-
 ```text
 Shader "Custom/metaPassShader"{
 Properties {
