@@ -1,44 +1,80 @@
 # 老特效线性与Gammar对比
 
-对比颜色空间，从rgb-&gt;hsv-&gt;lab
+![](../../../.gitbook/assets/image%20%2811%29.png)
 
-简化修改hsv的方法
+**EffectsRTAnalyzer，EffectsToRT：**
 
-{% embed url="https://zhuanlan.zhihu.com/p/21605186" %}
+1. 进入编辑器Playing状态，2个相机，gamma, linear,同一帧模拟数据，不同的RT,
+2. 挂在主相机的后处理，几次Blit将线性的结果转为gamma,然后转LAB空间 操作，按照需求显示在屏幕
+3.  回读结果分析，得到单帧数据
+4.  特效帧更新，特效播放结束换相机方向（前后，上下，左右相机）重新开始，
 
-颜色空间差异对比图
+Lab：感知均匀，L分量：亮度， A, 红到绿的比例 B蓝到黄比例，对比颜色空间，从rgb-&gt;hsv-&gt;lab
+
+**数据处理：**
+
+首先剔除掉数值变化较小的像素，避免小数淹没大数，
+
+结果处理方法:
+
+![](../../../.gitbook/assets/image%20%2816%29.png)
 
 
 
-![&#x56FE;&#x7247;1&#xFF1A;Gamma&#x7A7A;&#x95F4;&#x4E0E;Linear&#x7A7A;&#x95F4;](../../../.gitbook/assets/image%20%286%29.png)
+* 得到每帧LAB差异总量，差异均值，6组数据
+* 取相机前，上，左的每帧结果数据的Max
 
-Lab空间差异
+目录：Assets/ResForAssetBundles/Effects; Assets/ArtWork/Effects，
 
-图片
+总的Prefab 个数 34150， 去掉纯引用的Prefab：大概还有20273左右
 
-![Lab&#x7A7A;&#x95F4;&#xFF1A;&#x5DE6;&#x5230;&#x53F3;&#x4F9D;&#x6B21;&#x4E3A;L,a,b&#x5206;&#x91CF;&#x7684;&#x5DEE;&#x5F02;\(b&#x5206;&#x91CF;&#x63A5;&#x8FD1;&#x4E8E;0&#xFF0C;&#x5DEE;&#x5F02;&#x90FD;&#x662F;&#x6574;&#x4F53;&#x5355;&#x5411;&#x7684;\)](../../../.gitbook/assets/image%20%287%29.png)
+阈值：基本还是经验值，没法说用一个科学的方法来评估，但要往尽量科学靠
 
-HSV空间差异
+```text
+           //对于变化面积小且平均变化还能接受的特效
+           Vector3 LabTotalParam1 = new Vector3(10, 2.5f, 2.5f);
+           Vector3 LabAVGParam1 = new Vector3(0.14f, 0.03f, 0.03f);
+           
+           //对于平均变化比较小且变化面积不大的特效
+           Vector3 LabAVGParam2 = new Vector3(0.07f, 0.015f, 0.015f);
+           Vector3 LabTotalParam2 = new Vector3(500, 100f, 100f);
+```
 
-![HSV&#x7A7A;&#x95F4;&#xFF1A;&#x5DE6;&#x81F3;&#x53F3;&#x5206;&#x522B;&#x662F;&#x662F;H,S,V&#x5206;&#x91CF;&#x5DEE;&#x5F02;\(&#x4E09;&#x4E2A;&#x996D;&#x91CF;&#x90FD;&#x6709;&#x5DEE;&#x5F02;&#xFF0C;&#x5E76;&#x4E14;&#x5DEE;&#x5F02;&#x975E;&#x5355;&#x5411;\)](../../../.gitbook/assets/image%20%288%29.png)
+使用256 \* 256来作为计算和分析rt，能体现物体的形状，下面依次是256\* 512的，256\*256的，基本上呈现一种scale的差异，分辨率对均值影响不大，并且256 \*256是现在唯一有8,9帧的。
 
-刷不出来的特效：移动较快，并且移动本身就有亮度的变化，就会造成单帧差异大，整体看不出来
+![](../../../.gitbook/assets/image%20%2818%29.png)
 
-结果处理方法:取前，上，左的最大，每帧最大，确定差异最大帧，和朝向
+![](../../../.gitbook/assets/image%20%2831%29.png)
 
-使用256 \* 256来作为计算和分析rt
-
-我们的lod不是自动的，而是不同的资源，这样会增加包量
-
-fx：prefab总量34150，分析了11645个，认为需要修改的是5002，还有625个是没有分析出结
-
-改进：剔除纯引用的prefab
-
-输出安全的特效保证结果正确，输出有问题的特效来给美术修改
+目标：**输出安全的特效保证结果正确，输出最有问题的特效来给美术修改**
 
 给美术提供gamma和线性下的结果
 
+数据对比分析，显示结果与数据对比
 
+![Linear](../../../.gitbook/assets/image%20%2812%29.png)
+
+![Diff\_L](../../../.gitbook/assets/image%20%2821%29.png)
+
+![Diff\_A](../../../.gitbook/assets/image%20%2826%29.png)
+
+![](../../../.gitbook/assets/image%20%2825%29.png)
+
+![](../../../.gitbook/assets/image%20%2820%29.png)
+
+图中总值110 &gt;阈值100， B均值0.022大于0.015，标记为
+
+能通过的特效：
+
+存在的问题：
+
+1移动较快或者并且本身就有亮度或者颜色的变化，就会造成单帧差异大，数据可能表现差异大，整体不明显，
+
+2 效果变好了，没法感知，现在只是能够整体接受变亮一些
+
+其他一些问题：
+
+我们的lod不是自动的，而是不同的资源，这样会增加包量
 
 
 
