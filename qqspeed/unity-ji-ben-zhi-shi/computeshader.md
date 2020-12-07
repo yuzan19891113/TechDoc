@@ -67,5 +67,7 @@ void ComputeDiffTotalAndAvg(uint3 inp : SV_DispatchThreadID)
 
 ```
 
+### 原子操作
 
+![](../../.gitbook/assets/image%20%2842%29.png)
 
