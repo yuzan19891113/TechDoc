@@ -17,8 +17,8 @@
                     ResultBuffer = new ComputeBuffer(4, 4);        
                 }
                 ResultBuffer.SetData(BackData);      
-                int xGroups = width / 16;
-                int yGroups = height / 16;
+                int xGroups = width / 32;
+                int yGroups = height / 32;
                   
                 _CSShader.SetBuffer(kernel, "_ResultBuffer", ResultBuffer);
                 _CSShader.Dispatch(kernel, xGroups, yGroups, 1);
@@ -41,7 +41,7 @@ float4 _CullThrehold;
 
 //rgb2lab code miss
 
-[numthreads(16, 16, 1)]
+[numthreads(32, 32, 1)]
 void ComputeDiffTotalAndAvg(uint3 inp : SV_DispatchThreadID)
 {
 	float3 GammaRes  = rgb2lab(_GammaTex[inp.xy].rgb);
