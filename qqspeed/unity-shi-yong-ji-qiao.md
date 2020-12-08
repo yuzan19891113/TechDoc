@@ -11,6 +11,7 @@
 * 使用Invokerepeating在monobehaviour脚本内部重复调用函数
 * texture2d.getpixels需要从gpu回读，所以特别慢
 * 修改特效的属性，不能直接particle.main调用，因为只有get权限，可以赋值给var，然后修改
+* New出来的Texture2D默认是srgb，就是说采样texture会自动pow2.2，转线性
 
 
 
