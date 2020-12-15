@@ -21,6 +21,7 @@
 * [Unity](qqspeed/README.md)
   * [Unity使用技巧](qqspeed/unity-shi-yong-ji-qiao.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
+    * [优化](qqspeed/unity-ji-ben-zhi-shi/you-hua.md)
     * [Built-in render pipeline](qqspeed/unity-ji-ben-zhi-shi/built-in-render-pipeline.md)
     * [shadow](qqspeed/unity-ji-ben-zhi-shi/shadow.md)
     * [ComputeShader](qqspeed/unity-ji-ben-zhi-shi/computeshader.md)
