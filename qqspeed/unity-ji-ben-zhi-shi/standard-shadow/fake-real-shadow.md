@@ -42,7 +42,9 @@ shadow caster上加光源方向的Projector，加渲染阴影到RenderTexture的
 
 Drawcall ≈ （shadow caster +1）\* shadow receiver
 
- **角色脚下阴影面片**  
+####  **角色脚下阴影面片**
+
+  
 对于游戏中的NPC、杂兵、野怪这些非关键性角色可以直接用防止一个阴影面片来模拟阴影，当然如果地面起伏比较大可能会有穿插问题
 
 ![](http://km.oa.com/files/photos/pictures/201707/1499402769_23_w600_h400.png)![](http://km.oa.com/articles/show/329935?from=iSearch) 
