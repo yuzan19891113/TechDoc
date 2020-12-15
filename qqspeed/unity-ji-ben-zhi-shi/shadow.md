@@ -13,7 +13,7 @@
 创建一个跟随主相机的阴影相机，改为正交投影，设置单独的shadow Layer,将需要投射阴影物体设置到shadow layer，为此阴影相机设置渲染目标到一个渲染纹理RTT\_Shadow。另外创建一个Projector，为它设置一个材质Mat\_Proj，并将RTT\_Shadow传到Mat\_Proj的shader中进行着色，另外为防止投影相机边缘的刺刺的长线，要设置一个阴影衰减纹理，如果需要软阴影则需要另外Blur。
 
  **角色脚下阴影面片**  
-**对于游戏中的NPC、杂兵、野怪这些非关键性角色可以直接用防止一个阴影面片来模拟阴影，当然如果地面起伏比较大可能会有穿插问题**
+对于游戏中的NPC、杂兵、野怪这些非关键性角色可以直接用防止一个阴影面片来模拟阴影，当然如果地面起伏比较大可能会有穿插问题
 
 ####  Standard Shadow Mapping：
 
@@ -62,5 +62,9 @@ Matrix Light::CalculateCropMatrix(Frustum splitFrustum)
 c\)针对切分的每一块渲染阴影图，一般阴影图大小一样的，比如都是1024\*1024，而近处包含的场景范围比远处小，所以近处阴影图的精度会更高。  
 d\)渲染场景阴影  
 ![](https://pic4.zhimg.com/80/v2-0a754fdc0b823495b997af96ab509c53_720w.jpg)  
+Unity5内置的阴影的实现方式是Screen Space Shadow Mapping，流程如图
 
+ ![](http://km.oa.com/files/photos/pictures/201707/1499402620_97_w292_h178.png)![](http://km.oa.com/files/photos/pictures/201707/1499402620_17_w292_h178.png)![](http://km.oa.com/files/photos/pictures/201707/1499402620_56_w292_h218.png) ![](http://km.oa.com/files/photos/pictures/201707/1499402620_74_w292_h173.png)![](http://km.oa.com/articles/show/329935?from=iSearch)  ![](http://km.oa.com/articles/show/329935?from=iSearch)
+
+使用了三张深度图，每个shadow caster都需要被多渲染三次，对手游来说开销无法接受。**即使使用简化的Shadow Mapping，不考虑overdraw和滤波，每个shadow caster也至少要增加一个drawcall**，对同屏物体较多的游戏渲染压力还是很大，而且**需要设备支持depth texture**。
 
