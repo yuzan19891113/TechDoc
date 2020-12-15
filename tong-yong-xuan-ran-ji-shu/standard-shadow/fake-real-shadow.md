@@ -16,13 +16,13 @@
 
 ![](../../.gitbook/assets/image%20%2843%29.png)
 
-![](../../.gitbook/assets/image%20%2851%29.png)
+![](../../.gitbook/assets/image%20%2853%29.png)
 
 shadow caster上加光源方向的Projector，加渲染阴影到RenderTexture的相机，RenderTexture赋到Projector的材质
 
 当“轮廓”图中的物体贴近边缘的时候阴影会产生bug，如下图，看到阴影被拉长了一条。
 
-![](../../.gitbook/assets/image%20%2845%29.png)
+![](../../.gitbook/assets/image%20%2846%29.png)
 
 这是由于“轮廓”图的wrapMode采用使用了clamp导致的，clamp模式就是uv在超过1的时候把图像边缘的像素拉伸，如下图：
 
@@ -32,7 +32,7 @@ shadow caster上加光源方向的Projector，加渲染阴影到RenderTexture的
 
 2）在投影器的shader中使用一张图来做遮罩（下图），这样边缘的像素可以过滤掉，还可以做出边缘的阴影渐隐的效果。
 
-![](../../.gitbook/assets/image%20%2848%29.png)
+![](../../.gitbook/assets/image%20%2849%29.png)
 
 优点：投射阴影，细节精确
 
