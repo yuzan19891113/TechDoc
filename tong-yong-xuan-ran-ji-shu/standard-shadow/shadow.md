@@ -53,3 +53,10 @@ Unity5内置的阴影的实现方式是Screen Space Shadow Mapping，流程如�
 
 使用了三张深度图，每个shadow caster都需要被多渲染三次，对手游来说开销无法接受。**即使使用简化的Shadow Mapping，不考虑overdraw和滤波，每个shadow caster也至少要增加一个drawcall**，对同屏物体较多的游戏渲染压力还是很大，而且**需要设备支持depth texture**。
 
+LISPSM  
+在PSM的基础上又有了新的阴影技术Light Space Perspective Shadow Maps，它是在和灯光方向垂直的方向构建View Frustrum，然后将灯光、场景都转到这个View Frustrum的Perspective space，然后再计算Shadow Map，这样无论是点光、聚光、平行光就都转为平行光。  
+![](http://uwa-ducument-img.oss-cn-beijing.aliyuncs.com/Blog/usparkle_shadow/14.png)
+
+左图是Uniform（近处精度不足），中间是LISPSM（近处、远处都不错），右面是PSM（远处精度不足）。LISPSM具体细节参考：  
+[https://www.cg.tuwien.ac.at/research/vr/lispsm/shadows\_egsr2004\_revised.pdf](https://www.cg.tuwien.ac.at/research/vr/lispsm/shadows_egsr2004_revised.pdf)
+
