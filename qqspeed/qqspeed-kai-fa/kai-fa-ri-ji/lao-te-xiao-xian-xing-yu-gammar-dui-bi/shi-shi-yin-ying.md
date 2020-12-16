@@ -1,6 +1,6 @@
 # 实时阴影
 
-* shadow mapping \(中高档） 
+* shadow mapping \(中高档） 优先级:高
 
 1. 只保存一个rt，切分为4分，通过projection矩阵将切分区域的对象的投到rt不同位置
 2. Light Space Perspective ShadowMap
