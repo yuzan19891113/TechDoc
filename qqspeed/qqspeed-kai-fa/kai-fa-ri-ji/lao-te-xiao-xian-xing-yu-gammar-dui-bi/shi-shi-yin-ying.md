@@ -10,6 +10,10 @@
 4. 可能需要处理动态阴影和bake阴影的问题
 5.  优化：分辨率，隔帧更新，shader,blur优化
 
+{% embed url="http://km.oa.com/group/1667/articles/show/265715?from=iSearch&sessionKey=1AON5ZrJWCH0zGkfvzXTzQhwWs5J0RE2" %}
+
+[http://km.oa.com/group/1667/articles/show/265718?kmref=author\_post](http://km.oa.com/group/1667/articles/show/265718?kmref=author_post)
+
 * bake + rotate projector\(中低档\)
 
 1. bake 一个标准角度的阴影projector结果
