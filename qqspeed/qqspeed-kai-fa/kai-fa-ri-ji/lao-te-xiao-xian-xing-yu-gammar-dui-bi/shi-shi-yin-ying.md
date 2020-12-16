@@ -9,3 +9,6 @@
 
 * bake + rotate projector\(中低档\)
 
+1. bake 一个标准角度的阴影projector结果
+2. 旋转 projector矩阵 as object rotate at fixed rotation
+
