@@ -97,7 +97,9 @@ unity中基本会影响阴影的基本设置：
 
 ![](../../.gitbook/assets/image%20%2851%29.png)
 
-ForwardBase Pass中只处理平行光阴影，LightMap等，其他的灯光需要在ForwordAdd Pass中进行处理。
+1.ForwardBase Pass中只处理平行光阴影，LightMap等，其他的灯光需要在ForwordAdd Pass中进行处理。
 
 2.在顶点着色器中加入顶点变换的话，接受阴影需要使用UNITY\_LIGHT\_ATTENUATION\(atten, i, i.worldPos\);因为在设置阴影坐标的时候是把v.vertex变换到灯光空间，位移之后除非改动v.vertex，否则阴影坐标计算的是顶点变换前的。
+
+3.PC平台和移动平台对阴影的默认设置不一样，比如PC平台默认是Cascaded Shadow开启，那如果物体想仅接收阴影，也必须写Shadowcaster Pass，因为使用的屏幕空间的Cascaded Shadow Map， 移动平台默认是关闭Cascaded Shadow，仅接收阴影不用写Shadowcaster Pass；具体可参见unity5.0更新说明，Shadowcaster实际是用来收集CameraDepthTexture：
 
