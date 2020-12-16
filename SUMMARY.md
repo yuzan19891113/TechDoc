@@ -22,7 +22,7 @@
 * [Unity](qqspeed/README.md)
   * [Unity使用技巧](qqspeed/unity-shi-yong-ji-qiao.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
-    * [AssetPostprocesso](qqspeed/unity-ji-ben-zhi-shi/assetpostprocesso.md)
+    * [AssetPostprocessor](qqspeed/unity-ji-ben-zhi-shi/assetpostprocesso.md)
     * [Material](qqspeed/unity-ji-ben-zhi-shi/material.md)
     * [性能分析](qqspeed/unity-ji-ben-zhi-shi/you-hua/README.md)
       * [基本优化](qqspeed/unity-ji-ben-zhi-shi/you-hua/ji-ben-you-hua.md)

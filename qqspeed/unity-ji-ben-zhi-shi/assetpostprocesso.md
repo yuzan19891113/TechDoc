@@ -1,4 +1,4 @@
-# AssetPostprocesso
+# AssetPostprocessor
 
 AssetPostprocessor lets you hook into the import pipeline and run scripts prior or after importing assets.
 
