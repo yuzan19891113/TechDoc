@@ -16,7 +16,7 @@
 
 ![](../../.gitbook/assets/image%20%2843%29.png)
 
-![](../../.gitbook/assets/image%20%2857%29.png)
+![](../../.gitbook/assets/image%20%2859%29.png)
 
 shadow caster上加光源方向的Projector，加渲染阴影到RenderTexture的相机，RenderTexture赋到Projector的材质
 

@@ -102,7 +102,7 @@ unity中基本会影响阴影的基本设置：
 ![&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;](https://img-blog.csdnimg.cn/20200505012141805.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2pzMDkwNw==,size_16,color_FFFFFF,t_70)  
 
 
-![](../../.gitbook/assets/image%20%2853%29.png)
+![](../../.gitbook/assets/image%20%2854%29.png)
 
 1.ForwardBase Pass中只处理平行光阴影，LightMap等，其他的灯光需要在ForwordAdd Pass中进行处理。
 

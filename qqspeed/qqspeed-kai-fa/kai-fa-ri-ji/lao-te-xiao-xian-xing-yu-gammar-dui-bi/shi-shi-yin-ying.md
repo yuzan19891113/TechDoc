@@ -1,5 +1,7 @@
 # 实时阴影
 
+unity设置关闭lightmap static选项
+
 参考刺激战场：中低配都没有实时阴影，只有高清以上才有
 
 * shadow mapping \(中高档） 优先级:高
@@ -10,12 +12,18 @@
 4. 可能需要处理动态阴影和bake阴影的问题
 5.  优化：分辨率，隔帧更新，shader,blur优化
 
-{% embed url="http://km.oa.com/group/1667/articles/show/265715?from=iSearch&sessionKey=1AON5ZrJWCH0zGkfvzXTzQhwWs5J0RE2" %}
+![1 rt,4&#x4E2A;viewport](../../../../.gitbook/assets/image%20%2857%29.png)
+
+![](../../../../.gitbook/assets/image%20%2852%29.png)
+
+[http://km.oa.com/group/1667/articles/show/265715?kmref=author\_post](http://km.oa.com/group/1667/articles/show/265715?kmref=author_post)
 
 [http://km.oa.com/group/1667/articles/show/265718?kmref=author\_post](http://km.oa.com/group/1667/articles/show/265718?kmref=author_post)
 
-* bake + rotate projector\(中低档\)
+* bake + rotate projector\(中低档\)优先级:中
 
 1. bake 一个标准角度的阴影projector结果
 2. 旋转 projector矩阵 as object rotate at fixed rotation
+
+
 
