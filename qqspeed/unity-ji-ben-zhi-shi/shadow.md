@@ -1,6 +1,12 @@
 # shadow
 
+Unity 使用的是CSM\(cascade shadowmapping\)
 
+1. render几个不同视锥裁剪面的depthrt
+2.  screen space 的shadowcollect pass,将几个rt合并成一个大的rt
+3. 采样第2步得到的depth rt，然后得到阴影
+
+Unity开启流程：
 
 1. \_CameraDepthTexture和\_CameraDepthNormalsTexture是unity提供的内置纹理，将摄像机的depthTextureMode设置为Depth或DepthNormals即可以渲染这两张纹理。
 2. 只要保证你的shader拥有一个ShadowCaster pass即可渲染到\_CameraDepthTexture
