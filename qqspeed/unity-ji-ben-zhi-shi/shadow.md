@@ -2,8 +2,8 @@
 
 Unity 使用的是CSM\(cascade shadowmapping\)
 
-1. render几个不同视锥裁剪面的depthrt
-2.  screen space 的shadowcollect pass,通过主相机的depth texture恢复wpos,与shadowmap depth进行比较,得到shadowmask
+1. render几个不同视锥裁剪面的depthrt,会保存为texuturearray
+2.  screen space 的shadowcollect pass,通过主相机的depth texture恢复wpos,与shadowmap depth进行比较,得到shadowmask, 如果是cascade shadowmap,通过UNITY\_SETUP\_STEREO\_EYE\_INDEX\_POST\_VERTEX，来确定坐标采样哪一个textureArray中哪一个shadowmap
 3. 采样shadowmap，得到shadow factor进行pixel light shading
 
 Unity开启流程：
