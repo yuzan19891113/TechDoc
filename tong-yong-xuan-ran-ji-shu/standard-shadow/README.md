@@ -18,7 +18,7 @@
 
 5.不支持般透明物体阴影
 
-![](../../.gitbook/assets/image%20%2856%29.png)
+![](../../.gitbook/assets/image%20%2857%29.png)
 
 **ProjectorShadow**
 
@@ -34,7 +34,7 @@
 
 5.支持半透明物体阴影，如下图:
 
-![](../../.gitbook/assets/image%20%2847%29.png)
+![](../../.gitbook/assets/image%20%2848%29.png)
 
 缺点
 
