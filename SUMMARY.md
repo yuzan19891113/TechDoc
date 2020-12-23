@@ -22,6 +22,7 @@
 * [Unity](qqspeed/README.md)
   * [Unity使用技巧](qqspeed/unity-shi-yong-ji-qiao.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
+    * [Mixed lighting + shadowmask](qqspeed/unity-ji-ben-zhi-shi/mixed-lighting-+-shadowmask.md)
     * [AssetPostprocessor](qqspeed/unity-ji-ben-zhi-shi/assetpostprocesso.md)
     * [Material](qqspeed/unity-ji-ben-zhi-shi/material.md)
     * [性能分析](qqspeed/unity-ji-ben-zhi-shi/you-hua/README.md)
@@ -49,8 +50,8 @@
   * [QQSpeed开发](qqspeed/qqspeed-kai-fa/README.md)
     * [开发日记](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/README.md)
       * [自己的想法规划](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/zi-ji-de-xiang-fa-gui-hua.md)
-      * [老特效线性与Gammar对比](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/lao-te-xiao-xian-xing-yu-gammar-dui-bi/README.md)
-        * [实时阴影](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/lao-te-xiao-xian-xing-yu-gammar-dui-bi/shi-shi-yin-ying.md)
+      * [老特效线性与Gammar对比](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/lao-te-xiao-xian-xing-yu-gammar-dui-bi.md)
+    * [实时阴影](qqspeed/qqspeed-kai-fa/shi-shi-yin-ying.md)
     * [热更工具xlua vs IFix](qqspeed/qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix.md)
     * [XLua热更步骤](qqspeed/qqspeed-kai-fa/xlua-re-geng-lu-cheng.md)
 
