@@ -16,6 +16,7 @@ Unity开启流程：
 5. \_CameraDepthTexture和\_CameraDepthNormalsTexture是unity提供的内置纹理，将摄像机的depthTextureMode设置为Depth或DepthNormals即可以渲染这两张纹理。
 6. 只要保证你的shader拥有一个ShadowCaster pass即可渲染到\_CameraDepthTexture
 7. Custom shader要先加入一个LightMode为ShadowCaster的pass，例如：
+8.  可以使用shadow screen是否开启了屏幕阴影宏
 
    ```text
    // Pass to render object as a shadow caster
