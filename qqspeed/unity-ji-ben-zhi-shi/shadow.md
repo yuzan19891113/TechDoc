@@ -118,3 +118,5 @@ unity shadowmaks模式：
 * Static GameObjects receive shadows from other static GameObjects via the shadow mask, regardless of the **Shadow Distance** \(menu: **Edit** &gt; **Project Settings** &gt; **Quality** &gt; **Shadows**\). They also receive shadows from dynamic GameObjects, but only those within the **Shadow Distance**.
 * Dynamic GameObjects receive shadows from other dynamic GameObjects within the **Shadow Distance** via shadow maps. They also receive shadows from static GameObjects, via Light Probes. The shadow fidelity depends on the density of Light Probes in the Scene, and the **Light Probes**mode selected on the Mesh Renderer.
 
+![](../../.gitbook/assets/image%20%2870%29.png)
+
