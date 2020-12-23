@@ -3,9 +3,6 @@
 Unity 使用的是CSM\(cascade shadowmapping\)
 
 * native shadow mapping:
-
-
-
 * screen shadow mapping:
 
 1. updatedepthtexture, 渲染主相机的深度
