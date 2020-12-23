@@ -37,3 +37,5 @@ unity设置关闭lightmap static选项
 
 ![](../../.gitbook/assets/image%20%2869%29.png)
 
+* 静态投射动态，阴影边缘摆lightprobes,阴影内阴影外,产生阴影内动态物体经过静态阴影时通过lightprobe产生明暗的效果，不能产生类似阴影的边缘
+
