@@ -13,7 +13,7 @@ Unity 使用的是CSM\(cascade shadowmapping\)
 Unity开启流程：
 
 1. graphics settings: cascade shadows on, screen space shadows, cascaded shadows off, native shadow mapping.
-2. project settings: lighting开启shadow，设置shadowditance,设定为shadowmask\(distance范围内静态使用bake shadow, 动态使用realtime shadow\),distanceshadowmask（distance范围内所有对象都是realtime shadow\),**注意如果没有shadowmask,静态物件也会走实时阴影,即静态物件的uv一定要存在于shadowmask的uv中**
+2. project settings: lighting开启shadow，设置shadowditance,设定为shadowmask\(distance范围内静态使用bake shadow, 动态使用realtime shadow\),distanceshadowmask（distance范围内所有对象都是realtime shadow\),**注意如果没有shadowmask,静态物件也会走实时阴影,即静态物件的uv一定要存在于shadowmask的uv中,所以如果改变静态动态，需要删掉lightmapdata, bakery light,重新bake,**
 3.  light settings:使用shadowmask mode, 
 4.  light 组件使用mixed lighing mode,开启 shadow
 5. 静态阴影投射到动态对象上要bake light probe
