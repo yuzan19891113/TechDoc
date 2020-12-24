@@ -14,7 +14,7 @@
 * New出来的Texture2D默认是srgb，就是说采样texture会自动pow2.2，转线性
 * 内存不足不会有dump
 * 使用bakery烘培时，如果出现阴影烘培不上去，发现shadowmask正常，尝试删掉所有bakerylight,lightmapdata重新生成一下，bakerylight + lightmapdata可能拥有shadowmask uv数据，可能会影响bake shadowmask的结果和对象是否投射动态阴影（根据是否拥有shadowmask uv\)
-* 一定要确保shadowmask不变灰，如果变灰，怀疑是bakery或者其他操作把windows lighting 变为subtractive,一定要是shadowmask
+* 一定要确保shadowmask不变灰，如果变灰，怀疑是bakery或者其他操作把windows lighting 变为subtractive,一定要是shadowmask,一定要确保shadowmask显示正确
 * bakery参数与前面不一致一定要警惕，肯定是bakery light不对了，删掉重新烘培
 
 
