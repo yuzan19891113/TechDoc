@@ -2,9 +2,6 @@
 
 Unity 使用的是CSM\(cascade shadowmapping\)
 
-* native shadow mapping:
-* screen shadow mapping:
-
 1. updatedepthtexture, 渲染主相机的深度
 2. shadows.RenderShadowMap:render几个不同视锥裁剪面的depthrt,会保存为texuturearray
 3.  screen space 的shadowcollect pass:通过主相机的depth texture恢复wpos,与shadowmap depth进行比较,得到**shadowmask**, 如果是cascade shadowmap,通过wpos来确定坐标采样哪一个textureArray中哪一个shadowmap, 如果有pcf blur也在这个流程中
@@ -12,15 +9,14 @@ Unity 使用的是CSM\(cascade shadowmapping\)
 
 Unity开启流程：
 
-1. graphics settings: cascade shadows on, screen space shadows, cascaded shadows off, native shadow mapping.
-2. project settings: lighting开启shadow，设置shadowditance,设定为shadowmask\(distance范围内静态使用bake shadow, 动态使用realtime shadow\),distanceshadowmask（distance范围内所有对象都是realtime shadow\),**注意如果没有shadowmask,静态物件也会走实时阴影,即静态物件的uv一定要存在于shadowmask的uv中,所以如果改变静态动态，需要删掉lightmapdata, bakery light,重新bake,**
-3.  light settings:使用shadowmask mode, 
-4.  light 组件使用mixed lighing mode,开启 shadow
-5. 静态阴影投射到动态对象上要bake light probe
-6. \_CameraDepthTexture和\_CameraDepthNormalsTexture是unity提供的内置纹理，将摄像机的depthTextureMode设置为Depth或DepthNormals即可以渲染这两张纹理。
-7. 只要保证你的shader拥有一个ShadowCaster pass即可渲染到\_CameraDepthTexture
-8. Custom shader要先加入一个LightMode为ShadowCaster的pass，例如：
-9.  可以使用shadow screen是否开启了屏幕阴影宏
+1. project settings: lighting开启shadow，设置shadowditance,设定为shadowmask\(distance范围内静态使用bake shadow, 动态使用realtime shadow\),distanceshadowmask（distance范围内所有对象都是realtime shadow\),**注意如果没有lightmap,静态物件也会走实时阴影**
+2.  light settings:使用shadowmask mode, 
+3.  light 组件使用mixed lighing mode,开启 shadow
+4. 静态阴影投射到动态对象上要bake light probe
+5. \_CameraDepthTexture和\_CameraDepthNormalsTexture是unity提供的内置纹理，将摄像机的depthTextureMode设置为Depth或DepthNormals即可以渲染这两张纹理。
+6. 只要保证你的shader拥有一个ShadowCaster pass即可渲染到\_CameraDepthTexture
+7. Custom shader要先加入一个LightMode为ShadowCaster的pass，例如：
+8.  可以使用shadow screen是否开启了屏幕阴影宏
 
    ```text
    // Pass to render object as a shadow caster

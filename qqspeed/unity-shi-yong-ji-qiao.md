@@ -13,6 +13,7 @@
 * 修改特效的属性，不能直接particle.main调用，因为只有get权限，可以赋值给var，然后修改
 * New出来的Texture2D默认是srgb，就是说采样texture会自动pow2.2，转线性
 * 内存不足不会有dump
+* 使用bakery烘培时，如果出现阴影烘培不上去，发现shadowmask正常，尝试删掉所有bakerylight,lightmapdata重新生成一下，bakerylight + lightmapdata可能拥有shadowmask uv数据，可能会影响bake shadowmask的结果和对象是否投射动态阴影（根据是否拥有shadowmask uv\)
 
 
 
