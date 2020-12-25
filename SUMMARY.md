@@ -29,6 +29,7 @@
       * [基本优化](qqspeed/unity-ji-ben-zhi-shi/you-hua/ji-ben-you-hua.md)
     * [Built-in render pipeline](qqspeed/unity-ji-ben-zhi-shi/built-in-render-pipeline.md)
     * [shadow](qqspeed/unity-ji-ben-zhi-shi/shadow.md)
+    * [静态阴影和动态阴影](qqspeed/unity-ji-ben-zhi-shi/jing-tai-yin-ying-he-dong-tai-yin-ying.md)
     * [ComputeShader](qqspeed/unity-ji-ben-zhi-shi/computeshader.md)
     * [bake light mapping](qqspeed/unity-ji-ben-zhi-shi/bake-light-mapping.md)
     * [GameObject](qqspeed/unity-ji-ben-zhi-shi/gameobject.md)
@@ -51,7 +52,7 @@
     * [开发日记](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/README.md)
       * [自己的想法规划](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/zi-ji-de-xiang-fa-gui-hua.md)
       * [老特效线性与Gammar对比](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/lao-te-xiao-xian-xing-yu-gammar-dui-bi.md)
-    * [实时阴影](qqspeed/qqspeed-kai-fa/shi-shi-yin-ying.md)
+      * [实时阴影](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/shi-shi-yin-ying.md)
     * [热更工具xlua vs IFix](qqspeed/qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix.md)
     * [XLua热更步骤](qqspeed/qqspeed-kai-fa/xlua-re-geng-lu-cheng.md)
 
