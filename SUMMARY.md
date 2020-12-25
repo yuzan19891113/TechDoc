@@ -50,6 +50,7 @@
     * [PVS（可烘培的遮挡裁减\)](qqspeed/unity-ji-ben-zhi-shi/zhe-dang-ti-chu-pvs.md)
   * [QQSpeed开发](qqspeed/qqspeed-kai-fa/README.md)
     * [开发日记](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/README.md)
+      * [codereview](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/codereview.md)
       * [自己的想法规划](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/zi-ji-de-xiang-fa-gui-hua.md)
       * [老特效线性与Gammar对比](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/lao-te-xiao-xian-xing-yu-gammar-dui-bi.md)
       * [实时阴影](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/shi-shi-yin-ying.md)
