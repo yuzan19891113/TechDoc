@@ -16,6 +16,14 @@
 
 单张shadowmap: 512\*512\(low\),1024 \* 1024\(medium\),  小于shadow distance（150- 200）的 动态物件增加一次depth的draw call
 
+1024 \* 1024
+
+![](../../../../.gitbook/assets/image%20%2876%29.png)
+
+512 \* 512
+
+![](../../../../.gitbook/assets/image%20%2875%29.png)
+
  PCF soft:  接受阴影的对象个数 \* 单像素四次采样
 
 
