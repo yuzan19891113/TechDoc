@@ -1,55 +1,134 @@
 # shadow
 
-#### Standard Shadow Mapping：
+Unity 使用的是CSM\(cascade shadowmapping\)
 
-的基本思想是在光源位置放置一个相机\(Light space Camera\)，画一遍深度得到深度图，在渲染场景时将pixel坐标转换Light Space计算深度，然后比较它深度和深度图中的深度，如果比深度图中深度大就意味着在阴影中，否则在被照亮。  
-阴影的锯齿有两类：透视导致的锯齿\(Perspective alias\)和投影导致的锯齿（Project alias）。  
-2.PCF：投影导致的锯齿是因为灯光投射方向和物体表面夹角过小时多pixel对应阴影图的一个texel，这可以通过提高阴影图的大小来解决，也可以通过Percentage Closer Filtering来柔化边缘。PCF就是在绘制时，除了绘制当前点还会对周围像素进行多次采样、混合来柔化锯齿，常用PCF有：[使用随机采样实现soft shadow](https://link.zhihu.com/?target=http%3A//blog.csdn.net/candycat1992/article/details/8981370)、[泊松采样](https://link.zhihu.com/?target=http%3A//www.ownself.org/blog/2010/percentage-closer-filtering.html)等。
+* native shadow mapping:
+* screen shadow mapping:
 
- 
+1. updatedepthtexture, 渲染主相机的深度
+2. shadows.RenderShadowMap:render几个不同视锥裁剪面的depthrt,会保存为texuturearray
+3.  screen space 的shadowcollect pass:通过主相机的depth texture恢复wpos,与shadowmap depth进行比较,得到**shadowmask**, 如果是cascade shadowmap,通过wpos来确定坐标采样哪一个textureArray中哪一个shadowmap, 如果有pcf blur也在这个流程中
+4. 采样shadowmap，得到shadow factor进行pixel light shading
 
-#### CSM/PSSM（Cascaded shadow mapping\):
+Unity开启流程：
 
-这是两种分别研究发表但是原理几乎一样的阴影技术，Unity用的就是CSM，而其中PSSM是几个中国人（Zhang F, Sun H Q, Xu L L, et al，[观摩大佬风采](https://link.zhihu.com/?target=http%3A//cs.scu.edu.cn/cs/xyxw/webinfo/2014/05/1397522799914515.htm)）提出的。它们的原理如下：  
-a\)对摄像机视锥体内沿着Z由近到远切阴影图分为多张，而切分是两种切分规则的混合，一种是均匀切分，一种是指数切分，两者按照一定比率混合起来。  
-![](https://pic2.zhimg.com/80/v2-0ae72a1c96b4279b6b085e00c26f57ad_720w.png)  
-  
-b\)对每一块分别计算一个光源投影空间内平移、缩放的矩阵cropMatrix，它可以将切分的多块移动、缩放到光源的视椎中，这个矩阵和正交投影矩阵非常像。  
+1. graphics settings: cascade shadows on, screen space shadows, cascaded shadows off, native shadow mapping.
+2. project settings: lighting开启shadow，设置shadowditance,设定为shadowmask\(distance范围内静态使用bake shadow, 动态使用realtime shadow\),distanceshadowmask（distance范围内所有对象都是realtime shadow\),**注意如果没有shadowmask,静态物件也会走实时阴影,即静态物件的uv一定要存在于shadowmask的uv中,所以如果改变静态动态，需要删掉lightmapdata, bakery light,重新bake,**
+3.  light settings:使用shadowmask mode, 
+4.  light 组件使用mixed lighing mode,开启 shadow
+5. 静态阴影投射到动态对象上要bake light probe
+6. \_CameraDepthTexture和\_CameraDepthNormalsTexture是unity提供的内置纹理，将摄像机的depthTextureMode设置为Depth或DepthNormals即可以渲染这两张纹理。
+7. 只要保证你的shader拥有一个ShadowCaster pass即可渲染到\_CameraDepthTexture
+8. Custom shader要先加入一个LightMode为ShadowCaster的pass，例如：
+9.  可以使用shadow screen是否开启了屏幕阴影宏
 
+   ```text
+   // Pass to render object as a shadow caster
+   Pass 
+   {
+   Name "ShadowCaster"
+   Tags { "LightMode" = "ShadowCaster" }
+
+       CGPROGRAM
+       #pragma vertex vert
+       #pragma fragment frag
+       #pragma target 2.0
+       #pragma multi_compile_shadowcaster
+       #pragma multi_compile_instancing // allow instanced shadow pass for most of the shaders
+       #include "UnityCG.cginc"
+
+       struct v2f {
+           V2F_SHADOW_CASTER;
+           UNITY_VERTEX_OUTPUT_STEREO
+       };
+
+       v2f vert(appdata_base v)
+       {
+           v2f o;
+           UNITY_SETUP_INSTANCE_ID(v);
+           UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
+           TRANSFER_SHADOW_CASTER_NORMALOFFSET(o)
+           return o;
+       }
+
+       float4 frag(v2f i) : SV_Target
+       {
+           SHADOW_CASTER_FRAGMENT(i)
+       }
+       ENDCG
+   }
+   ```
+
+   这个Pass把物体渲染进ShadowMap
+
+4 在ForwardBase Pass中，加入
 
 ```text
-   // Build a matrix for cropping light's projection
-   // Given vectors are in light's clip space
-Matrix Light::CalculateCropMatrix(Frustum splitFrustum)
+Pass
 {
-  Matrix lightViewProjMatrix = viewMatrix * projMatrix;
-  // Find boundaries in light's clip space
-  BoundingBox cropBB = CreateAABB(splitFrustum.AABB,
-                                  lightViewProjMatrix);
-  // Use default near-plane value
-  cropBB.min.z = 0.0f;
-  // Create the crop matrix
-  float scaleX, scaleY, scaleZ;
-  float offsetX, offsetY, offsetZ;
-  scaleX = 2.0f / (cropBB.max.x - cropBB.min.x);
-  scaleY = 2.0f / (cropBB.max.y - cropBB.min.y);
-  offsetX = -0.5f * (cropBB.max.x + cropBB.min.x) * scaleX;
-  offsetY = -0.5f * (cropBB.max.y + cropBB.min.y) * scaleY;
-  scaleZ = 1.0f / (cropBB.max.z - cropBB.min.z);
-  offsetZ = -cropBB.min.z * scaleZ;
-  return Matrix( scaleX,     0.0f,     0.0f,  0.0f,
-                   0.0f,   scaleY,     0.0f,  0.0f,
-                   0.0f,     0.0f,   scaleZ,  0.0f,
-                offsetX,  offsetY,  offsetZ,  1.0f);
+    Tags { "LightMode" = "ForwardBase" }
+
+    CGPROGRAM
+
+    #pragma vertex vert
+    #pragma fragment frag
+    #include "UnityCG.cginc"
+
+    #pragma multi_compile_fwdbase
+
+    #include "AutoLight.cginc"
+
+
+    struct v2f
+    {
+        float4 pos : SV_POSITION;
+        float3 worldPos : Texcoord0;
+        LIGHTING_COORDS(1,2)
+    };
+
+
+    v2f vert(appdata_base v) {
+        v2f o;
+        o.pos = UnityObjectToClipPos(v.vertex);
+        TRANSFER_VERTEX_TO_FRAGMENT(o);
+
+        return o;
+    }
+
+    fixed4 frag(v2f i) : COLOR {
+        float atten = LIGHT_ATTENUATION(i);
+        //UNITY_LIGHT_ATTENUATION(atten, i, i.worldPos);
+        fixed3 outColor = fixed3(0.6, 0.0, 0.0) * atten;
+        return float4(outColor, 0.5);
+    }
+    ENDCG
 }
 ```
 
-c\)针对切分的每一块渲染阴影图，一般阴影图大小一样的，比如都是1024\*1024，而近处包含的场景范围比远处小，所以近处阴影图的精度会更高。  
-d\)渲染场景阴影  
-![](https://pic4.zhimg.com/80/v2-0a754fdc0b823495b997af96ab509c53_720w.jpg)  
-Unity5内置的阴影的实现方式是Screen Space Shadow Mapping，流程如图
+得到的atten 就是shadow值。
 
- ![](http://km.oa.com/files/photos/pictures/201707/1499402620_97_w292_h178.png)![](http://km.oa.com/files/photos/pictures/201707/1499402620_17_w292_h178.png)![](http://km.oa.com/files/photos/pictures/201707/1499402620_56_w292_h218.png) ![](http://km.oa.com/files/photos/pictures/201707/1499402620_74_w292_h173.png)![](http://km.oa.com/articles/show/329935?from=iSearch)  ![](http://km.oa.com/articles/show/329935?from=iSearch)
+unity中基本会影响阴影的基本设置：  
+![&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;](https://img-blog.csdnimg.cn/20200505012141805.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2pzMDkwNw==,size_16,color_FFFFFF,t_70)  
 
-使用了三张深度图，每个shadow caster都需要被多渲染三次，对手游来说开销无法接受。**即使使用简化的Shadow Mapping，不考虑overdraw和滤波，每个shadow caster也至少要增加一个drawcall**，对同屏物体较多的游戏渲染压力还是很大，而且**需要设备支持depth texture**。
+
+1.ForwardBase Pass中只处理平行光阴影，LightMap等，其他的灯光需要在ForwordAdd Pass中进行处理。
+
+2.在顶点着色器中加入顶点变换的话，接受阴影需要使用UNITY\_LIGHT\_ATTENUATION\(atten, i, i.worldPos\);因为在设置阴影坐标的时候是把v.vertex变换到灯光空间，位移之后除非改动v.vertex，否则阴影坐标计算的是顶点变换前的。
+
+3.PC平台和移动平台对阴影的默认设置不一样，比如PC平台默认是Cascaded Shadow开启，那如果物体想仅接收阴影，也必须写Shadowcaster Pass，因为使用的屏幕空间的Cascaded Shadow Map， 移动平台默认是关闭Cascaded Shadow，仅接收阴影不用写Shadowcaster Pass；具体可参见unity5.0更新说明，Shadowcaster实际是用来收集CameraDepthTexture：
+
+unity shadowmaks模式：
+
+* Static GameObjects receive shadows from other static GameObjects via the shadow mask, regardless of the **Shadow Distance** \(menu: **Edit** &gt; **Project Settings** &gt; **Quality** &gt; **Shadows**\). They also receive shadows from dynamic GameObjects, but only those within the **Shadow Distance**.
+* Dynamic GameObjects receive shadows from other dynamic GameObjects within the **Shadow Distance** via shadow maps. They also receive shadows from static GameObjects, via Light Probes. The shadow fidelity depends on the density of Light Probes in the Scene, and the **Light Probes**mode selected on the Mesh Renderer.
+
+![](../../../.gitbook/assets/image%20%2870%29.png)
+
+\_WorldSpaceLightPos :如果w = 0则表示方向光没有位置，如果1表示点光源有位置数据
+
+unity lightspace优化：方向光的正交投影，然后优化近平面
+
+![](../../../.gitbook/assets/image%20%2876%29.png)
+
+[https://docs.unity3d.com/Manual/ShadowPerformance.html](https://docs.unity3d.com/Manual/ShadowPerformance.html)
 

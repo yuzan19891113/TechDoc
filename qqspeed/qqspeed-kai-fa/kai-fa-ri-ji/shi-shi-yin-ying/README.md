@@ -41,3 +41,7 @@ unity设置关闭lightmap static选项
 
 不能直接对shadowmap进行blur，因为这样的结果blur的结果得到的是平均深度，而不是结果的平均值。貌似只有方差阴影或者shadowmask才是提前blur
 
+
+
+
+
