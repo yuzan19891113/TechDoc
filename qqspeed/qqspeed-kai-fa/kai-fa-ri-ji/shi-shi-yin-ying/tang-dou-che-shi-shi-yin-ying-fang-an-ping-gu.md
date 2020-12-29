@@ -71,7 +71,9 @@ if (shadow > _LightShadowData.r)
 	}
 ```
 
+未来的考虑：
 
+CSM + LIPSM\(处理较大距离阴影，提高阴影精度）
 
 
 
