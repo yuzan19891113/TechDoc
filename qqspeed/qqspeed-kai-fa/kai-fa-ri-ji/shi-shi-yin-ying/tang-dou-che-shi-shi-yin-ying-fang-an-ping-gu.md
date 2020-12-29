@@ -24,7 +24,7 @@ codm:流畅，标准，没有阴影，精致，高清，有分辨率较低的阴
 
 **单张shadowmap + PCF soft**
 
-**单张shadowmap:** 512\*512\(low\),1024 \* 1024\(medium\),  小于shadow distance（150- 200）的 动态物件增加一次depth的draw call
+**单张shadowmap:** 1024 \* 1024\(medium\),  小于shadow distance（150- 200）的 动态物件增加一次depth的draw call
 
 近处：
 
@@ -40,7 +40,7 @@ codm:流畅，标准，没有阴影，精致，高清，有分辨率较低的阴
 
 ![](../../../../.gitbook/assets/image%20%2879%29.png)
 
- **PCF soft:**  接受阴影的对象个数 \* 单像素四次采样, PC平台：手写 PCF过滤  移动平台：**buit-in PCF\( from gles 3.0\)**，进入静态阴影区以及超出light project camera distance,不需要采样
+ **PCF soft:**  接受阴影的对象个数 \* 单像素四次采样,  移动平台：**buit-in PCF\( from gles 3.0\)**，进入静态阴影区以及超出light project camera distance,不需要采样
 
 ```text
 UNITY_BRANCH
