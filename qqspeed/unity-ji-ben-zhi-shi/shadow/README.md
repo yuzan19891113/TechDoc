@@ -124,6 +124,8 @@ unity shadowmaks模式：
 
 ![](../../../.gitbook/assets/image%20%2870%29.png)
 
+不能直接对shadowmap进行blur，因为这样的结果blur的结果得到的是平均深度，而不是结果的平均值。貌似只有方差阴影或者shadowmask才是提前blur
+
 \_WorldSpaceLightPos :如果w = 0则表示方向光没有位置，如果1表示点光源有位置数据
 
 unity lightspace优化：方向光的正交投影，然后优化近平面
