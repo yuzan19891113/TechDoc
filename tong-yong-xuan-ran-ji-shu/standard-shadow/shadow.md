@@ -64,7 +64,7 @@ Unity5内置的阴影的实现方式是Screen Space Shadow Mapping，流程如�
 
 PSM
 
-计算shadowmap转换到post eye space, 从而让阴影精度能够近大远小，但如果光照方向不垂直于view方向，平行光会扭曲，会变成一个点光源。所以对光照方向要求很高
+计算shadowmap转换到post eye space, 从而让阴影精度能够近大远小，但如果光照方向不垂直于view方向，平行光会扭曲
 
 PSM算法步骤：
 

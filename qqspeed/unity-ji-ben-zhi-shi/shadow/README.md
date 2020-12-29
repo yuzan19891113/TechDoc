@@ -138,3 +138,7 @@ shadowbias:解决自阴影的问题，物体表面拉近一下，不然阴影产
 
 {% embed url="http://km.oa.com/group/1667/articles/show/369638?from=iSearch" %}
 
+Editor project quality settings: Projection stable fit解决相机移动阴影闪烁的问题
+
+
+
