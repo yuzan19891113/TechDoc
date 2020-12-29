@@ -28,9 +28,10 @@
 
 ![](../../../../.gitbook/assets/image%20%2876%29.png)
 
- **PCF soft:**  接受阴影的对象个数 \* 单像素四次采样,PC平台：手写 PCF过滤  移动平台：buit-in PCF\( from gles 3.0\)，进入静态阴影区，不会处理动态阴影。
+ **PCF soft:**  接受阴影的对象个数 \* 单像素四次采样,PC平台：手写 PCF过滤  移动平台：buit-in PCF\( from gles 3.0\)，进入静态阴影区以及超出light project camera distance,不需要采样
 
 ```text
+UNITY_BRANCH
 if (shadow > _LightShadowData.r)
 	{
 		fixed shadowValue = 1.0f;
@@ -38,14 +39,17 @@ if (shadow > _LightShadowData.r)
 		
 		//transfer coord
 		#ifdef UNITY_NO_SCREENSPACE_SHADOWS
-			ShadowCoord = mul(unity_WorldToShadow[0], float4(worldPos, 1.0f));
+			ShadowCoord = mul(unity_WorldToShadow[0], float4(worldPos, 1.0f));	
 		#else
 			ShadowCoord = ScreenPos;
 		#endif
-
 		//blur
-		ShadowCoord.xyz = ShadowCoord.xyz ;
+		ShadowCoord.xyz = ShadowCoord.xyz / ShadowCoord.w;
 		ShadowCoord.w = 1.0f;
+
+		UNITY_BRANCH
+		if (ShadowCoord.z < 0 || (ShadowCoord.z > 1))
+			return 1.0;
 
 		#ifdef SHADOWS_SOFT	
 			#if defined(UNITY_NO_SCREENSPACE_SHADOWS) && defined(SHADER_API_DESKTOP)
