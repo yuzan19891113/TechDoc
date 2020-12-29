@@ -39,3 +39,5 @@ unity设置关闭lightmap static选项
 
 * 静态投射动态，阴影边缘摆lightprobes,阴影内阴影外,产生阴影内动态物体经过静态阴影时通过lightprobe产生明暗的效果，不能产生类似阴影的边缘
 
+不能直接对shadowmap进行blur，因为这样的结果blur的结果得到的是平均深度，而不是结果的平均值。
+

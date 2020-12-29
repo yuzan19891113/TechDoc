@@ -10,9 +10,9 @@
 
 阴影方案：
 
-单张shadowmap + PCF soft
+**单张shadowmap + PCF soft**
 
-单张shadowmap: 512\*512\(low\),1024 \* 1024\(medium\),  小于shadow distance（150- 200）的 动态物件增加一次depth的draw call
+**单张shadowmap:** 512\*512\(low\),1024 \* 1024\(medium\),  小于shadow distance（150- 200）的 动态物件增加一次depth的draw call
 
 近处：
 
@@ -28,7 +28,7 @@
 
 ![](../../../../.gitbook/assets/image%20%2876%29.png)
 
- PCF soft:  接受阴影的对象个数 \* 单像素四次采样
+ **PCF soft:**  接受阴影的对象个数 \* 单像素四次采样,PC平台：手写 PCF过滤  移动平台：buit-in PCF\( from gles 3.0\)
 
 
 
