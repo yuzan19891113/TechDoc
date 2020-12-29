@@ -18,7 +18,7 @@
 
 1024 \* 1024
 
-![](../../../../.gitbook/assets/image%20%2879%29.png)
+![](../../../../.gitbook/assets/image%20%2880%29.png)
 
 512 \* 512
 
@@ -26,7 +26,7 @@
 
 远处：
 
-![](../../../../.gitbook/assets/image%20%2878%29.png)
+![](../../../../.gitbook/assets/image%20%2879%29.png)
 
  **PCF soft:**  接受阴影的对象个数 \* 单像素四次采样,PC平台：手写 PCF过滤  移动平台：buit-in PCF\( from gles 3.0\)，进入静态阴影区以及超出light project camera distance,不需要采样
 

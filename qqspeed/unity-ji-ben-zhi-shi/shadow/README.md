@@ -130,7 +130,7 @@ unity shadowmaks模式：
 
 unity lightspace优化：方向光的正交投影，然后优化近平面
 
-![](../../../.gitbook/assets/image%20%2877%29.png)
+![](../../../.gitbook/assets/image%20%2878%29.png)
 
 {% embed url="https://docs.unity3d.com/Manual/ShadowPerformance.html" %}
 
