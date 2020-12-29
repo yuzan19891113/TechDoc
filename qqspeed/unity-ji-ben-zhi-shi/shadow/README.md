@@ -132,5 +132,7 @@ unity lightspace优化：方向光的正交投影，然后优化近平面
 
 ![](../../../.gitbook/assets/image%20%2876%29.png)
 
-[https://docs.unity3d.com/Manual/ShadowPerformance.html](https://docs.unity3d.com/Manual/ShadowPerformance.html)
+{% embed url="https://docs.unity3d.com/Manual/ShadowPerformance.html" %}
+
+shadowbias:解决自阴影的问题，物体表面拉近一下，不然阴影产生位置的z与shadowmap的z会非常近似
 

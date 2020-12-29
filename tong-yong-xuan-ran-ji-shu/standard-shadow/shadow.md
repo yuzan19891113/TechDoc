@@ -2,7 +2,11 @@
 
 #### Standard Shadow Mapping：
 
-的基本思想是在光源位置放置一个相机\(Light space Camera\)，画一遍深度得到深度图，在渲染场景时将pixel坐标转换Light Space计算深度，然后比较它深度和深度图中的深度，如果比深度图中深度大就意味着在阴影中，否则在被照亮。  
+的基本思想是在光源位置放置一个相机\(Light space Camera\)，画一遍深度得到深度图，在渲染场景时将pixel坐标转换Light Space计算深度，然后比较它深度和深度图中的深度，如果比深度图中深度大就意味着在阴影中，否则在被照亮。
+
+点光源，spot使用透视矩阵投影，方向光使用正交投影。
+
+  
 阴影的锯齿有两类：透视导致的锯齿\(Perspective alias\)和投影导致的锯齿（Project alias）。  
 2.PCF：投影导致的锯齿是因为灯光投射方向和物体表面夹角过小时多pixel对应阴影图的一个texel，这可以通过提高阴影图的大小来解决，也可以通过Percentage Closer Filtering来柔化边缘。PCF就是在绘制时，除了绘制当前点还会对周围像素进行多次采样、混合来柔化锯齿，常用PCF有：[使用随机采样实现soft shadow](https://link.zhihu.com/?target=http%3A//blog.csdn.net/candycat1992/article/details/8981370)、[泊松采样](https://link.zhihu.com/?target=http%3A//www.ownself.org/blog/2010/percentage-closer-filtering.html)等。
 
@@ -59,4 +63,6 @@ LISPSM
 
 左图是Uniform（近处精度不足），中间是LISPSM（近处、远处都不错），右面是PSM（远处精度不足）。LISPSM具体细节参考：  
 [https://www.cg.tuwien.ac.at/research/vr/lispsm/shadows\_egsr2004\_revised.pdf](https://www.cg.tuwien.ac.at/research/vr/lispsm/shadows_egsr2004_revised.pdf)
+
+
 
