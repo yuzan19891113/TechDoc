@@ -28,7 +28,44 @@
 
 ![](../../../../.gitbook/assets/image%20%2876%29.png)
 
- **PCF soft:**  接受阴影的对象个数 \* 单像素四次采样,PC平台：手写 PCF过滤  移动平台：buit-in PCF\( from gles 3.0\)
+ **PCF soft:**  接受阴影的对象个数 \* 单像素四次采样,PC平台：手写 PCF过滤  移动平台：buit-in PCF\( from gles 3.0\)，进入静态阴影区，不会处理动态阴影。
+
+```text
+if (shadow > _LightShadowData.r)
+	{
+		fixed shadowValue = 1.0f;
+		float4 ShadowCoord;
+		
+		//transfer coord
+		#ifdef UNITY_NO_SCREENSPACE_SHADOWS
+			ShadowCoord = mul(unity_WorldToShadow[0], float4(worldPos, 1.0f));
+		#else
+			ShadowCoord = ScreenPos;
+		#endif
+
+		//blur
+		ShadowCoord.xyz = ShadowCoord.xyz ;
+		ShadowCoord.w = 1.0f;
+
+		#ifdef SHADOWS_SOFT	
+			#if defined(UNITY_NO_SCREENSPACE_SHADOWS) && defined(SHADER_API_DESKTOP)
+				shadowValue = NssSampleShadowmap_PCF3x3(ShadowCoord, 0);
+			#else
+				shadowValue = SAMPLE_SHADOW(_ShadowMapTexture, ShadowCoord);//gl3.0 has built-in PCF
+			#endif
+		#else
+			shadowValue = SAMPLE_SHADOW(_ShadowMapTexture, ShadowCoord);
+		#endif
+
+		//blend dynamic static shadow
+		#ifdef UNITY_NO_SCREENSPACE_SHADOWS
+			shadow = min(shadow, _LightShadowData.r + shadowValue * (1 - _LightShadowData.r));
+		#else
+			shadow = min(shadow, shadowValue);
+		#endif
+
+	}
+```
 
 
 
