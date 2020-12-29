@@ -8,7 +8,7 @@
 
   
 阴影的锯齿有两类：透视导致的锯齿\(Perspective alias\)和投影导致的锯齿（Project alias）。  
-2.PCF：投影导致的锯齿是因为灯光投射方向和物体表面夹角过小时多pixel对应阴影图的一个texel，这可以通过提高阴影图的大小来解决，也可以通过Percentage Closer Filtering来柔化边缘。PCF就是在绘制时，除了绘制当前点还会对周围像素进行多次采样、混合来柔化锯齿，常用PCF有：[使用随机采样实现soft shadow](https://link.zhihu.com/?target=http%3A//blog.csdn.net/candycat1992/article/details/8981370)、[泊松采样](https://link.zhihu.com/?target=http%3A//www.ownself.org/blog/2010/percentage-closer-filtering.html)等。
+2.PCF：投影导致的锯齿是因为灯光投射方向和物体表面夹角过小时多pixel对应阴影图的一个texel，这可以通过提高阴影图的大小来解决，也可以通过Percentage Closer Filtering来柔化边缘。PCF就是在绘制时，除了绘制当前点还会对周围像素进行多次采样、混合来柔化锯齿，常用PCF有：[使用随机采样实现soft shadow](https://link.zhihu.com/?target=http%3A//blog.csdn.net/candycat1992/article/details/8981370)、[泊松采样](https://link.zhihu.com/?target=http%3A//www.ownself.org/blog/2010/percentage-closer-filtering.html)等。多次采样目标位置附近的texel，每次获得的结果为shadowStrength在阴影中，1不在阴影中，然后把所有结果混合可以得出\[shadowStrength, 1\]之间的值，用于决定该处阴影的强度。
 
  
 
@@ -18,6 +18,10 @@
 a\)对摄像机视锥体内沿着Z由近到远切阴影图分为多张，而切分是两种切分规则的混合，一种是均匀切分，一种是指数切分，两者按照一定比率混合起来。  
 ![](https://pic2.zhimg.com/80/v2-0ae72a1c96b4279b6b085e00c26f57ad_720w.png)  
   
+
+
+![CSM&#x5212;&#x5206;](../../.gitbook/assets/image%20%2875%29.png)
+
 b\)对每一块分别计算一个光源投影空间内平移、缩放的矩阵cropMatrix，它可以将切分的多块移动、缩放到光源的视椎中，这个矩阵和正交投影矩阵非常像。  
 
 
@@ -63,6 +67,14 @@ LISPSM
 
 左图是Uniform（近处精度不足），中间是LISPSM（近处、远处都不错），右面是PSM（远处精度不足）。LISPSM具体细节参考：  
 [https://www.cg.tuwien.ac.at/research/vr/lispsm/shadows\_egsr2004\_revised.pdf](https://www.cg.tuwien.ac.at/research/vr/lispsm/shadows_egsr2004_revised.pdf)
+
+#### VSM （Variance ShadowMap） <a id="h3-5-3-vsm-variance-shadowmap-"></a>
+
+算法流程与标准ShadowMap不同的是，第一个pass除了写入深度，还写入深度的平方，所以需要多一个通道来保存数据。接着对ShadowMap这张贴图进行blur，blur过程就是每个texel由其自己和周围一定范围的texel平均而得，处理完得到一张 \[E\(Depth\), E\(Depth\)2\] 的贴图，于是方差可以根据方差公式 V\(Depth\)=E\(Depth2\)-E\(Depth\)2 计算得到。
+
+切比雪夫不等式如下图所示，它可以得出x&gt;=t的概率上限。在进行深度比较时，以往得到的是该fragment是否在阴影中，VSM计算出来的则是该fragment在阴影中的概率。这里的概率直接使用概率上限来近似，代入的t为fragment实际距离光源的深度。得到了概率，就可以用它来代表阴影强度，计算不同灰阶的阴影，从而实现软阴影。
+
+**它的缺点第一个是需要两个通道来纪录深度信息，有额外的开销。**
 
 
 

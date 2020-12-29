@@ -124,15 +124,17 @@ unity shadowmaks模式：
 
 ![](../../../.gitbook/assets/image%20%2870%29.png)
 
-不能直接对shadowmap进行blur，因为这样的结果blur的结果得到的是平均深度，而不是结果的平均值。貌似只有方差阴影或者shadowmask才是提前blur
+不能直接对shadowmap进行blur，因为这样的结果blur的结果得到的是平均深度，而不是结果的平均值。标准ShadowMap纪录的是非线性的深度信息，预过滤或者模糊处理会导致错误的结果,只有方差阴影或者shadowmask才是提前blur,
 
 \_WorldSpaceLightPos :如果w = 0则表示方向光没有位置，如果1表示点光源有位置数据
 
 unity lightspace优化：方向光的正交投影，然后优化近平面
 
-![](../../../.gitbook/assets/image%20%2876%29.png)
+![](../../../.gitbook/assets/image%20%2877%29.png)
 
 {% embed url="https://docs.unity3d.com/Manual/ShadowPerformance.html" %}
 
 shadowbias:解决自阴影的问题，物体表面拉近一下，不然阴影产生位置的z与shadowmap的z会非常近似
+
+[http://km.oa.com/group/1667/articles/show/369638?from=iSearch](http://km.oa.com/group/1667/articles/show/369638?from=iSearch)
 
