@@ -91,7 +91,7 @@ CSM + LIPSM\(处理较大距离阴影，提高阴影精度）
 
 
 
-配置调整：InGameConfig,  car选24210
+配置调整：InGameConfig（切换到糖豆车模式）,  car选24210猫车
 
 ### 
 
