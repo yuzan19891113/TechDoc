@@ -33,6 +33,8 @@ shader 线性\(没法兼容后期,只解决了光照线性）：计算结束后�
 
 全流程线性\(兼容后期）：写入colorbuffer仍旧为线性，然后通过后期处理，将经过混合和后期处理后的colorbuffer转换为gamma color buffer
 
+![](../.gitbook/assets/image%20%28100%29.png)
+
 第三张图：显示器把color buffer显示到眼睛。   
 color buffer中的颜色和人眼看到的不同，这是显示器做的事，这个步骤叫display transfer，目前就掌握到这个程度。 
 
