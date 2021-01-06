@@ -27,15 +27,14 @@ LinearSpace时，除非对指定图片选择了bypass sRGB，否则所有纹理�
 
 第二张图：shader计算结果到写入color buffer。 所有计算应该发生在linear space，
 
-shader 线性\(没法兼容后期）：计算结束后需GPU会将该像素颜色再次转换到gamma space，再写入colorbuffer
+shader 线性\(没法兼容后期,只解决了光照线性）：计算结束后需GPU会将该像素颜色再次转换到gamma space，再写入colorbuffer
 
 ![](../.gitbook/assets/image%20%2896%29.png)
 
 全流程线性\(兼容后期）：写入colorbuffer仍旧为线性，然后通过后期处理，将经过混合和后期处理后的colorbuffer转换为gamma color buffer
 
 第三张图：显示器把color buffer显示到眼睛。   
-color buffer中的颜色和人眼看到的不同，这是显示器做的事，这个步骤叫display transfer，目前就掌握到这个程度。   
-
+color buffer中的颜色和人眼看到的不同，这是显示器做的事，这个步骤叫display transfer，目前就掌握到这个程度。 
 
 ![](../.gitbook/assets/image%20%2897%29.png)
 
