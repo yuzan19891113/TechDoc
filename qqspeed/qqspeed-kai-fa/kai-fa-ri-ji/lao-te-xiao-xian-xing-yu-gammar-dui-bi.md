@@ -178,5 +178,7 @@ bg 128,128,128 ， l 0.03, a,0.01, b 0.02再刷一波
 
 859-&gt;685  avatar :391
 
-unity 的材质color会在线性空间下，自动转为线性color,
+unity 的材质color会在线性空间下，自动转为线性color,  特效的color不会转线性。
+
+
 

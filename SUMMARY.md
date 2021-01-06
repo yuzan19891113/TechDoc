@@ -8,6 +8,7 @@
   * [Snapdragon Profiler](kai-fa-ji-tiao-shi-gong-ju/snapdragon-profiler.md)
   * [RenderDoc](kai-fa-ji-tiao-shi-gong-ju/renderdoc-snapdragon-profiler-lian-jie-android.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
+  * [线性与gamma空间](tong-yong-xuan-ran-ji-shu/xian-xing-yu-gamma-kong-jian.md)
   * [云海](tong-yong-xuan-ran-ji-shu/yun-hai.md)
   * [Unity , Unreal文档](tong-yong-xuan-ran-ji-shu/zong-lan.md)
   * [阴影](tong-yong-xuan-ran-ji-shu/standard-shadow/README.md)
