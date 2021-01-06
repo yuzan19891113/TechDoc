@@ -55,3 +55,5 @@ color buffer中的颜色和人眼看到的不同，这是显示器做的事，�
 
 ## 对于unity 材质color会隐式的转线性，特效color不会处理 <a id="&#x6700;&#x540E;"></a>
 
+HDR == float rt
+
