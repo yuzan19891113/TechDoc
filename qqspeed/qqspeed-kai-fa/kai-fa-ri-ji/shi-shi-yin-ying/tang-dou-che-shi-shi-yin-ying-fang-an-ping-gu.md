@@ -117,6 +117,10 @@ batches: 126-&gt;121\(关闭阴影），对象类似的灰dynamic batch，所以
 
 400 \* 2k 
 
+比较shadow2d ,tex2d
+
+一键创建动态阴影。
+
 
 
 
