@@ -52,7 +52,9 @@ codm:流畅，标准，没有阴影，精致，高清，有分辨率较低的阴
 
  **PCF soft:**  接受阴影的对象个数 \* 单像素四次采样,  移动平台：**buit-in PCF\( from gles 3.0\)**，进入静态阴影区以及超出light project camera distance,不需要采样
 
-built-in PCF: depth comparision sampler，加上线性采样器，可以得到pcf的结果
+built-in PCF: 开启纹理比较，加上线性采样器，可以得到pcf的结果
+
+GL\_TEXTURE\_COMPARE\_MODE = GL\_COMPARE\_REF\_TO\_TEXTURE
 
 ```text
 UNITY_BRANCH
