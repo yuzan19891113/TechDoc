@@ -21,6 +21,8 @@
   * [环境交互](tong-yong-xuan-ran-ji-shu/huan-jing-jiao-hu/README.md)
     * [植被的交互调研](tong-yong-xuan-ran-ji-shu/huan-jing-jiao-hu/zhi-bei-de-jiao-hu-tiao-yan.md)
 * [Unity](qqspeed/README.md)
+  * [Profiler](qqspeed/profiler/README.md)
+    * [优化流程](qqspeed/profiler/you-hua-liu-cheng.md)
   * [Unity使用技巧](qqspeed/unity-shi-yong-ji-qiao.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
     * [Package](qqspeed/unity-ji-ben-zhi-shi/package.md)

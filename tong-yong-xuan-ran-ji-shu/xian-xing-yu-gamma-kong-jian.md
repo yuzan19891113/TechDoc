@@ -23,22 +23,22 @@ LinearSpace时，除非对指定图片选择了bypass sRGB，否则所有纹理�
 对于sRGB的纹理，GPU会自动将colorG0（偏亮）转换到linear space，即colorL0（偏暗）。也就是说，在此转换之前，存储在纹理中的颜色colorG0是在gamma space的（偏亮）。   
 
 
-![](../.gitbook/assets/image%20%2898%29.png)
+![](../.gitbook/assets/image%20%2899%29.png)
 
 第二张图：shader计算结果到写入color buffer。 所有计算应该发生在linear space，
 
 shader 线性\(没法兼容后期,只解决了光照线性）：计算结束后需GPU会将该像素颜色再次转换到gamma space，再写入colorbuffer
 
-![](../.gitbook/assets/image%20%2896%29.png)
+![](../.gitbook/assets/image%20%2897%29.png)
 
 全流程线性\(兼容后期）：写入colorbuffer仍旧为线性，然后通过后期处理，将经过混合和后期处理后的colorbuffer转换为gamma color buffer
 
-![](../.gitbook/assets/image%20%28100%29.png)
+![](../.gitbook/assets/image%20%28102%29.png)
 
 第三张图：显示器把color buffer显示到眼睛。   
 color buffer中的颜色和人眼看到的不同，这是显示器做的事，这个步骤叫display transfer，目前就掌握到这个程度。 
 
-![](../.gitbook/assets/image%20%2897%29.png)
+![](../.gitbook/assets/image%20%2898%29.png)
 
 ### 当ColorSpace选择gammaSpace时 <a id="&#x5F53;colorspace&#x9009;&#x62E9;gammaspace&#x65F6;"></a>
 
@@ -51,7 +51,7 @@ color buffer中的颜色和人眼看到的不同，这是显示器做的事，�
 第三张图：显示器把color buffer显示到眼睛。 （和上面没区别）   
 
 
-![](../.gitbook/assets/image%20%2899%29.png)
+![](../.gitbook/assets/image%20%28101%29.png)
 
 ## 对于unity 材质color会隐式的转线性，特效color不会处理 <a id="&#x6700;&#x540E;"></a>
 
