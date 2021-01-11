@@ -30,6 +30,8 @@
     * [AssetPostprocessor](qqspeed/unity-ji-ben-zhi-shi/assetpostprocesso.md)
     * [Material](qqspeed/unity-ji-ben-zhi-shi/material.md)
     * [性能分析](qqspeed/unity-ji-ben-zhi-shi/you-hua/README.md)
+      * [手机GPU](qqspeed/unity-ji-ben-zhi-shi/you-hua/shou-ji-gpu.md)
+      * [优化流程](qqspeed/unity-ji-ben-zhi-shi/you-hua/you-hua-liu-cheng.md)
       * [基本优化](qqspeed/unity-ji-ben-zhi-shi/you-hua/ji-ben-you-hua.md)
     * [Built-in render pipeline](qqspeed/unity-ji-ben-zhi-shi/built-in-render-pipeline.md)
     * [shadow](qqspeed/unity-ji-ben-zhi-shi/shadow/README.md)

@@ -1,4 +1,4 @@
-# Profiler
+# 手机GPU
 
 TBR渲染管线与IMR渲染的区别在于，TBR是将屏幕划分为一个个的小块，然后在每个chip分别shading，从而降低带宽消耗，不要与内存发生频繁的交换数据。
 
@@ -10,9 +10,9 @@ TBDR，以苹果设备用的ImgTec的PowerVR系列来说，在渲染处理时，
 
 ImgeTec还有另一个depth-only pass功能，生成深度缓冲，再次进行渲染时，就可以获取每个像素的可见深度，只有可见像素才会进行处理。所以，对于苹果设备来说，在CPU阶段对不透明物体的那种从前向后预处理排序是没有必要的。而是应该根据渲染状态来排序。
 
-![ ImgeTec&#x7684;&#x6E32;&#x67D3;&#x5904;&#x7406;](../../.gitbook/assets/image%20%28100%29.png)
+![ ImgeTec&#x7684;&#x6E32;&#x67D3;&#x5904;&#x7406;](../../../.gitbook/assets/image%20%28100%29.png)
 
-![](../../.gitbook/assets/image%20%2896%29.png)
+![](../../../.gitbook/assets/image%20%2896%29.png)
 
 
 
@@ -23,6 +23,4 @@ ImgeTec还有另一个depth-only pass功能，生成深度缓冲，再次进行�
 CPU天梯：[https://www.mydrivers.com/zhuanti/tianti/01/](https://www.mydrivers.com/zhuanti/tianti/01/)
 
 GPU天梯：[https://www.notebookcheck.net/Smartphone-Graphics-Cards-Benchmark-List.149363.0.html](https://www.notebookcheck.net/Smartphone-Graphics-Cards-Benchmark-List.149363.0.html)
-
-
 
