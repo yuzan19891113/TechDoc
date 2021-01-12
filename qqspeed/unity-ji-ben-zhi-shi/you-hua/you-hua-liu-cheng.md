@@ -24,7 +24,7 @@
 
 3 内存优化
 
-1. 压缩纹理和动画
+1. 压缩纹理和动画（base texture, pc: DXT ios, android: ASTC\)
 2. 定期UnLoadUnusedAssets\(GC\)
 
 
