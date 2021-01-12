@@ -22,7 +22,16 @@
 2.  shader负载度（填充率，fillrate\)
 3.  staticbatch会号内存，dynamic batche会耗cpu（动态顶点buffer\)
 
-3 耗电优化
+3 内存优化
 
-4 中配占最大\(40%以上\)，中配要着重优化
+1. 压缩纹理和动画
+2. 定期UnLoadUnusedAssets\(GC\)
+
+
+
+
+
+4 耗电优化
+
+5 中配占最大\(40%以上\)，中配要着重优化
 
