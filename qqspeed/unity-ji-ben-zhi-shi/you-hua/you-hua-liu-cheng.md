@@ -14,7 +14,7 @@
 1 CPU: 
 
 * GC问题，主要是装箱，listadd等。
-* drawcall问题， 是否合批
+* drawcall问题， 是否合批（static batch, dynamic batch由player settings开启\)
 
 2 GPU优化：最简单的通过改分辨率可以快速判断是否gpu瓶颈
 

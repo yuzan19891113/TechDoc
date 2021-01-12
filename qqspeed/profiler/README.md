@@ -18,6 +18,8 @@ ImgeTec还有另一个depth-only pass功能，生成深度缓冲，再次进行�
 
 {% embed url="https://www.cnblogs.com/TracePlus/p/4037165.html" %}
 
+ [Shader.maximumLOD](https://link.zhihu.com/?target=https%3A//docs.unity3d.com/ScriptReference/Shader-maximumLOD.html) 来指定不同画质的shader,然后在写Shader的时候注明LOD，在fallback里面写下一级的Shader。
+
 {% embed url="https://developer.arm.com/solutions/graphics-and-gaming/gaming-engine/unity/arm-guide-for-unity-developers" %}
 
 CPU天梯：[https://www.mydrivers.com/zhuanti/tianti/01/](https://www.mydrivers.com/zhuanti/tianti/01/)

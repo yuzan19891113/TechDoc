@@ -91,7 +91,5 @@ Unity同样也提供了一个很好用的工具，来便于我们进行优化—
 3. **Garbage Collection\(GC 垃圾回收\)或者Physics**   
 如果渲染时，通过检查定位，发现其实影响性能的并非是因为CPU的Batches或者GPU引起的，那么，这个问题可能出GC或者Physics（物理计算）。
 
-
-
 ###  <a id="cpu&#x51CF;&#x5C11;draw-call"></a>
 
