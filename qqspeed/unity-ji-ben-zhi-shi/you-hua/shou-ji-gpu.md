@@ -24,3 +24,5 @@ CPU天梯：[https://www.mydrivers.com/zhuanti/tianti/01/](https://www.mydrivers
 
 GPU天梯：[https://www.notebookcheck.net/Smartphone-Graphics-Cards-Benchmark-List.149363.0.html](https://www.notebookcheck.net/Smartphone-Graphics-Cards-Benchmark-List.149363.0.html)
 
+![OnChip \(TBR\)](../../../.gitbook/assets/image%20%28103%29.png)
+
