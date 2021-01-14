@@ -184,3 +184,9 @@ default-diffuse, default-particle不能被修改，从而不需考虑多个外�
 
 
 
+问题特效
+
+![](../../../.gitbook/assets/image%20%28104%29.png)
+
+
+
