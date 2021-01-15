@@ -131,6 +131,8 @@ andreo 506 : 中配 43帧到40帧
 
 如果本体找不到shadowcasterpass ,会向下往fallback里找
 
+"ForceNoShadowCasting" = "True" 可以在shader关闭阴影
+
 
 
 
