@@ -23,6 +23,7 @@
 * [Unity](qqspeed/README.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
     * [Unity使用技巧](qqspeed/unity-ji-ben-zhi-shi/unity-shi-yong-ji-qiao.md)
+    * [Texture](qqspeed/unity-ji-ben-zhi-shi/texture.md)
     * [Package](qqspeed/unity-ji-ben-zhi-shi/package.md)
     * [Mixed lighting + shadowmask](qqspeed/unity-ji-ben-zhi-shi/mixed-lighting-+-shadowmask.md)
     * [AssetPostprocessor](qqspeed/unity-ji-ben-zhi-shi/assetpostprocesso.md)
