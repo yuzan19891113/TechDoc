@@ -133,7 +133,15 @@ andreo 506 : 中配 43帧到40帧
 
 "ForceNoShadowCasting" = "True" 可以在shader关闭阴影
 
+通过纹理比较产生的软阴影
 
+hard
+
+![](../../../../.gitbook/assets/image%20%28104%29.png)
+
+Soft
+
+![](../../../../.gitbook/assets/image%20%28106%29.png)
 
 
 
