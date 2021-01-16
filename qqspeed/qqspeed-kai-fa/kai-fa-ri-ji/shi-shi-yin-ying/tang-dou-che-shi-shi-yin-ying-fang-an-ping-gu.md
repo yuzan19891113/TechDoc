@@ -135,17 +135,25 @@ andreo 506 : 中配 43帧到40帧
 
 通过纹理比较产生的软阴影
 
-hard
-
-![](../../../../.gitbook/assets/image%20%28105%29.png)
-
-Soft
-
-![](../../../../.gitbook/assets/image%20%28107%29.png)
 
 
+超高： 3 \* 3PCF +  200 \* 2048
 
-150 \* 1024的精度
+高配:  built-in PCF + 150 \* 2048
 
-![](../../../../.gitbook/assets/image%20%28108%29.png)
+中配 :built-in PCF + 75 \* 1024
+
+
+
+150 \* 1024
+
+![hard](../../../../.gitbook/assets/image%20%28112%29.png)
+
+![built-in pcf](../../../../.gitbook/assets/image%20%28111%29.png)
+
+
+
+![3 \*3 PCF\(4 taps\)](../../../../.gitbook/assets/image%20%28113%29.png)
+
+
 
