@@ -137,11 +137,15 @@ andreo 506 : 中配 43帧到40帧
 
 hard
 
-![](../../../../.gitbook/assets/image%20%28104%29.png)
+![](../../../../.gitbook/assets/image%20%28105%29.png)
 
 Soft
 
-![](../../../../.gitbook/assets/image%20%28106%29.png)
+![](../../../../.gitbook/assets/image%20%28107%29.png)
 
 
+
+150 \* 1024的精度
+
+![](../../../../.gitbook/assets/image%20%28108%29.png)
 

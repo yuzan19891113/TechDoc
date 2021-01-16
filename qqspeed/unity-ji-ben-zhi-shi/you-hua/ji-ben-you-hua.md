@@ -104,4 +104,5 @@ Soft shadows比hard shadows有更大的渲染开销，但这只影响GPU，并�
 * 尽可能使用half精度的变量。
 * 尽量减少使用复杂的数学运算，如在像素着色器中的pow, sin和cos。
 * 每个片段使用更少的纹理。
+* DC的性能瓶颈比texture size更大
 
