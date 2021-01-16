@@ -147,13 +147,15 @@ andreo 506 : 中配 43帧到40帧
 
 150 \* 1024
 
-![hard](../../../../.gitbook/assets/image%20%28112%29.png)
+![hard](../../../../.gitbook/assets/image%20%28114%29.png)
 
-![built-in pcf](../../../../.gitbook/assets/image%20%28111%29.png)
+![built-in pcf](../../../../.gitbook/assets/image%20%28112%29.png)
 
+![3 \*3 PCF\(4 taps\)](../../../../.gitbook/assets/image%20%28115%29.png)
 
+Unity默认方案对比 200 \* 2048
 
-![3 \*3 PCF\(4 taps\)](../../../../.gitbook/assets/image%20%28113%29.png)
+![screen space shadow map batches 150](../../../../.gitbook/assets/image%20%28109%29.png)
 
-
+![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28113%29.png)
 
