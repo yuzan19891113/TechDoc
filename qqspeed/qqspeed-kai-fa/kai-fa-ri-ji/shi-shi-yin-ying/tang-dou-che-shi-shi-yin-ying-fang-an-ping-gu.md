@@ -147,17 +147,25 @@ andreo 506 : 中配 43帧到40帧
 
 150 \* 1024
 
-![hard](../../../../.gitbook/assets/image%20%28114%29.png)
+![hard](../../../../.gitbook/assets/image%20%28115%29.png)
 
-![built-in pcf](../../../../.gitbook/assets/image%20%28112%29.png)
+![built-in pcf](../../../../.gitbook/assets/image%20%28113%29.png)
 
-![3 \*3 PCF\(4 taps\)](../../../../.gitbook/assets/image%20%28115%29.png)
+![3 \*3 PCF\(4 taps\)](../../../../.gitbook/assets/image%20%28116%29.png)
 
-![screen space shadow map](../../../../.gitbook/assets/image%20%28117%29.png)
+![screen space shadow map](../../../../.gitbook/assets/image%20%28118%29.png)
 
 Unity默认方案对比 200 \* 2048
 
-![screen space shadow map batches 150](../../../../.gitbook/assets/image%20%28109%29.png)
+![&#x5173;&#x95ED;&#x9634;&#x5F71; 96](../../../../.gitbook/assets/image%20%28109%29.png)
 
-![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28113%29.png)
+![screen space shadow map batches 150](../../../../.gitbook/assets/image%20%28110%29.png)
+
+![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28114%29.png)
+
+逻辑地图配置动态物件是否产生阴影
+
+场景地图配置动态物件的阴影
+
+由大圣那边统计动态阴影DC数量。
 
