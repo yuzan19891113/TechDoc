@@ -147,6 +147,8 @@ Unity默认方案对比 200
 
 ![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28114%29.png)
 
+比较CSSM, shadowProjector, shadowTexture.
+
 **方案**
 
 **单张shadowmap + PCF soft**
@@ -174,7 +176,7 @@ bias
 **静态动态阴影融合问题**
 
 ```text
-shadow = min(shadow, shadowValue);
+shadow = min(shadowMask, shadowValue);
 ```
 
 ## **优化：**
