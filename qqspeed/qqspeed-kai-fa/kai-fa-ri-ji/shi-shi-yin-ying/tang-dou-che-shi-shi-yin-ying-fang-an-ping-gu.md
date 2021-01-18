@@ -137,17 +137,7 @@ andreo 506 : 中配 43帧到40帧
 
 
 
-
-
-150 \* 1024
-
-![hard](../../../../.gitbook/assets/image%20%28115%29.png)
-
-![built-in pcf](../../../../.gitbook/assets/image%20%28113%29.png)
-
-![3 \*3 PCF\(4 taps\)](../../../../.gitbook/assets/image%20%28116%29.png)
-
-![screen space shadow map](../../../../.gitbook/assets/image%20%28118%29.png)
+方案调研
 
 Unity默认方案对比 200
 
@@ -156,6 +146,24 @@ Unity默认方案对比 200
 ![screen space shadow map batches 150](../../../../.gitbook/assets/image%20%28110%29.png)
 
 ![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28114%29.png)
+
+**相机空间：改进近处阴影精度**
+
+Lightspace shadowMap
+
+**软阴影：**
+
+1 PCF
+
+2 ESM
+
+**静态动态阴影融合问题**
+
+```text
+shadow = min(shadow, shadowValue);
+```
+
+## **优化：**
 
 逻辑地图配置动态物件是否产生阴影
 
@@ -167,7 +175,7 @@ Unity默认方案对比 200
 
 | 机型 | iPhone 7P | 8号 | 8号 | 8号 |
 | :--- | :--- | :--- | :--- | :--- |
-| shadowmap | 阴影关 | 150-1024 | 400-2048 | 200-2048 |
+| shadowmap | 阴影关 | 150-1024 | 200-2048 | 400-2048 |
 | GPU总+ | 7.28 | 7.87 | 8.58 | 8.59 |
 | 主场景 | 4.1 | 4.28 | 4.32 | 4.32 |
 | shadowmap总 | - | 0.57 | 1.61 | 1.62 |
@@ -176,17 +184,47 @@ Unity默认方案对比 200
 | 总DC | 98 | 114 | 120 | 116 |
 | vertices | 201556 | 240504 | 252474 | 244506 |
 
-shader If优化：连片的像素处理能够通过if优化，fragment仅仅跟采样的texture分辨率和采样的范围有关系
+### **降DC**
 
-| fragment | - | 0.18 | 0.22 | 0.22 |
+**距离优化**：
+
+| 总DC | 98 | 114 | 130 | 150 |
 | :--- | :--- | :--- | :--- | :--- |
 
 
-**DC 优化**：美术:限制顶点，确保能动态合批，不然会增加双倍DC
+**合批 优化**：美术:限制顶点，确保能动态合批，不然会增加双倍DC
 
-过高的DC会导致过高的GPU vertex 消耗, 且会导致过高的cpu消耗，限制顶点，确保能够动态合批后
+过高的DC会导致过高的cpu消耗，限制顶点，确保能够动态合批后
 
 | 总DC | 84 | 88 | 93 | 95 |
+| :--- | :--- | :--- | :--- | :--- |
+
+
+### **降采样范围与shader复杂度：**
+
+原始PCF 9次采样，
+
+**使用bilinear sampler + sampler comparision == PCF，仅需一次采样，得到简化但高效的PCF.**
+
+**4 tap PCF得到标准PCF等价结果。**
+
+150 \* 1024
+
+![hard](../../../../.gitbook/assets/image%20%28115%29.png)
+
+![built-in pcf](../../../../.gitbook/assets/image%20%28113%29.png)
+
+![3 \*3 PCF\(4 taps\)](../../../../.gitbook/assets/image%20%28116%29.png)
+
+![screen space shadow map](../../../../.gitbook/assets/image%20%28118%29.png)
+
+效率数据
+
+\*\*\*\*
+
+**shader If优化**：连片的像素处理能够通过if优化，fragment仅仅跟采样的texture分辨率和采样的范围有关系
+
+| fragment | - | 0.18 | 0.22 | 0.22 |
 | :--- | :--- | :--- | :--- | :--- |
 
 
