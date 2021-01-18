@@ -147,9 +147,17 @@ Unity默认方案对比 200
 
 ![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28114%29.png)
 
+**相机空间：压缩阴影范围**
+
+shadowCameraSpace 压缩
+
 **相机空间：改进近处阴影精度**
 
 Lightspace shadowMap
+
+**自阴影问题**
+
+bias
 
 **软阴影：**
 
@@ -237,4 +245,6 @@ shadow = min(shadow, shadowValue);
 高配:  built-in PCF + 200 \* 2048
 
 中配 :built-in PCF + 150 \* 1024
+
+与其他方案的对比：
 
