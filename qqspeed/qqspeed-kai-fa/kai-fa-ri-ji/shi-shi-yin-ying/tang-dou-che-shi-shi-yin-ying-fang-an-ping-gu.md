@@ -147,7 +147,7 @@ Unity默认方案对比 200
 
 ![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28114%29.png)
 
-比较CSSM, shadowProjector, shadowTexture.[**https://www.zhihu.com/question/287079059**](https://www.zhihu.com/question/287079059)\*\*\*\*
+比较CSSM, shadowProjector, shadowTexture.[**https://www.zhihu.com/question/287079059**](https://www.zhihu.com/question/287079059)**，**CSSM的两级融合。实现方案
 
 **方案**
 
