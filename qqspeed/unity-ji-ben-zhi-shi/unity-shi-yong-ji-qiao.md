@@ -17,6 +17,7 @@
 * 一定要确保shadowmask不变灰，如果变灰，怀疑是bakery或者其他操作把windows lighting 变为subtractive,一定要是shadowmask,一定要确保shadowmask显示正确
 * bakery参数与前面不一致一定要警惕，肯定是bakery light不对了，删掉重新烘培
 * c\#设置material的时候，从sharematerials的单个material set不行，要对sharematerials整体set
+* Batches \(draw calls\) and SetPasses \(material changes\)
 
 
 
