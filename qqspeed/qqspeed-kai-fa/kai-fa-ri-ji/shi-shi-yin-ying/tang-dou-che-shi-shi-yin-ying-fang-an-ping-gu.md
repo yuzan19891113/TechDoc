@@ -163,6 +163,8 @@ shadowCameraSpace 压缩
 
 Lightspace shadowMap
 
+[https://www.cnblogs.com/crazii/p/5443534.html](https://www.cnblogs.com/crazii/p/5443534.html)
+
 **自阴影问题**
 
 bias
