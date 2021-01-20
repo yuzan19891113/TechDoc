@@ -210,9 +210,11 @@ shadow = min(shadowMask, shadowValue);
 | :--- | :--- | :--- | :--- | :--- |
 
 
-**没有静态合批，由美术合了，静态走shadowmap**
+**没有静态合批，由美术合了，静态走bake shadowmask**
 
-**instance batch + dynamic batch\(合批 优化**：美术:限制顶点，确保能动态合批，不然会增加双倍DC,限制在220\)
+**instance batch\(美术材质勾选gpuinstancing,shadowcaster pass兼容，2倍降低DC）**
+
+**dynamic batch\(合批 优化**：美术:限制顶点，确保能动态合批，限制在220\)
 
 过高的DC会导致过高的cpu消耗，限制顶点，确保能够动态合批后
 
