@@ -210,6 +210,8 @@ shadow = min(shadowMask, shadowValue);
 | :--- | :--- | :--- | :--- | :--- |
 
 
+**没有静态合批，由美术合了，静态走shadowmap**
+
 **instance batch + dynamic batch\(合批 优化**：美术:限制顶点，确保能动态合批，不然会增加双倍DC,限制在220\)
 
 过高的DC会导致过高的cpu消耗，限制顶点，确保能够动态合批后
@@ -257,4 +259,10 @@ shadow = min(shadowMask, shadowValue);
 与其他方案的对比：
 
 地图5,7，10有问题
+
+场景静态合批被动态阴影打断
+
+Fast Shadow Receiver方案之后，就比较难做融合的效果，除非在新生成的mesh中保存之前mesh的uv2信息以及使用的Lightmap贴图信息，再做一次Lightmap的采样。但这比较麻烦，性价比也不高
+
+[https://blog.uwa4d.com/archives/2185.html](https://blog.uwa4d.com/archives/2185.html)
 
