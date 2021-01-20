@@ -210,9 +210,7 @@ shadow = min(shadowMask, shadowValue);
 | :--- | :--- | :--- | :--- | :--- |
 
 
-**合批 优化**：美术:限制顶点，确保能动态合批，不然会增加双倍DC,限制在220
-
-**instance batch + dynamic batch**
+**instance batch + dynamic batch\(合批 优化**：美术:限制顶点，确保能动态合批，不然会增加双倍DC,限制在220\)
 
 过高的DC会导致过高的cpu消耗，限制顶点，确保能够动态合批后
 
@@ -257,4 +255,6 @@ shadow = min(shadowMask, shadowValue);
 中配 :built-in PCF + 150 \* 1024
 
 与其他方案的对比：
+
+地图5,7，10有问题
 
