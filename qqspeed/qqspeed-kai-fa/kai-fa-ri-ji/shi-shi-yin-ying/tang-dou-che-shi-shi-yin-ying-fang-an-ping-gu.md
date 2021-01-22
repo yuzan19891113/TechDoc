@@ -226,11 +226,11 @@ shadow = min(shadowMask, shadowValue);
 
 ### **降 vs消耗**
 
-**距离减少dc,减少triangles，**
+**距离减少dc, 同时也减少了vertices，**
 
 **proxy: shadows only receviewshadows off** 
 
-**使用低模proxy投射阴影。**
+**使用低模proxy投射阴影。包含有多个子材质的，复制一个render出来，改为用一个材质，直接做shadowonly.**
 
 ### **降采样范围与shader复杂度：**
 
