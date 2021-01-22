@@ -212,6 +212,8 @@ shadow = min(shadowMask, shadowValue);
 
 **没有静态合批，由美术合了，静态走bake shadowmask**
 
+一键添加动态阴影，一键关掉不必要的投射
+
 **instance batch\(美术材质勾选gpuinstancing,shadowcaster pass兼容，2倍降低DC）**
 
 **dynamic batch\(合批 优化**：美术:限制顶点，确保能动态合批，限制在220\)
@@ -222,7 +224,17 @@ shadow = min(shadowMask, shadowValue);
 | :--- | :--- | :--- | :--- | :--- |
 
 
+### **降 vs消耗**
+
+**距离减少dc,减少triangles，**
+
+**proxy: shadows only receviewshadows off** 
+
+**使用低模proxy投射阴影。**
+
 ### **降采样范围与shader复杂度：**
+
+**real object:shadows off receviewshadows on**
 
 原始PCF 9次采样，
 
@@ -266,5 +278,9 @@ shadow = min(shadowMask, shadowValue);
 
 Fast Shadow Receiver方案之后，就比较难做融合的效果，除非在新生成的mesh中保存之前mesh的uv2信息以及使用的Lightmap贴图信息，再做一次Lightmap的采样。但这比较麻烦，性价比也不高
 
-[https://blog.uwa4d.com/archives/2185.html](https://blog.uwa4d.com/archives/2185.html)
+{% embed url="https://blog.uwa4d.com/archives/2185.html" %}
+
+
+
+0.14ms的固定消耗，
 
