@@ -145,8 +145,6 @@ Unity默认方案对比 200
 
 ![screen space shadow map batches 150](../../../../.gitbook/assets/image%20%28110%29.png)
 
-![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28114%29.png)
-
 比较CSSM, shadowProjector, shadowTexture.[**https://www.zhihu.com/question/287079059**](https://www.zhihu.com/question/287079059)**，**CSSM的两级融合。实现方案
 
 **方案**
@@ -251,6 +249,10 @@ shadow = min(shadowMask, shadowValue);
 ![3 \*3 PCF\(4 taps\)](../../../../.gitbook/assets/image%20%28116%29.png)
 
 ![screen space shadow map](../../../../.gitbook/assets/image%20%28118%29.png)
+
+![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28114%29.png)
+
+
 
 效率数据
 
