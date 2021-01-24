@@ -145,8 +145,6 @@ Unity默认方案对比 200
 
 ![screen space shadow map batches 150](../../../../.gitbook/assets/image%20%28110%29.png)
 
-![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28114%29.png)
-
 比较CSSM, shadowProjector, shadowTexture.[**https://www.zhihu.com/question/287079059**](https://www.zhihu.com/question/287079059)**，**CSSM的两级融合。实现方案
 
 **方案**
@@ -252,9 +250,15 @@ shadow = min(shadowMask, shadowValue);
 
 ![screen space shadow map](../../../../.gitbook/assets/image%20%28118%29.png)
 
+![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28114%29.png)
+
+
+
 效率数据
 
-**shader If优化**：连片的像素处理能够通过if优化，fragment仅仅跟采样的texture分辨率和采样的范围有关系
+**shader If优化**：连片的像素处理能够通过if优化，fragment仅仅跟采样的texture分辨率和采样的范围有关系,
+
+并行的像素处理方式连片的，连片的像素都可以if成功或者失败
 
 | fragment | - | 0.18 | 0.22 | 0.22 |
 | :--- | :--- | :--- | :--- | :--- |

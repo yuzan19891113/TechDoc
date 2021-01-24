@@ -1,5 +1,19 @@
 # 优化流程
 
+#### unity profiler方法：
+
+adb devices
+
+adb forward tcp:34999 localabstract:Unity-com.tencent.tmgp.speedmobile
+
+new unity project, build settings switch to android.
+
+profiler windower, switch to android
+
+waitforpresent :gpu 等待时间， DC数， camera.onrender
+
+#### 优化策略和分析流程
+
 1 设备等级划分， 根据cpu和gpu天梯
 
 2 unity 各种等级设定lod，每个shader需要分不同shader lod值分别撰写shader
