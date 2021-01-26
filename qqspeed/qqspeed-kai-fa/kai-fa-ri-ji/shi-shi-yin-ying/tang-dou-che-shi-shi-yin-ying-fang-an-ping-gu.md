@@ -296,5 +296,7 @@ cullshadowcascades: 0.09 //parellel job to job system
 
 隔帧更新
 
+vs shadow projector, vs CSM ,
+
 
 
