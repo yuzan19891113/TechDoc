@@ -26,8 +26,6 @@ Unity3D的draw call动态批处理机制是引擎自动进行的，无需像静�
 
 9.预设体的实例会自动地使用相同的网格模型和材质。
 
-10.update vertice buffer in job system
-
   
 **Static Batching\(静态批处理\)**：
 

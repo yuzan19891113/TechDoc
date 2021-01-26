@@ -284,7 +284,7 @@ Fast Shadow Receiver方案之后，就比较难做融合的效果，除非在新
 
 {% embed url="https://blog.uwa4d.com/archives/2185.html" %}
 
-
+dynamic game objects receive low-resolution shadows from static game objects via light probes
 
 0.14ms的固定消耗，
 
