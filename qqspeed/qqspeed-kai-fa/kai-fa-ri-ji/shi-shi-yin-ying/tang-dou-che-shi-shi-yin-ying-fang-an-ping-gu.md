@@ -294,5 +294,7 @@ prepare shadowmap: 0.09
 
 cullshadowcascades: 0.09
 
+隔帧更新
+
 
 
