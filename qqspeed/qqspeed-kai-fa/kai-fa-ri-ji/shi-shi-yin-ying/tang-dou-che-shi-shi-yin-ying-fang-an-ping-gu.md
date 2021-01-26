@@ -292,7 +292,7 @@ rendershadowmap : 0.20
 
 prepare shadowmap: 0.09 
 
-cullshadowcascades: 0.09
+cullshadowcascades: 0.09 //parellel job to job system
 
 隔帧更新
 
