@@ -288,3 +288,11 @@ Fast Shadow Receiver方案之后，就比较难做融合的效果，除非在新
 
 0.14ms的固定消耗，
 
+rendershadowmap : 0.20
+
+prepare shadowmap: 0.09 
+
+cullshadowcascades: 0.09
+
+
+

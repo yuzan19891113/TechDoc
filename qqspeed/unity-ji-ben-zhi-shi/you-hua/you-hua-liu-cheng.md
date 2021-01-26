@@ -49,5 +49,7 @@ waitforpresent :gpu 等待时间， DC数， camera.onrender
 
 5 中配占最大\(40%以上\)，中配要着重优化
 
-6 低配上，shadowmask和lightmap共用，不要分开处理
+6 低配上，shadowmask和lightmap共用，不要分开处理, 低配没有法线
+
+
 
