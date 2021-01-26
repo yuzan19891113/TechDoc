@@ -210,6 +210,8 @@ shadow = min(shadowMask, shadowValue);
 
 **没有静态合批，由美术合了，静态走bake shadowmask**
 
+使用标准材质 + 动态物件来限制美术不产生多余的阴影DC，
+
 一键添加动态阴影，一键关掉不必要的投射
 
 **instance batch\(美术材质勾选gpuinstancing,shadowcaster pass兼容，2倍降低DC）**
