@@ -15,6 +15,7 @@ ASTC offers texture compression with high quality, low bitrate and has many cont
 * Support for both low dynamic range \(LDR\) and high dynamic range \(HDR\) images.
 * Support for 2D and 3D images.
 * Support for selecting different combinations of features.
+* The larger block sizes provide higher compression
 
 
 
