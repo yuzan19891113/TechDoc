@@ -51,5 +51,9 @@ waitforpresent :gpu 等待时间， DC数， camera.onrender
 
 6 低配上，shadowmask和lightmap共用，不要分开处理, 低配没有法线
 
+7 texture read write disabled
+
+8 avoid read write meshes
+
 
 
