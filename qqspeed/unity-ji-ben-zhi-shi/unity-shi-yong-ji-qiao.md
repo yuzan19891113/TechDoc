@@ -18,6 +18,7 @@
 * bakery参数与前面不一致一定要警惕，肯定是bakery light不对了，删掉重新烘培
 * c\#设置material的时候，从sharematerials的单个material set不行，要对sharematerials整体set
 * Batches \(draw calls\) and SetPasses \(material changes\)
+* unity default skybox，need a material 产生一个DC。
 
 
 
