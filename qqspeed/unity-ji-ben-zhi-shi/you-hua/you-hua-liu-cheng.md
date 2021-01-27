@@ -45,7 +45,7 @@ waitforpresent :gpu 等待时间， DC数， camera.onrender
 
 
 
-4 耗电优化,小于8ms\(iphone 7p\)
+4 耗电优化,小于8ms\(iphone 7p\)，耗电会导致降频，从而低帧率。
 
 5 中配占最大\(40%以上\)，中配要着重优化
 

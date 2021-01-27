@@ -4,6 +4,14 @@
 
 TBR渲染管线与IMR渲染的区别在于，TBR是将屏幕划分为一个个的小块，然后在每个chip分别shading，从而降低带宽消耗，不要与内存发生频繁的交换数据。
 
+CPU天梯：[https://www.mydrivers.com/zhuanti/tianti/01/](https://www.mydrivers.com/zhuanti/tianti/01/)
+
+GPU天梯：[https://www.notebookcheck.net/Smartphone-Graphics-Cards-Benchmark-List.149363.0.html](https://www.notebookcheck.net/Smartphone-Graphics-Cards-Benchmark-List.149363.0.html)
+
+
+
+### GPU架构
+
 总共有2种基于TBR的GPU结构
 
 #### TBR\(Mali,Andreno, android\)
@@ -28,13 +36,35 @@ ImgeTec还有另一个depth-only pass功能，生成深度缓冲，再次进行�
 
 {% embed url="https://www.cnblogs.com/TracePlus/p/4037165.html" %}
 
-{% embed url="https://developer.arm.com/solutions/graphics-and-gaming/gaming-engine/unity/arm-guide-for-unity-developers" %}
+### GPU性能指标
 
-CPU天梯：[https://www.mydrivers.com/zhuanti/tianti/01/](https://www.mydrivers.com/zhuanti/tianti/01/)
+GFLOPS:绘制一个全屏矩形的帧率 1024 \* 768 \* 1000 \* 2 \* 30 = 47.2 GFLOPS
 
-GPU天梯：[https://www.notebookcheck.net/Smartphone-Graphics-Cards-Benchmark-List.149363.0.html](https://www.notebookcheck.net/Smartphone-Graphics-Cards-Benchmark-List.149363.0.html)
+纹理采样 Gtex/sec
 
-![](../../../.gitbook/assets/image%20%28103%29.png)
+纹理填充 Gpix/sec
+
+### 发热
+
+#### gpu发热： 影响性能
+
+gpu时间
+
+#### 带宽发热：影响耗电时间，玩得久
+
+顶点数据：normal tangent 用 1010102， uv 用half float
+
+贴图带宽：ASTC, ETC, MipMap
+
+
+
+### 分析工具
+
+snapdragon profiler
+
+XCode instrument
+
+
 
 
 
