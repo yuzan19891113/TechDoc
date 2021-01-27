@@ -98,6 +98,10 @@ Branch性能：
 
 ![](../../../.gitbook/assets/image%20%28127%29.png)
 
+### 可以使用step, lerp, min ,max来优化。
+
+[https://zhuanlan.zhihu.com/p/143571980](https://zhuanlan.zhihu.com/p/143571980)
+
 ### Shader 编译
 
 HLSL2GLSL -&gt; GLSL Optimizer -&gt;Driver
