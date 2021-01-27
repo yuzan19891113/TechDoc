@@ -1,5 +1,7 @@
 # 手机GPU
 
+手机没有专有的显存而是共用内存，带宽瓶颈发生在与内存的数据交换上。
+
 TBR渲染管线与IMR渲染的区别在于，TBR是将屏幕划分为一个个的小块，然后在每个chip分别shading，从而降低带宽消耗，不要与内存发生频繁的交换数据。
 
 Tiled based gpu 不建议开启alpha test 或者discard类似的操作，一旦使用打开alpha test或者其他discard功能的指令，就意味着这个fragment shader上不再只绘制一次像素了。这样会增加额外的性能消耗，所以一般都是建议用不实用alpha test，或者用alpha blend来代替。
