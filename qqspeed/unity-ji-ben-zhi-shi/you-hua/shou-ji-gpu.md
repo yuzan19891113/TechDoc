@@ -12,6 +12,20 @@ GPU天梯：[https://www.notebookcheck.net/Smartphone-Graphics-Cards-Benchmark-L
 
 ### GPU架构
 
+#### 基本介绍
+
+ALU:多个算术逻辑单元，多个ALU共享一个指令流。 SIMD，每个像素一个Ctx\(contextstoriage\)，像素中的ctx存储临时变量，shared ctx data储存 const buffer等。
+
+![ShaderCore&#x4E00;&#x6B21;&#x5904;&#x7406;8&#x4E2A;&#x50CF;&#x7D20;](../../../.gitbook/assets/image%20%28126%29.png)
+
+shader可能的性能瓶颈：
+
+stall: 纹理采样，读取顶点数据，读取varing\(指令有外部依赖\)
+
+cacheMiss（更小的texture sample，更好的cache\)
+
+
+
 总共有2种基于TBR的GPU结构
 
 #### TBR\(Mali,Andreno, android\)
@@ -63,6 +77,45 @@ gpu时间
 snapdragon profiler
 
 XCode instrument
+
+### shader性能分析
+
+ ALU, Texture, 带宽， Stall, ROP
+
+Forward PBR渲染通常
+
+高配机：ALU Bound
+
+低配机：Stall Bound
+
+PS消耗高可能是全屏面积大，计算可以从ps移动到vs计算，但当物体显示很小时，未必划算。
+
+Branch性能：
+
+一个group中，所有像素结果相同，则只会走一边。如果有的走一个分支，有的走其他分支，则效率低。
+
+临近像素能够走相同的分支。
+
+
+
+### Shader 编译
+
+HLSL2GLSL -&gt; GLSL Optimizer -&gt;Driver
+
+编译器自动优化的工作：
+
+1. 去掉没有引用的代码和变量
+2. 代码中常量预计算
+3. 自动劣化
+4. 要看生成代码
+
+
+
+
+
+
+
+
 
 
 
