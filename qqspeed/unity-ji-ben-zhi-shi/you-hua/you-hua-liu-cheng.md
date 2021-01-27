@@ -53,7 +53,9 @@ waitforpresent :gpu 等待时间， DC数， camera.onrender
 
 7 texture read write disabled
 
-8 avoid read write meshes
+8 avoid read write meshes\(会需要 多拷贝一份mesh在内存\)
+
+9 带宽优化
 
 
 
