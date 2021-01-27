@@ -96,7 +96,7 @@ Branch性能：
 
 临近像素能够走相同的分支。
 
-
+![](../../../.gitbook/assets/image%20%28127%29.png)
 
 ### Shader 编译
 
