@@ -28,6 +28,8 @@ Unity3D的draw call动态批处理机制是引擎自动进行的，无需像静�
 
 10.update vertice buffer in job system
 
+11.对于特效不一定能合批，因为特效一般按照绘制距离排序，可以都改为2500， Unity对Opaque的队列定义为2000，Transparent的队列定义为3000，2500以下的自定义队列都是不按照距离排序的。所以都修改为2500就可以达到目的
+
   
 **Static Batching\(静态批处理\)**：
 
