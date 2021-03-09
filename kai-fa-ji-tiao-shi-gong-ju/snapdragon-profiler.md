@@ -10,6 +10,8 @@ Snapdragon profiler  url：[https://developer.qualcomm.com/software/snapdragon-p
 
        PC： windows 10
 
+需要关闭Unity等影响adb接口的软件
+
 ### 介绍：  
 
 ![](http://tapd.oa.com/tfl/captures/2018-10/tapd_10124081_base64_1540286455_61.png)
