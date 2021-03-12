@@ -1,5 +1,23 @@
 # PBR中低配
 
+### 
+
+### PBR不同配置
+
+![BRDF&#x65B9;&#x7A0B;](../../../.gitbook/assets/image%20%28139%29.png)
+
+NL表示lightDir \* Normal， D是Normal Distribution Function\(微表面法线分布\)， G是几何函数，描述的是微平面间相互遮蔽的比率，F是大家耳熟能详的菲涅尔系数，反射与眼睛方向的关系（视角越大，反射越明显
+
+#### 超高配：CreateIndirectLight +  BRDF2\_PBS
+
+直接光： Lambert Diffuse \(DiffColor \* LightColor \* NL\)+ 
+
+#### 高配：CreateIndirectLight\_low +  BRDF2\_PBS
+
+#### 中配：CreateIndirectLight\_Low + 
+
+
+
 1中低配的效率问题， 采样次数
 
 2 法线压缩策略

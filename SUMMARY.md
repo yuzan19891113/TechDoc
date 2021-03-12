@@ -23,6 +23,7 @@
     * [植被的交互调研](tong-yong-xuan-ran-ji-shu/huan-jing-jiao-hu/zhi-bei-de-jiao-hu-tiao-yan.md)
 * [Unity](qqspeed/README.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
+    * [Unity standard shader](qqspeed/unity-ji-ben-zhi-shi/unity-standard-shader.md)
     * [warn as error](qqspeed/unity-ji-ben-zhi-shi/warn-as-error.md)
     * [Unity 源码编译](qqspeed/unity-ji-ben-zhi-shi/unity-yuan-ma-bian-yi.md)
     * [Unity使用技巧](qqspeed/unity-ji-ben-zhi-shi/unity-shi-yong-ji-qiao.md)
