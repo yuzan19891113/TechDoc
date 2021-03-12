@@ -1,20 +1,33 @@
 # PBR中低配
 
-### 
+
+
+
 
 ### PBR不同配置
 
-![BRDF&#x65B9;&#x7A0B;](../../../.gitbook/assets/image%20%28139%29.png)
+| 功能 | 超高配 | 高配 | 中配 | 低配 |
+| :--- | :--- | :--- | :--- | :--- |
+| BRDF函数 | PBR\_All | PBR\_All | PBR\_All | No |
+| 间接 Specular | planer reflection + reflection Cube | reflection Cube | reflection Cube | No |
+| NormalMap | Yes | Yes | No | No\(shader不支持） |
+| OcclusionMap | Yes | Yes | No | No |
 
-NL表示lightDir \* Normal， D是Normal Distribution Function\(微表面法线分布\)， G是几何函数，描述的是微平面间相互遮蔽的比率，F是大家耳熟能详的菲涅尔系数，反射与眼睛方向的关系（视角越大，反射越明显
+#### 其中高配\_DIRECT\_SPEC\_ON默认开启了，反而超高配可以配置
 
-#### 超高配：CreateIndirectLight +  BRDF2\_PBS
+#### frag\_mid没有使用，理论上应该去掉
 
-直接光： Lambert Diffuse \(DiffColor \* LightColor \* NL\)+ 
+低配中的reflection Cube采样未使用，理论上会被shader编译优化掉
 
-#### 高配：CreateIndirectLight\_low +  BRDF2\_PBS
+**结论：**
 
-#### 中配：CreateIndirectLight\_Low + 
+**高配，超高配会降低2次采样，优化了性能，** 
+
+**中配：降低了1次采样，增加了NormalMap计算,画质有提升，性能待测**
+
+**低配：降低了1次采样，可以考虑增加NormalMap，性能待测**
+
+\*\*\*\*
 
 
 
