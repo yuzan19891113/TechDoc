@@ -25,7 +25,7 @@
 
 **中配：降低了1次采样，增加了NormalMap计算,画质有提升，性能待测**
 
-**低配：降低了1次采样，可以考虑增加NormalMap，性能待测**
+**低配：降低了1次采样，可以考虑增加NormalMap，提升画质，性能待测**
 
 1中低配的效率问题， 采样次数
 
@@ -37,7 +37,7 @@
 
 5 原本采样次数 4次，变为2次
 
-### Normal an Metalic roughness 
+### Normal And Metalic roughness 
 
 原本Normal贴图和Metalic ,roughness贴图是分开的
 
