@@ -2,11 +2,13 @@
 
 ### 直接光
 
-如果不使用PBR,可以使用 Blinn–Phong模型，
+如果不使用PBR,可以使用 简单Blinn-phong模型，
 
 **Diffuse：**Lambert Diffuse = DiffColor \* LightColor \* normal;
 
 **Specular:**  Blinn–Phong specular = SpecColor \*\* LightColor \* pow\(Normal \* \(LightDir + ViewDir\), specularHardness\);
+
+### BRDF
 
 
 
