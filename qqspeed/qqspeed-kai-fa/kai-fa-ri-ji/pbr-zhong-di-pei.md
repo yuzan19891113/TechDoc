@@ -25,8 +25,6 @@
 
 #### **测试方法**
 
-什么也不改的优化
-
 中配增加NormalMap,画质，性能对比，画质对比
 
 低配增加ReflectionProbe的画质性能对比
@@ -81,5 +79,23 @@ mobile: RGBA ASTC 4X4
 
 ![&#x5408;&#x5E76;&#x8D34;&#x56FE;&#x540E;](../../../.gitbook/assets/image%20%28132%29.png)
 
+测试过程：
 
+测试环境：
+
+反向11城
+
+[http://tc-svn.tencent.com/ied/ied\_nssclient\_rep/nssclient\_proj/trunk/NssUnityProj/Assets/ResForAssetBundles/Scenes/LevelScene/Level\_11CityNew\_Reverse\_Art.unity](http://tc-svn.tencent.com/ied/ied_nssclient_rep/nssclient_proj/trunk/NssUnityProj/Assets/ResForAssetBundles/Scenes/LevelScene/Level_11CityNew_Reverse_Art.unity)
+
+| 差异 | 超高配 | 高配 | 中配 | 低配 |
+| :--- | :--- | :--- | :--- | :--- |
+| 原始GPU时间 |  |  |  |  |
+| PBR合图差异 | 少2次采样 | 少2次采样 | 少1次采样 | 少1次采样 |
+| 时间 |  |  |  |  |
+| PBR合图 + 效果提升 | 无 | 无 | 增加NormalMap计算 | 增加reflectionProbe一次采样与计算 |
+| 时间 |  |  |  |  |
+
+中配效果对比：
+
+低配效果对比：
 
