@@ -3,6 +3,7 @@
 * [开发技术集锦](README.md)
 * [开发感悟](kai-fa-gan-wu.md)
 * [编程语言](bian-cheng-yu-yan/README.md)
+  * [C\# Process deadlock](bian-cheng-yu-yan/c-process-deadlock.md)
   * [C\#](bian-cheng-yu-yan/c.md)
 * [开发及调试工具](kai-fa-ji-tiao-shi-gong-ju/README.md)
   * [Snapdragon Profiler](kai-fa-ji-tiao-shi-gong-ju/snapdragon-profiler.md)
