@@ -79,21 +79,19 @@ mobile: RGBA ASTC 4X4
 
 ![&#x5408;&#x5E76;&#x8D34;&#x56FE;&#x540E;](../../../.gitbook/assets/image%20%28132%29.png)
 
-测试过程：
+### 测试环境
 
-测试环境：
+iphone 8P  新反向11城
 
-ios 8
+{% embed url="http://tc-svn.tencent.com/ied/ied\_nssclient\_rep/nssclient\_proj/trunk/NssUnityProj/Assets/ResForAssetBundles/Scenes/LevelScene/Level\_11CityNew\_Reverse\_Art.unity" %}
 
-反向11城
-
-[http://tc-svn.tencent.com/ied/ied\_nssclient\_rep/nssclient\_proj/trunk/NssUnityProj/Assets/ResForAssetBundles/Scenes/LevelScene/Level\_11CityNew\_Reverse\_Art.unity](http://tc-svn.tencent.com/ied/ied_nssclient_rep/nssclient_proj/trunk/NssUnityProj/Assets/ResForAssetBundles/Scenes/LevelScene/Level_11CityNew_Reverse_Art.unity)
+### 测试结果
 
 | 差异 | 超高配 | 高配 | 中配 | 低配 |
 | :--- | :--- | :--- | :--- | :--- |
-| 原始GPU时间 |  |  |  |  |
+| 原始GPU时间 | 无 | 8.3ms | 6.8ms | 5.8ms |
 | PBR合图差异 | 少1次采样 | 少1次采样 | 少1次采样 | 少1次采样 |
-| 时间 |  |  |  |  |
+| 时间 | 无 | 7.94ms | 6.3ms | 5.5ms |
 | PBR合图 + 效果提升 | 无 | 无 | 增加NormalMap计算 | 增加reflectionProbe一次采样与计算 |
 | 时间 |  |  |  |  |
 
