@@ -83,17 +83,17 @@ mobile: RGBA ASTC 4X4
 
 iphone 8P  新反向11城
 
-{% embed url="http://tc-svn.tencent.com/ied/ied\_nssclient\_rep/nssclient\_proj/trunk/NssUnityProj/Assets/ResForAssetBundles/Scenes/LevelScene/Level\_11CityNew\_Reverse\_Art.unity" %}
+![&#x65B0;&#x53CD;&#x5411;11&#x57CE;&#xFF08;Level\_11CityNew\_Reverse\_Art.unity\)](../../../.gitbook/assets/image%20%28155%29.png)
 
 ### 测试结果
 
 | 差异 | 超高配 | 高配 | 中配 | 低配 |
 | :--- | :--- | :--- | :--- | :--- |
-| 原始GPU时间 | 无 | 8.3ms | 6.8ms | 5.8ms |
-| PBR合图差异 | 少1次采样 | 少1次采样 | 少1次采样 | 少1次采样 |
-| 时间 | 无 | 7.94ms | 6.3ms | 5.5ms |
-| PBR合图 + 效果提升 | 无 | 无 | 增加NormalMap计算 | 增加reflectionProbe一次采样与计算 |
-| 时间 |  |  |  |  |
+| **原始GPU时间** | 无 | 8.3ms | 6.8ms | 5.8ms |
+| PBR采样优化 | 少1次采样 | 少1次采样 | 少1次采样 | 少1次采样 |
+| **时间** | 无 | 7.94ms | 6.3ms | 5.5ms |
+| PBR效果提升 | 无 | 无 | 增加NormalMap | 增加reflectionProbe采样，不走旧的specular计算 |
+| **时间** | 无 | 无 | 6.75ms | 5.4ms |
 
 中配效果对比：
 
