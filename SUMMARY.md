@@ -22,6 +22,8 @@
     * [远景Imposter调研](tong-yong-xuan-ran-ji-shu/chang-jing-you-hua/yuan-jing-imposter-tiao-yan.md)
   * [环境交互](tong-yong-xuan-ran-ji-shu/huan-jing-jiao-hu/README.md)
     * [植被的交互调研](tong-yong-xuan-ran-ji-shu/huan-jing-jiao-hu/zhi-bei-de-jiao-hu-tiao-yan.md)
+* [游戏逻辑相关](you-xi-luo-ji-xiang-guan/README.md)
+  * [镜头交互动画](you-xi-luo-ji-xiang-guan/jing-tou-jiao-hu-dong-hua.md)
 * [Unity](qqspeed/README.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
     * [Unity standard shader](qqspeed/unity-ji-ben-zhi-shi/unity-standard-shader.md)
