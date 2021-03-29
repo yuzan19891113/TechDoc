@@ -12,9 +12,9 @@ obj.trans.localRotation = Quaternion.Euler\(eulerX, eulerY, eulerZ\);
 
 rotateY  = CurrentRotate.Y;
 
-rotateY += input.\(mouseButton\).delta.x ;
-
 forEachFrame{
+
+rotateY += input.\(mouseButton\).delta.x ;
 
 TargetRotate = Quaternion.Euler\(CurrentRotate.X, rotateY, CurrentRotate.Z\);
 
@@ -22,7 +22,7 @@ CurrentRotate =Quaternion.slerp\(CurrentRotate , TargetRotate , deltaTime\* damp
 
 LookDir = -Vector3.forward \* CurrentRotate \* LookDistance;
 
-Camera.rotate = CurrentRotate
+Camera.rotate = CurrentRotate;
 
 Camera.Pos = Camera.Target + LookDir
 
