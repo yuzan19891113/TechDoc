@@ -2,11 +2,22 @@
 
 ### PBR不同配置
 
+| 贴图类型 | 高与超高 | 中配 | 低配 |
+| :--- | :--- | :--- | :--- |
+| BaseColor | Yes | Yes | Yes |
+| NormalMap | Yes | **No** | **No** |
+| MRA | Yes | Yes | Yes |
+| LightMap | Yes | Yes | Yes |
+| ShadowMask | Yes | Yes | Yes |
+| ReflectionProbe | Yes | Yes | **No** |
+
+
+
 | 功能 | 超高配 | 高配 | 中配 | 低配 |
 | :--- | :--- | :--- | :--- | :--- |
 | BRDF函数 | PBR\_All | PBR\_All | PBR\_All | No |
-| 间接 Specular | planer reflection + reflection Cube | reflection Cube | reflection Cube | No |
-| NormalMap | Yes | Yes | No | No\(shader不支持） |
+| 间接 Specular | planer reflection + reflection Cube | reflection Cube | reflection Cube | **No** |
+| NormalMap | Yes | Yes | **No** | **No\(shader不支持）** |
 | OcclusionMap | Yes | Yes | No | No |
 
 #### 其中高配\_DIRECT\_SPEC\_ON默认开启了，反而超高配可以配置
