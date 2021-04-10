@@ -6,14 +6,14 @@
 
 #### LoadFileCache\(libaray/metaData/\)
 
-{% code title="SerializedFile.cpp" %}
 ```text
-SerializedFile::InitializedRead ->m_ReadFile
+SerializedFile::InitializedRead ->m_ReadFile(FileCacherRead)
 SerializedFile::ReadHeader
 SerializedFile::ReadFileCache
+    FileCacherRead::LockCacheBlock
+    FileCacherRead::UnLockCacheBlock
 SerializedFile::ReadMetaData ->m_Object
 ```
-{% endcode %}
 
 #### Initialize Object
 
