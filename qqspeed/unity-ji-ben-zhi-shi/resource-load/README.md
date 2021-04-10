@@ -2,9 +2,27 @@
 
 ## Editor
 
+### General object Load
+
+关键入口：ReadObjectFromPersistentManager
+
+![](../../../.gitbook/assets/image%20%28159%29.png)
+
 ### Shader Load
 
+![Shader Load](../../../.gitbook/assets/image%20%28167%29.png)
+
 #### LoadFileCache\(libaray/metaData/\)
+
+1.OpenFile
+
+```text
+LocalFileSystemWindowsShared::Open
+```
+
+![OpenFile](../../../.gitbook/assets/image%20%28160%29.png)
+
+2.ReadFileCache
 
 ```text
 SerializedFile::InitializedRead ->m_ReadFile(FileCacherRead)
@@ -17,7 +35,7 @@ SerializedFile::ReadMetaData ->m_Object
 
 #### Initialize Object
 
-![](../../../.gitbook/assets/image%20%28156%29.png)
+![](../../../.gitbook/assets/image%20%28157%29.png)
 
 #### Instance ID to File ID
 
