@@ -172,7 +172,9 @@ GPU
 
 现状：传统非PBR卡通渲染，2层uv,纹理在photoshop手绘，模型在3dsmax搭建
 
-[https://docs.qq.com/slide/DV1NyRExhaWRzdXJJ](https://docs.qq.com/slide/DV1NyRExhaWRzdXJJ)
+{% embed url="https://docs.qq.com/slide/DV1NyRExhaWRzdXJJ" %}
+
+展望：PBR统一光照，同时解决美术调卡通风格效果的问题
 
 ## 疑问
 
