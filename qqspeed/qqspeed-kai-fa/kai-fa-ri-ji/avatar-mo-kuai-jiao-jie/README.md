@@ -52,7 +52,7 @@ AvatarAnimator, MotorAvatarAnimator,skateAvatarAnimator
 
 teamDeng,运营定义物品ID，资源ID
 
-![Avatar&#x8D44;&#x6E90;&#x5206;&#x7C7B;](../../../.gitbook/assets/image%20%28179%29.png)
+![Avatar&#x8D44;&#x6E90;&#x5206;&#x7C7B;](../../../../.gitbook/assets/image%20%28181%29.png)
 
 ### 资源的目录结构与打包更新规范
 
@@ -164,7 +164,7 @@ GPU
 
 内存
 
-![&#x5185;&#x5B58;&#x7EDF;&#x8BA1;](../../../.gitbook/assets/image%20%28178%29.png)
+![&#x5185;&#x5B58;&#x7EDF;&#x8BA1;](../../../../.gitbook/assets/image%20%28180%29.png)
 
 ### 资源的渲染表现，业内标杆与后续扩展等展望
 
