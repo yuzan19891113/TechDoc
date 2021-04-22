@@ -86,9 +86,17 @@ mobile: RGBA ASTC 4X4
 
 #### Decoding
 
-![&#x5408;&#x5E76;&#x8D34;&#x56FE;&#x524D;](../../../.gitbook/assets/image%20%28136%29.png)
+![&#x9AD8;&#x914D;&#x4F18;&#x5316;&#x524D;](../../../.gitbook/assets/image%20%28136%29.png)
 
-![&#x5408;&#x5E76;&#x8D34;&#x56FE;&#x540E;](../../../.gitbook/assets/image%20%28132%29.png)
+![&#x9AD8;&#x914D;&#x4F18;&#x5316;&#x540E;\(&#x5C11;&#x4E00;&#x6B21;&#x91C7;&#x6837;&#xFF0C;&#x6548;&#x679C;&#x4E0D;&#x53D8;\)](../../../.gitbook/assets/image%20%28132%29.png)
+
+![&#x4E2D;&#x914D;PBR&#x4F18;&#x5316;&#x524D;&#xFF08;&#x65E0;normal map&#xFF09;](../../../.gitbook/assets/image%20%28173%29.png)
+
+![&#x4E2D;&#x914D;PBR&#x4F18;&#x5316;&#x540E;\(&#x5C11;&#x4E00;&#x6B21;&#x91C7;&#x6837;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x6CD5;&#x7EBF;&#x8D34;&#x56FE;\)](../../../.gitbook/assets/image%20%28168%29.png)
+
+![&#x4F4E;&#x914D;&#x4F18;&#x5316;&#x524D;&#xFF08;&#x65E0;reflection cube&#xFF09;](../../../.gitbook/assets/image%20%28170%29.png)
+
+![&#x4F4E;&#x914D;&#x4F18;&#x5316;&#x540E;\(&#x5C11;&#x4E00;&#x6B21;&#x91C7;&#x6837;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x73AF;&#x5883;&#x53CD;&#x5C04;\)](../../../.gitbook/assets/image%20%28169%29.png)
 
 ### 测试环境
 
@@ -105,8 +113,4 @@ iphone 8P  新反向11城
 | **时间** | 无 | 7.94ms | 6.3ms | 5.5ms |
 | PBR效果提升 | 无 | 无 | 增加NormalMap | 增加reflectionProbe采样，不走旧的specular计算 |
 | **时间** | 无 | 无 | 6.75ms | 5.4ms |
-
-中配效果对比：
-
-低配效果对比：
 
