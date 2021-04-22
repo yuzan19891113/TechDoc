@@ -174,6 +174,16 @@ GPU
 
 [https://docs.qq.com/slide/DV1NyRExhaWRzdXJJ](https://docs.qq.com/slide/DV1NyRExhaWRzdXJJ)
 
+## 疑问
+
+外网与内网常见的错误或者bug原因，包含美术与程序易错点
+
+材质需求的大概流程
+
+其他常见的美术需求
+
+
+
 
 
 
