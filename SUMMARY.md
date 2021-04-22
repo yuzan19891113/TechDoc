@@ -66,6 +66,7 @@
     * [PVS（可烘培的遮挡裁减\)](qqspeed/unity-ji-ben-zhi-shi/zhe-dang-ti-chu-pvs.md)
   * [QQSpeed开发](qqspeed/qqspeed-kai-fa/README.md)
     * [开发日记](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/README.md)
+      * [Avatar模块交接](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/avatar-mo-kuai-jiao-jie.md)
       * [codereview](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/codereview.md)
       * [PBR](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/pbr.md)
       * [PBR中低配](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/pbr-zhong-di-pei.md)
