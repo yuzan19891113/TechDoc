@@ -67,6 +67,8 @@
   * [QQSpeed开发](qqspeed/qqspeed-kai-fa/README.md)
     * [开发日记](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/README.md)
       * [Avatar模块交接](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/avatar-mo-kuai-jiao-jie/README.md)
+        * [资源性能规范与落地机制](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/avatar-mo-kuai-jiao-jie/zi-yuan-xing-neng-gui-fan-yu-luo-di-ji-zhi.md)
+        * [程序](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/avatar-mo-kuai-jiao-jie/cheng-xu.md)
         * [Shader](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/avatar-mo-kuai-jiao-jie/shader.md)
       * [codereview](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/codereview.md)
       * [PBR](qqspeed/qqspeed-kai-fa/kai-fa-ri-ji/pbr.md)

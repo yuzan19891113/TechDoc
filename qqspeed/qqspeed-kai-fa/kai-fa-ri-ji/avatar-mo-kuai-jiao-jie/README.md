@@ -1,49 +1,5 @@
 # Avatar模块交接
 
-## 程序
-
-### PresentationMgr（渲染管理器\):
-
-PresentationMgr:CreateAvatar\(创建avatar\)
-
-PresetnationMgr:OnPresentationEvent\(处理AvatarInit等特效事件\)
-
-### Presentation\(渲染对象\):
-
-#### 继承对象
-
-PresentationAvatar, PresentationBabyAvatar, PresentationSkateAvatar
-
-#### 组件
-
-PresentationAvatarWing,
-
-PresentationAvatarHang,
-
-PresentationAvatarAni,
-
-PresentationAvatarBone,
-
-PresentationAvatarExpression
-
-PresentationAvatarDress
-
-PresentationAvatarSkin
-
-等等
-
-### PresentationEventHandler
-
-PresentationAniConfig:主要是特效事件
-
-PresentationAvatarEventHandler
-
-### NssAnimator
-
-LobbyAvatarAnimator
-
-AvatarAnimator, MotorAvatarAnimator,skateAvatarAnimator
-
 ## 资源
 
 包括服装，魔法套装，宠物，宝宝，挂件，表情，人物动作等Avatar相关资源
@@ -125,46 +81,6 @@ Avatar,宝宝，检查骨头，检查TPose,资源不存在\(加载默认\)
 #### 大厅魔法套装
 
 会替换动画
-
-### 资源的性能规范与落地机制
-
-#### LOD规范
-
-套装：2 层 
-
-宠物: 2层
-
-尾挂:1层
-
-除了模型面数，节点结构，骨架TPose信息，需要完全一样
-
-#### 使用规则
-
-高模：大厅，UI展示，单局开场舞，单局结算
-
-低模：单局/休闲区
-
-#### 性能
-
-CPU
-
-套装，宠物，尾挂都带动画状态机，影响CPU计算
-
-单局内合批了，DC增加较小
-
-休闲区是没合批的，DC增加较大，休闲区限制了同屏人数
-
-GPU
-
-大厅：材质使用高配，使用了非pbr材质，性能好
-
-单局：合并后使用diffuse图，性能最优
-
-休闲区:简版材质，性能较好
-
-内存
-
-![&#x5185;&#x5B58;&#x7EDF;&#x8BA1;](../../../../.gitbook/assets/image%20%28180%29.png)
 
 ### 资源的渲染表现，业内标杆与后续扩展等展望
 
