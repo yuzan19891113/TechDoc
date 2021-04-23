@@ -48,3 +48,5 @@ AvatarAnimator, MotorAvatarAnimator,skateAvatarAnimator
 
 大厅和开场舞都是LobbyAvatarAnimator, 单局是AvatarAnimator
 
+大厅和开场舞会切换不同的animation controller
+
