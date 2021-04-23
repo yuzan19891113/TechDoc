@@ -1,5 +1,7 @@
 # 程序设计
 
+## 基本模块
+
 ### PresentationMgr（渲染管理器\):
 
 PresentationMgr:CreateAvatar\(创建avatar\)
@@ -41,4 +43,8 @@ PresentationAvatarEventHandler
 LobbyAvatarAnimator
 
 AvatarAnimator, MotorAvatarAnimator,skateAvatarAnimator
+
+## 流程控制
+
+大厅和开场舞都是LobbyAvatarAnimator, 单局是AvatarAnimator
 
