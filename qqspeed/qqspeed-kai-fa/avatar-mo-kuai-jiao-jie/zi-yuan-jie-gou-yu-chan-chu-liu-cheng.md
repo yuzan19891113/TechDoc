@@ -8,7 +8,7 @@
 
 teamDeng,运营定义物品ID，资源ID
 
-![Avatar&#x8D44;&#x6E90;&#x5206;&#x7C7B;](../../../../.gitbook/assets/image%20%28181%29.png)
+![Avatar&#x8D44;&#x6E90;&#x5206;&#x7C7B;](../../../.gitbook/assets/image%20%28181%29.png)
 
 ### 资源的目录结构与打包更新规范
 

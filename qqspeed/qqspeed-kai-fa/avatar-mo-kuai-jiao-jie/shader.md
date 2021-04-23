@@ -2,7 +2,7 @@
 
 ## 标准Shader
 
-![](../../../../.gitbook/assets/image%20%28177%29.png)
+![](../../../.gitbook/assets/image%20%28177%29.png)
 
 
 
@@ -17,7 +17,7 @@
 
 ## PBRshader
 
-![](../../../../.gitbook/assets/image%20%28178%29.png)
+![](../../../.gitbook/assets/image%20%28178%29.png)
 
 
 
@@ -46,7 +46,7 @@
 
 ## SH烘培工具
 
-![](../../../../.gitbook/assets/image%20%28182%29.png)
+![](../../../.gitbook/assets/image%20%28182%29.png)
 
 烘培SH到材质球
 

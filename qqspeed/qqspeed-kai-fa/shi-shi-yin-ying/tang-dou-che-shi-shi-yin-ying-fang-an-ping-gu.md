@@ -20,15 +20,15 @@
 
 1024 \* 1024
 
-![](../../../../.gitbook/assets/image%20%2880%29.png)
+![](../../../.gitbook/assets/image%20%2880%29.png)
 
 512 \* 512
 
-![](../../../../.gitbook/assets/image%20%2876%29.png)
+![](../../../.gitbook/assets/image%20%2876%29.png)
 
 远处：
 
-![](../../../../.gitbook/assets/image%20%2879%29.png)
+![](../../../.gitbook/assets/image%20%2879%29.png)
 
  **PCF soft:**  接受阴影的对象个数 \* 单像素四次采样,  移动平台：**buit-in PCF\( from gles 3.0\)**，进入静态阴影区以及超出light project camera distance,不需要采样
 
@@ -87,7 +87,7 @@ CSM + LIPSM\(处理较大距离阴影，提高阴影精度）
 
 batches: 126-&gt;121\(关闭阴影），对象类似的灰dynamic batch，所以增加的drawcall都在个位数
 
-![](../../../../.gitbook/assets/image%20%2891%29.png)
+![](../../../.gitbook/assets/image%20%2891%29.png)
 
 ### 策划需求:透贴是否可以改为动态阴影
 
@@ -141,9 +141,9 @@ codm:流畅，标准，没有阴影，精致，高清，有分辨率较低的阴
 
 Unity默认方案对比 200
 
-![&#x5173;&#x95ED;&#x9634;&#x5F71; 96](../../../../.gitbook/assets/image%20%28109%29.png)
+![&#x5173;&#x95ED;&#x9634;&#x5F71; 96](../../../.gitbook/assets/image%20%28109%29.png)
 
-![screen space shadow map batches 150](../../../../.gitbook/assets/image%20%28110%29.png)
+![screen space shadow map batches 150](../../../.gitbook/assets/image%20%28110%29.png)
 
 比较CSSM, shadowProjector, shadowTexture.[**https://www.zhihu.com/question/287079059**](https://www.zhihu.com/question/287079059)**，**CSSM的两级融合。实现方案
 
@@ -244,15 +244,15 @@ shadow = min(shadowMask, shadowValue);
 
 150 \* 1024
 
-![hard](../../../../.gitbook/assets/image%20%28115%29.png)
+![hard](../../../.gitbook/assets/image%20%28115%29.png)
 
-![built-in pcf](../../../../.gitbook/assets/image%20%28113%29.png)
+![built-in pcf](../../../.gitbook/assets/image%20%28113%29.png)
 
-![3 \*3 PCF\(4 taps\)](../../../../.gitbook/assets/image%20%28116%29.png)
+![3 \*3 PCF\(4 taps\)](../../../.gitbook/assets/image%20%28116%29.png)
 
-![screen space shadow map](../../../../.gitbook/assets/image%20%28118%29.png)
+![screen space shadow map](../../../.gitbook/assets/image%20%28118%29.png)
 
-![native shadow ma batches 100](../../../../.gitbook/assets/image%20%28114%29.png)
+![native shadow ma batches 100](../../../.gitbook/assets/image%20%28114%29.png)
 
 
 

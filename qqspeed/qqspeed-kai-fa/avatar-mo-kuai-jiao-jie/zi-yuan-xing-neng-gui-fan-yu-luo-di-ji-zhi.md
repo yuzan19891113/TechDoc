@@ -42,7 +42,7 @@ GPU
 
 内存
 
-![&#x5185;&#x5B58;&#x7EDF;&#x8BA1;](../../../../.gitbook/assets/image%20%28180%29.png)
+![&#x5185;&#x5B58;&#x7EDF;&#x8BA1;](../../../.gitbook/assets/image%20%28180%29.png)
 
 ### 
 

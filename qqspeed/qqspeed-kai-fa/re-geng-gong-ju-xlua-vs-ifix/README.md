@@ -8,7 +8,7 @@ c\#热更工具xlua，可以不修改原生c\#代码的情况下，通过xlua注
 
 lua框架和c\#游戏框架有一个一一对应的关系，使得每一次修改都能遵循相关的规范，能将相应的xlua热更产生的luabytes打到对应的dll上
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![](../../../.gitbook/assets/image%20%284%29.png)
 
 **登录游戏服务器，点击进入游戏的时候，会通过数据档下载好最新的Lua脚本，此时通过GameMain:InitDevFramework\( \)初始化Lua系统开发框架**
 
@@ -16,7 +16,7 @@ lua框架和c\#游戏框架有一个一一对应的关系，使得每一次修�
 
 每个版本维护一个基础的lua文件目录，需要热更新时，修改对应模块映射的lua，然后生成luabytes，通过服务器数据档发送出去。到下一个版本时，自动恢复为基础lua文件（热更修改已通过原生方式同步到下个版本）。
 
-![](../../.gitbook/assets/image%20%285%29.png)
+![](../../../.gitbook/assets/image%20%285%29.png)
 
 
 
@@ -58,16 +58,16 @@ private int OnSystemInit(GameEvent e)
   
  2.修改c\#等编译完成之后，点击iFix---Patch，即可在 \Tools\TDR\_res\Databin\Client!! 目录下生成  DllName.patch.bytes!! \(比如NssMain.patch.bytes\) 这个补丁
 
-![](../../.gitbook/assets/image%20%281%29.png)
+![](../../../.gitbook/assets/image%20%281%29.png)
 
   
  3.本地测试方式（基本不需要使用）： 在没有修改bug时，编译项目，编译成功后点击 iFix---Process Assembly-CSharp!! ，备份还未改bug的程序集
 
-![](../../.gitbook/assets/image%20%282%29.png)
+![](../../../.gitbook/assets/image%20%282%29.png)
 
 在c\#上修改bug，把修改过的方法打上 \[IFix.Patch\]!! 标签，改好以后编译成功后，点击  iFix---Patch!! ，保存生成的补丁 点击iFix---Revert Assembly-CSharp\(For test only\)!!，选择刚才备份的dll做还原
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](../../../.gitbook/assets/image%20%283%29.png)
 
 运行游戏，测试补丁是否生效，可以将Assembly-CSharp.patch.bytes改名和还原来控制是否加载补丁 也可以直接Inject在手机上测试!!  
  4.发布流程，使用蓝盾任务生成和提交patch，在124表配上对应的bytes安排发布  
