@@ -12,7 +12,7 @@ Snapdragon profiler  url：[https://developer.qualcomm.com/software/snapdragon-p
 
 Snapdragon 配置
 
-![](../.gitbook/assets/image%20%28184%29.png)
+![](../.gitbook/assets/image%20%28185%29.png)
 
 需要关闭Unity等影响adb接口的软件
 
@@ -57,6 +57,22 @@ a.     选择要截取的包名，然后在要截取的时机点Take Snapshot
 * 双击点击查看pixel history，找到对应的draw call ，分析shader, texture , vb, ib ,cb
 
 ![](http://tapd.oa.com/tfl/captures/2018-10/tapd_10124081_base64_1540286519_69.png)
+
+**贴图分析**
+
+![&#x67E5;&#x770B;&#x8D34;&#x56FE;slot, &#x8D34;&#x56FE;resource id](../.gitbook/assets/image%20%28189%29.png)
+
+![&#x8D34;&#x56FE;resource id](../.gitbook/assets/image%20%28183%29.png)
+
+![unity shader &#x8D34;&#x56FE;&#x9ED8;&#x8BA4; while](../.gitbook/assets/image%20%28186%29.png)
+
+![texture slot 0-6](../.gitbook/assets/image%20%28187%29.png)
+
+![](../.gitbook/assets/image%20%28188%29.png)
+
+如果只有glactivetexture没有glbindTexture,那是opengl认为不需要切换贴图，可以查看以前的DC对应slot查看slot绑定的贴图
+
+
 
 b.     遇到如下Program 为Binary的解决方法：
 
