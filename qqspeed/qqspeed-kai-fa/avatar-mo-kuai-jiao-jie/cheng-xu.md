@@ -50,3 +50,7 @@ AvatarAnimator, MotorAvatarAnimator,skateAvatarAnimator
 
 大厅和开场舞会切换不同的animation controller
 
+### 等待房间加载
+
+![&#x52A0;&#x8F7D;&#x5806;&#x6808;](../../../.gitbook/assets/image%20%28190%29.png)
+

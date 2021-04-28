@@ -8,6 +8,8 @@ Pet:HandleInitSync
 
 PresentationSuspension:Init
 
+套装单局坐姿隐藏：ShouldLoadExpandMesh
+
 套装，宝宝加载每一个Part后会骨架合并，重新蒙皮，单局内还会进一步合并模型和纹理
 
 宠物是一个整体，没有Part
