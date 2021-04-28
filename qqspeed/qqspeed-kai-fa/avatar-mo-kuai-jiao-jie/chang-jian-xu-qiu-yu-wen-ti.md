@@ -20,10 +20,6 @@ AB包问题，因为索引的是公共贴图，套装AB与公共贴图是不同�
 
 3 查看glactivetexture, glbindtexture,确定若干贴图丢失
 
-4 怀疑是AB包数据丢失
-
-5 AB包解包并在PC端加载
-
 
 
 #### 解决方法

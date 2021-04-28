@@ -6,3 +6,7 @@ Prefab \(預製物件\) 是在 Unity 中經常被使用的機制之一，能將 
 
  AssetBundles 是 Unity 用來取代 Resources 所建立的機制，若要從**外部載入 Prefab 使用**，這是唯一的方式。得先將 Prefab 打包成 AssetBundle ，之後在執行階段載入該 AssetBundle，然後讀取其內容取得該 Prefab 來使用。
 
+仅仅Prefab instance能够重新设置parent, prefab本身不能，如果是loadassetatpath加载的是prefab asset，instanabite实例化的才是instance
+
+Unity2019改变子节点需要unpackprefabinstance
+
