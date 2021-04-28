@@ -10,6 +10,7 @@
   * [Snapdragon Profiler](kai-fa-ji-tiao-shi-gong-ju/snapdragon-profiler.md)
   * [RenderDoc](kai-fa-ji-tiao-shi-gong-ju/renderdoc-snapdragon-profiler-lian-jie-android.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
+  * [体素渲染](tong-yong-xuan-ran-ji-shu/ti-su-xuan-ran.md)
   * [Anti\_Alising相关](tong-yong-xuan-ran-ji-shu/antialising-xiang-guan.md)
   * [Mipmap](tong-yong-xuan-ran-ji-shu/mipmap.md)
   * [线性与gamma空间](tong-yong-xuan-ran-ji-shu/xian-xing-yu-gamma-kong-jian.md)
