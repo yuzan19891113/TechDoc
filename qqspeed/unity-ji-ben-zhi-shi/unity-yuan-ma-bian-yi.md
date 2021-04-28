@@ -5,7 +5,7 @@
 ### Windows篇 <a id="toc0"></a>
 
 1、 Windows 7 SP1 64位以上，同时需要VS 2013和VS 2015 的CRT DLL \(一般都装过了\)  
-2、 Perl，安装ActivePerl 5.22或更高版本，并确保Perl位于%PATH%.  
+2、 Perl，安装ActivePerl 5.22或更高版本，并确保Perl位于%PATH%.\(5.22-5.24最好，更高版本perl容易报错\)  
 3、 VisualStudio 2010\(必须安装Service Pack 1\).  
 a\) 如果未安装SP1，会报类似错误\_XCR\_FEATURE\_ENABLED\_MASK  
 4、 也可以使用2015 Update 2 及以上版本
