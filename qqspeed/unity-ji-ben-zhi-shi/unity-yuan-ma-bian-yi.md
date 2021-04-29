@@ -10,6 +10,8 @@
 a\) 如果未安装SP1，会报类似错误\_XCR\_FEATURE\_ENABLED\_MASK  
 4、 也可以使用2015 Update 2 及以上版本
 
+5. vs安装组件
+
 如果只需要构建WindowsEditor，不需要Android sdk&ndk。
 
 Android sdk&ndk可以去IFS上拷贝：  
