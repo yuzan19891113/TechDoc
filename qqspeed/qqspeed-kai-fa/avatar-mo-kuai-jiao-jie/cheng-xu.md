@@ -54,7 +54,9 @@ AvatarAnimator, MotorAvatarAnimator,skateAvatarAnimator
 
 ![&#x52A0;&#x8F7D;&#x5806;&#x6808;](../../../.gitbook/assets/image%20%28190%29.png)
 
-Avatar回到大厅切换渲染状态，
+Avatar切换渲染状态，
 
-![](../../../.gitbook/assets/image%20%28191%29.png)
+![](../../../.gitbook/assets/image%20%28192%29.png)
+
+
 
