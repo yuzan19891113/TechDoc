@@ -19,7 +19,7 @@
 * c\#设置material的时候，从sharematerials的单个material set不行，要对sharematerials整体set
 * Batches \(draw calls\) and SetPasses \(material changes\)
 * unity default skybox，need a material 产生一个DC。
-* mcs.exe 编译C\#工具
+* mcs.exe 编译C\#工具,unity2019后变为roslyn的csc.exe 将c\#编译成dll
 
 
 
