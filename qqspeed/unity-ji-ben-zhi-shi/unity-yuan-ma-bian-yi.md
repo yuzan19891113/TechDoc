@@ -23,8 +23,7 @@ Android sdk&ndk可以去IFS上拷贝：
 **拉下源码之后cmd中执行**
 
 ```text
- 
-perl build.pl --prepare
+perl build.pl --prepare 
 ```
 
 ### Mac篇 <a id="toc1"></a>
