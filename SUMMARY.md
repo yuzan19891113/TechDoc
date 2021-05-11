@@ -31,6 +31,7 @@
   * [镜头交互动画](you-xi-luo-ji-xiang-guan/jing-tou-jiao-hu-dong-hua.md)
 * [Unity](qqspeed/README.md)
   * [Unity基本知识](qqspeed/unity-ji-ben-zhi-shi/README.md)
+    * [C\#编译](qqspeed/unity-ji-ben-zhi-shi/c-bian-yi.md)
     * [Resource Load](qqspeed/unity-ji-ben-zhi-shi/resource-load/README.md)
       * [Shader加载](qqspeed/unity-ji-ben-zhi-shi/resource-load/shader-jia-zai.md)
     * [Unity standard shader](qqspeed/unity-ji-ben-zhi-shi/unity-standard-shader.md)
