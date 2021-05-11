@@ -2,6 +2,8 @@
 
 unity2019使用CSC.exe来编译
 
+[https://github.com/dotnet/roslyn.git](https://github.com/dotnet/roslyn.git)
+
 预编译配置：csc.rsp
 
 编译错误查找：
