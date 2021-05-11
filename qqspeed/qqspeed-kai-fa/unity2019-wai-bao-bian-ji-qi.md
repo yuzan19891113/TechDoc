@@ -4,6 +4,20 @@
 
 ### 更新外包引擎
 
+[http://tc-svn.tencent.com/qqspeed/nssunity5\_proj/branches/Unity2019.4.22f1\_externalEditor](http://tc-svn.tencent.com/qqspeed/nssunity5_proj/branches/Unity2019.4.22f1_externalEditor)
+
+取最新引擎，然后合并以上分支的
+
+![](../../.gitbook/assets/image%20%28193%29.png)
+
+编译引擎。
+
+加密工具，内部已更新到csc的解密程序，一般不需要重新生成
+
+[http://tc-svn.tencent.com/qqspeed/nssunity5\_proj/trunk/Libs/mono\_5.0.1.1\_for\_mcs](http://tc-svn.tencent.com/qqspeed/nssunity5_proj/trunk/Libs/mono_5.0.1.1_for_mcs)
+
+编译后需要拷贝roslyn\artifacts\bin\csc\Release的所有文件拷贝覆盖到引擎的WindowsEditor\Data\Tools\Roslyn，从而让引擎具有了编译加密代码文件的功能
+
 ### 导出加密基础资源
 
 ### 导出补丁
