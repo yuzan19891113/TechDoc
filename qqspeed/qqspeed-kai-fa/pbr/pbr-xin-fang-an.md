@@ -38,7 +38,7 @@ instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + al
 
 特性:
 
-instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + alphaBlend + normalMap + **occlusionMap + planer\_reflection** 
+instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest + alphaBlend + normalMap + **occlusionMap + planer\_reflection** 
 
 
 
