@@ -79,6 +79,7 @@
     * [实时阴影](qqspeed/qqspeed-kai-fa/shi-shi-yin-ying/README.md)
       * [糖豆车实时阴影方案](qqspeed/qqspeed-kai-fa/shi-shi-yin-ying/tang-dou-che-shi-shi-yin-ying-fang-an-ping-gu.md)
     * [PBR](qqspeed/qqspeed-kai-fa/pbr/README.md)
+      * [PBR新方案](qqspeed/qqspeed-kai-fa/pbr/pbr-xin-fang-an.md)
       * [PBR中低配](qqspeed/qqspeed-kai-fa/pbr/pbr-zhong-di-pei.md)
     * [Avatar模块交接](qqspeed/qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/README.md)
       * [程序设计](qqspeed/qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/cheng-xu.md)
