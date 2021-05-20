@@ -1,6 +1,6 @@
 # PBR中低配
 
-### PBR不同配置
+PBR不同配置
 
 | 贴图类型 | 高与超高 | 中配 | 低配 |
 | :--- | :--- | :--- | :--- |
@@ -69,6 +69,8 @@ mobile: RGBA ASTC 4X4
 ![](../../../.gitbook/assets/image%20%28131%29.png)
 
 ### LightMap And ShadowMask
+
+[https://docs.unity3d.com/Manual/Lightmaps-TechnicalInformation.html](https://docs.unity3d.com/Manual/Lightmaps-TechnicalInformation.html)
 
 gamma与线性的地图的差异处理
 
