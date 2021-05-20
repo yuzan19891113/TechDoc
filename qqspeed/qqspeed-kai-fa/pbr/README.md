@@ -36,7 +36,7 @@ float LH = saturate\(dot\(light.dir, halfDir\)\);
 
 ![GGX&#x4E0E;Blinn&#x5DEE;&#x5F02;](../../../.gitbook/assets/image%20%28143%29.png)
 
-移动平台优化版
+## PBR优化一
 
 [https://community.arm.com/developer/tools-software/graphics/b/blog/posts/moving-mobile-graphics](https://community.arm.com/developer/tools-software/graphics/b/blog/posts/moving-mobile-graphics)
 
@@ -75,5 +75,7 @@ Reflection cube map: 使用V \* N采样， 根据roughness采样不同mipmapleve
 surfaceReduction * gi.specular* FresnelLerpFast (specColor, grazingTerm, NV);
 ```
 
+## PBR 优化2
 
+[http://filmicworlds.com/blog/optimizing-ggx-shaders-with-dotlh/](http://filmicworlds.com/blog/optimizing-ggx-shaders-with-dotlh/)
 
