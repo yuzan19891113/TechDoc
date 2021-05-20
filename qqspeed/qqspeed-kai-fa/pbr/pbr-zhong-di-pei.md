@@ -81,6 +81,8 @@ PC端Lightmap是RGBM, 移动端是DLDR
 
 现在统一DLDR, max value 是34.49f.
 
+不同hdr value的结果
+
 #### LS Encoding:
 
 ![](../../../.gitbook/assets/image%20%28137%29.png)
