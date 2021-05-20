@@ -1,6 +1,6 @@
 # PBR中低配
 
-PBR不同配置
+### PBR不同配置
 
 | 贴图类型 | 高与超高 | 中配 | 低配 |
 | :--- | :--- | :--- | :--- |
@@ -70,20 +70,9 @@ mobile: RGBA ASTC 4X4
 
 ### LightMap And ShadowMask
 
-[https://docs.unity3d.com/Manual/Lightmaps-TechnicalInformation.html](https://docs.unity3d.com/Manual/Lightmaps-TechnicalInformation.html)
-
-gamma与线性的地图的差异处理
-
-* lightmap bake in gamma,  lightMap = 5 \* _data.a  \*_  data.rgb;
-* lightmap bake in linear,  lightMap = 5 ^2.2 \*  _pow\(data.a, 2.2\)_  data.rgb
-
 原来的Lightmap ,shadowMask，
 
 PC端Lightmap是RGBM, 移动端是DLDR
-
-现在统一DLDR, max value 是34.49f.
-
-不同hdr value的结果
 
 #### LS Encoding:
 
