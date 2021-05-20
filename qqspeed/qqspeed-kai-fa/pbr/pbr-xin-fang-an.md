@@ -42,11 +42,13 @@ instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest
 
 \*\*\*\*
 
-### 美术流程转换
+### PBR中低配美术流程转换
 
 1 lightmap\(\_final文件\) _+ shadowMask\(\_mask文件\) -&gt; LightMapShadowMask\(_\_LS文件\)
 
 2 Normal贴图 + MRA 贴图 -&gt; NMR\(贴图） + occlusion 贴图
+
+3 优化PBR模型
 
 
 
