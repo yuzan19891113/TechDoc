@@ -74,6 +74,8 @@ mobile: RGBA ASTC 4X4
 
 PC端Lightmap是RGBM, 移动端是DLDR
 
+现在统一DLDR
+
 #### LS Encoding:
 
 ![](../../../.gitbook/assets/image%20%28137%29.png)
