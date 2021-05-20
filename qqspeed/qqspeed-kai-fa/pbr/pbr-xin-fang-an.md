@@ -44,9 +44,9 @@ instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest
 
 ### PBR中低配美术流程转换
 
-1 lightmap\(\_final文件\) _+ shadowMask\(\_mask文件\) -&gt; LightMapShadowMask\(_\_LS文件\)
+1 lightmap\(\_final文件\) _+ shadowMask\(\_mask文件\) -&gt; LightMapShadowMask\(_\_LS文件\) （bakery完成后自动合并图\)
 
-2 Normal贴图 + MRA 贴图 -&gt; NMR\(贴图） + occlusion 贴图
+2 **Normal贴图** + MRA 贴图 -&gt; NMR\(贴图） + occlusion 贴图 \( 是否程序合并图，怎么集成到美术流程\)
 
 3 优化PBR模型
 
