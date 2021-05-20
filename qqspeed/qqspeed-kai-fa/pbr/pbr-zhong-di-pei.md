@@ -70,6 +70,11 @@ mobile: RGBA ASTC 4X4
 
 ### LightMap And ShadowMask
 
+gamma与线性的地图的差异处理
+
+* lightmap bake in gamma,  lightMap = 5 \* _data.a  \*_  data.rgb;
+* lightmap bake in linear,  lightMap = 5 ^2.2 \*  _pow\(data.a, 2.2\)_  data.rgb
+
 原来的Lightmap ,shadowMask，
 
 PC端Lightmap是RGBM, 移动端是DLDR
