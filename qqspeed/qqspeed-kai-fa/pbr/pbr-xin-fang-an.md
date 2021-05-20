@@ -38,8 +38,6 @@ instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + al
 
 instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest + alphaBlend + normalMap + **occlusionMap + planer\_reflection** 
 
-\*\*\*\*
-
 ### PBR中低配美术流程转换
 
 1 lightmap\(\_final文件\) _+ shadowMask\(\_mask文件\) -&gt; LightMapShadowMask\(_\_LS文件\) （bakery完成后自动合并图\)
