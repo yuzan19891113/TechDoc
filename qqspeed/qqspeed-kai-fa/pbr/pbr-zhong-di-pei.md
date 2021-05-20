@@ -79,7 +79,7 @@ gamma与线性的地图的差异处理
 
 PC端Lightmap是RGBM, 移动端是DLDR
 
-现在统一DLDR
+现在统一DLDR, max value 是34.49f.
 
 #### LS Encoding:
 
