@@ -14,7 +14,7 @@ _通过配置不同的shader feature来控制不同质量等级。_
 
 模型： PBR\_low
 
-instance + shadowMask + lightmap + emision + alphaTest + alphaBlend
+instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + reflectionProbe
 
 ### 中配
 
@@ -22,7 +22,7 @@ instance + shadowMask + lightmap + emision + alphaTest + alphaBlend
 
 特性:
 
-instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + **normalMap**
+instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + **** + reflectionProbe + **normalMap**
 
 ### 高配
 
@@ -30,7 +30,7 @@ instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + **normalMa
 
 特性:
 
-instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + alphaBlend + normalMap + **occlusionMap**
+instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + alphaBlend  + reflectionProbe + normalMap + **occlusionMap**
 
 ### 超高配
 
@@ -39,6 +39,16 @@ instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + al
 特性:
 
 instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest + alphaBlend + normalMap + **occlusionMap + planer\_reflection** 
+
+\*\*\*\*
+
+### 美术流程转换
+
+1 lightmap\(\_final文件\) _+ shadowMask\(\_mask文件\) -&gt; LightMapShadowMask\(_\_LS文件\)
+
+2 Normal贴图 + MRA 贴图 -&gt; NMR\(贴图） + occlusion 贴图
+
+
 
 
 
