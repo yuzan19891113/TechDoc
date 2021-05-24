@@ -23,3 +23,9 @@ ASTC offers texture compression with high quality, low bitrate and has many cont
 
 **You must differentiate between textures used in 3D content from textures used in the GUI elements. In some cases it might be best to leave the GUI textures uncompressed to avoid unwanted artifacts.**
 
+## **SRGB texture**
+
+在linear space下，写入时会linear-&gt;gammar, 读取时会gammar-&gt;linear
+
+所以如果作为rt使用时没有区别的
+
