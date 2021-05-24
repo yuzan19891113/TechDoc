@@ -10,7 +10,7 @@ UIPlayer:InitAvatar
 
 * PresentationMgr:CreateAvatar\(创建avatar\)
 * Avatar.Init\(\)
-* Avatar:ApplyDressUpInfo\(\)
+* Avatar:ApplyDressUpInfo\(\) ：组装avatar part
 
 PresetnationMgr:OnPresentationEvent\(处理AvatarInit等特效事件\)
 
