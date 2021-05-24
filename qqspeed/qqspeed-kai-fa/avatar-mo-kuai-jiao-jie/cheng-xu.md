@@ -4,7 +4,13 @@
 
 ### PresentationMgr（渲染管理器\):
 
-PresentationMgr:CreateAvatar\(创建avatar\)
+局外:
+
+UIPlayer:InitAvatar
+
+![](../../../.gitbook/assets/image%20%28195%29.png)
+
+单局：PresentationMgr:CreateAvatar\(创建avatar\)
 
 PresetnationMgr:OnPresentationEvent\(处理AvatarInit等特效事件\)
 
@@ -65,6 +71,8 @@ PresentationAvatarExpression: 2D 表情，通过贴图替换实现的
 ![](../../../.gitbook/assets/image%20%28194%29.png)
 
 PresentationAvatar3DExpression: 捏脸
+
+LOD控制: LODMgr.GetAvatarInitConfig AvatarLODController
 
 
 
