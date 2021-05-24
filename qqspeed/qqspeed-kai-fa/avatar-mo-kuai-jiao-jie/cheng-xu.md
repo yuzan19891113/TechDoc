@@ -10,7 +10,7 @@ UIPlayer:InitAvatar
 
 ![](../../../.gitbook/assets/image%20%28195%29.png)
 
-单局：PresentationMgr:CreateAvatar\(创建avatar\)
+PresentationMgr:CreateAvatar\(创建avatar\)
 
 PresetnationMgr:OnPresentationEvent\(处理AvatarInit等特效事件\)
 
