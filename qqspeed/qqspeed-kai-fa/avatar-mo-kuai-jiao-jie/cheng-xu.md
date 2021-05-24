@@ -64,7 +64,7 @@ PresentationAvatarExpression: 2D 表情，通过贴图替换实现的
 
 ![](../../../.gitbook/assets/image%20%28194%29.png)
 
-PresentationAvatar3DExpression:
+PresentationAvatar3DExpression: 捏脸
 
 
 
