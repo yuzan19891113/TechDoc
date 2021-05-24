@@ -4,13 +4,13 @@
 
 ### PresentationMgr（渲染管理器\):
 
-局外:
+#### 局外:
 
 UIPlayer:InitAvatar
 
-![](../../../.gitbook/assets/image%20%28195%29.png)
-
-PresentationMgr:CreateAvatar\(创建avatar\)
+* PresentationMgr:CreateAvatar\(创建avatar\)
+* Avatar.Init\(\)
+* Avatar:ApplyDressUpInfo\(\)
 
 PresetnationMgr:OnPresentationEvent\(处理AvatarInit等特效事件\)
 
