@@ -58,5 +58,13 @@ Avatar切换渲染状态，
 
 ![](../../../.gitbook/assets/image%20%28192%29.png)
 
+PresentationAvatarExpression: 2D 表情，通过贴图替换实现的
+
+表情是序列帧，每帧由Diffuse和皮肤Mask两张纹理组成， 皮肤Mask的用途是换肤色时防止眼睛变色
+
+![](../../../.gitbook/assets/image%20%28194%29.png)
+
+PresentationAvatar3DExpression:
+
 
 
