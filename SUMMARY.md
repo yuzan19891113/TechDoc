@@ -70,6 +70,7 @@
     * [静态合批vs 动态合批](qqspeed/unity-ji-ben-zhi-shi/jing-tai-he-pi-vs-dong-tai-he-pi.md)
     * [PVS（可烘培的遮挡裁减\)](qqspeed/unity-ji-ben-zhi-shi/zhe-dang-ti-chu-pvs.md)
   * [QQSpeed开发](qqspeed/qqspeed-kai-fa/README.md)
+    * [实习生李洲工作安排](qqspeed/qqspeed-kai-fa/shi-xi-sheng-li-zhou-gong-zuo-an-pai.md)
     * [Unity2019 外包编辑器](qqspeed/qqspeed-kai-fa/unity2019-wai-bao-bian-ji-qi.md)
     * [资源打包AB](qqspeed/qqspeed-kai-fa/zi-yuan-da-bao-ab.md)
     * [codereview](qqspeed/qqspeed-kai-fa/codereview.md)
