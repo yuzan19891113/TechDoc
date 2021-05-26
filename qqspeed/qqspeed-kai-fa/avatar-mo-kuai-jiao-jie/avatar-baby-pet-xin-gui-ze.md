@@ -12,7 +12,7 @@
 
 2 非颜色类贴图Mask, _Mxx, 不勾选srgb,  颜色类贴图勾srgb_
 
-_3  common textures_
+_3  common textures 处理_
 
 
 
