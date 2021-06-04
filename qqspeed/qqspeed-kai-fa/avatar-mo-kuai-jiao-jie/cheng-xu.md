@@ -74,5 +74,9 @@ PresentationAvatar3DExpression: 捏脸
 
 LOD控制: LODMgr.GetAvatarInitConfig AvatarLODController
 
+头发换颜色：
+
+PresentationAvatarMaterialData:TintHair
+
 
 

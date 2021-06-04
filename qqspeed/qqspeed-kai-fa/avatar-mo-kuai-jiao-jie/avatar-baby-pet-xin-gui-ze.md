@@ -14,13 +14,11 @@
 
 1 shader 是非hidden的版本，程序保证，美术禁止使用
 
-2 非颜色类贴图Mask, _Mxx, 不勾选srgb,  颜色类贴图勾srgb_
+2 非颜色类贴图Mask, _Mxx, 法线\_N不勾选srgb,  颜色类贴图勾srgb_
 
 _3  common textures 处理_
 
-_4 贴图被pbr 和 hidden共同使用_
-
-_5 禁止使用avatar以外shader_
+_5 禁止直接使用avatar以外shader, 如果用，由程序拷贝_
 
 
 
