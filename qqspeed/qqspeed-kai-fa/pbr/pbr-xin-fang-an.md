@@ -10,9 +10,13 @@ _通过配置不同的shader feature来控制不同质量等级。_
 
 ### 低配：
 
-模型： PBR\_low
+模型： PBR\_Standard
 
 instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + reflectionProbe
+
+**ALU**指令数：
+
+**Sample**次数：
 
 ### 中配
 
@@ -20,7 +24,13 @@ instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + reflection
 
 特性:
 
-instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + **** + reflectionProbe + **normalMap**
+instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + reflectionProbe + **normalMap**
+
+**+ CorrectPlaner\_reflection**
+
+**ALU**指令数：
+
+**Sample**次数：
 
 ### 高配
 
@@ -28,7 +38,11 @@ instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + **** + ref
 
 特性:
 
-instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + alphaBlend  + reflectionProbe + normalMap + **occlusionMap**
+instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + alphaBlend  + reflectionProbe + normalMap + CorrectPlaner\_reflection **+ occlusionMap + Direct\_Specular** 
+
+**ALU**指令数：
+
+**Sample**次数：
 
 ### 超高配
 
@@ -36,7 +50,11 @@ instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + al
 
 特性:
 
-instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest + alphaBlend + normalMap + **occlusionMap + planer\_reflection** 
+instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest + alphaBlend + normalMap  + occlusionMap ****+ Direct\_Specular + CorrectPlaner\_reflection **+  planer\_reflection + DIRLIGHTMAP\_COMBINED** 
+
+**ALU**指令数：
+
+**Sample**次数：
 
 ### PBR中低配美术流程转换
 
