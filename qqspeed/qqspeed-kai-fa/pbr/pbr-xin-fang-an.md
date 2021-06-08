@@ -74,7 +74,7 @@ instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest
 
 1 lightmap\(\_final文件\) _+ shadowMask\(\_mask文件\) -&gt; LightMapShadowMask\(_\_LS文件\) （bakery完成后自动合并图，降低贴图数量为1\)\)
 
-2 **Normal贴图** + MRA 贴图 -&gt; NMR\(贴图） + occlusion 贴图\(根据原来MRA中a分量的值， 判断是否生成，理论上较少，降低贴图数量为0.8\),
+2 **Normal贴图** + MRA 贴图 -&gt; NMR\(贴图） + occlusion 贴图\(根据原来MRA中a分量的值， 判断是否生成，就是说绝大部分不需要occlusionMap，降低贴图数量为0.8\),
 
 3 优化PBR模型
 
