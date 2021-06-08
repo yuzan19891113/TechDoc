@@ -2,11 +2,9 @@
 
 PBR 4档配置
 
-超高配，高配，中配shader入口统一为vert_standard, frag\_standard,_
+shader入口统一为vert_standard, frag\_standard, 模型统一为BRDF\__
 
 _通过配置不同的shader feature来控制不同质量等级。_
-
-低配为vert\_low, frag\_low, 尽量精简算法与shader指令数_。_
 
 \_\_[_https://www.zhihu.com/question/25421190_](https://www.zhihu.com/question/25421190)\_\_
 
@@ -20,6 +18,10 @@ instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + reflection
 | :--- | :--- | :--- | :--- |
 | **PBR\_OPTIMIZE** |  |  |  |
 | **PBR\_Current** |  |  |  |
+
+#### 真机对比
+
+
 
 ### 中配
 
@@ -36,6 +38,8 @@ instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + reflection
 | **PBR\_OPTIMIZE** |  |  |  |
 | **PBR\_Current** |  |  |  |
 
+#### 真机对比
+
 ### 高配
 
 模型： PBR\_Standard
@@ -49,6 +53,8 @@ instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + al
 | **PBR\_OPTIMIZE** |  |  |  |
 | **PBR\_Current** |  |  |  |
 
+#### 真机对比
+
 ### 超高配
 
 模型： PBR\_Standard
@@ -61,6 +67,8 @@ instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest
 | :--- | :--- | :--- | :--- |
 | **PBR\_OPTIMIZE** |  |  |  |
 | **PBR\_Current** |  |  |  |
+
+#### 真机对比
 
 ### PBR中低配美术流程转换
 
