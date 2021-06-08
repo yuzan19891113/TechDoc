@@ -64,6 +64,8 @@ instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest
 
 3 优化PBR模型
 
+4 减少的宏的数量
+
 
 
 
