@@ -8,15 +8,18 @@ _通过配置不同的shader feature来控制不同质量等级。_
 
 低配为vert\_low, frag\_low, 尽量精简算法与shader指令数_。_
 
+\_\_[_https://www.zhihu.com/question/25421190_](https://www.zhihu.com/question/25421190)\_\_
+
 ### 低配：
 
 模型： PBR\_Standard
 
 instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + reflectionProbe
 
-**ALU**指令数：
-
-**Sample**次数：
+|  | **ALU**指令数： | **Register**数量： | **Sample**次数： |
+| :--- | :--- | :--- | :--- |
+| **PBR\_OPTIMIZE** |  |  |  |
+| **PBR\_Current** |  |  |  |
 
 ### 中配
 
@@ -28,9 +31,10 @@ instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + reflection
 
 **+ CorrectPlaner\_reflection**
 
-**ALU**指令数：
-
-**Sample**次数：
+|  | **ALU**指令数： | **Register**数量： | **Sample**次数： |
+| :--- | :--- | :--- | :--- |
+| **PBR\_OPTIMIZE** |  |  |  |
+| **PBR\_Current** |  |  |  |
 
 ### 高配
 
@@ -38,11 +42,12 @@ instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + reflection
 
 特性:
 
-instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + alphaBlend  + reflectionProbe + normalMap + CorrectPlaner\_reflection **+ occlusionMap + Direct\_Specular** 
+instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + alphaBlend  + reflectionProbe + normalMap + CorrectPlaner\_reflection **+ occlusionMap + Direct\_Specular\(大幅增加指令数\)** 
 
-**ALU**指令数：
-
-**Sample**次数：
+|  | **ALU**指令数： | **Register**数量： | **Sample**次数： |
+| :--- | :--- | :--- | :--- |
+| **PBR\_OPTIMIZE** |  |  |  |
+| **PBR\_Current** |  |  |  |
 
 ### 超高配
 
@@ -50,11 +55,12 @@ instance + shadowMask + lightmap  + **DynamicShadow** + emision + alphaTest + al
 
 特性:
 
-instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest + alphaBlend + normalMap  + occlusionMap ****+ Direct\_Specular + CorrectPlaner\_reflection **+  planer\_reflection + DIRLIGHTMAP\_COMBINED** 
+instance + shadowMask + lightmap  + **3 \*3 Soft Shadow**  + emision + alphaTest + alphaBlend + normalMap  + occlusionMap ****+ Direct\_Specular + CorrectPlaner\_reflection **+  planer\_reflection + DIRLIGHTMAP\_COMBINED**
 
-**ALU**指令数：
-
-**Sample**次数：
+|  | **ALU**指令数： | **Register**数量： | **Sample**次数： |
+| :--- | :--- | :--- | :--- |
+| **PBR\_OPTIMIZE** |  |  |  |
+| **PBR\_Current** |  |  |  |
 
 ### PBR中低配美术流程转换
 
