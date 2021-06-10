@@ -77,5 +77,13 @@ surfaceReduction * gi.specular* FresnelLerpFast (specColor, grazingTerm, NV);
 
 ## PBR 优化2
 
-[http://filmicworlds.com/blog/optimizing-ggx-shaders-with-dotlh/](http://filmicworlds.com/blog/optimizing-ggx-shaders-with-dotlh/)
+{% embed url="http://filmicworlds.com/blog/optimizing-ggx-shaders-with-dotlh/" %}
+
+
+
+**菲涅尔系数**
+
+接下来看菲涅尔函数，我们知道当光垂直射向表面时，折射光线最多，反射光线最少，假设此时的菲涅尔系数是F0，那么在给定任意角度的时候，可以用下面一个公式来近似的表示这个系数
+
+![](http://avocado.oa.com/fconv/files/201806/21f77d138a89f33621ce4e3f430f8659.files/doc_image_39_w252_h42.jpg)
 
