@@ -2,7 +2,7 @@
 
 #### 加载
 
-PresentationAvatarDtaPart:LoadAvatarPart
+PresentationAvatarDataPart:LoadAvatarPart
 
 Pet:HandleInitSync
 
