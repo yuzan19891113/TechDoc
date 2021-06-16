@@ -1,14 +1,9 @@
 # XLua热更步骤
 
-1. 打开LuaPefect\(nssclient\_preview/nssunityproj/luaperfect.exe
-2. 去掉asset目录
-3.  加上luascript目录
-4. 修改lua_globalmain.lua 与lua_\_logical.lua
-5. 回到unity编辑器，XLua-generate code 去compile code
-6. inject to editor
-7. 调试，运行游戏，查看log，是否有error, lua（解释语言\),需要运行时才能知道错误
-8. 如果有错误，不关游戏，直接修改lua， generate code -&gt;重载所有热更新脚本
-9. 提交lua,启动蓝盾构建lua bytes单
-10. 更新热更的excel 任务单
-11.  通知服务器更新对应的xlua热更bytes
+1. 打开luascript目录
+2. 修改lua_globalmain.lua 与lua_\_logical.lua
+3. 对于安卓手机，直接
+4. 提交lua,启动蓝盾构建lua bytes单
+5. 更新热更的excel 任务单
+6.  通知服务器更新对应的xlua热更bytes
 
