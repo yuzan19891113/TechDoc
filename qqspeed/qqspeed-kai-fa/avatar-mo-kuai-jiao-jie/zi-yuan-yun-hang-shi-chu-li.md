@@ -16,6 +16,18 @@ PresentationSuspension:Init
 
 尾挂会在展示宠物后，变身为尾挂
 
+人物车内车外处理：
+
+setIsOutOfCar,  
+
+UpdateShrinkBottom\(PresentationAvatar avatar\)\(车内收缩下半身\)
+
+单局内合并DC
+
+FirePerformanceCombine
+
+combineRender会根据avatarpart是否visible合并mesh
+
 #### 卸载
 
 PresentationAvatarDataParts:ClearParts
