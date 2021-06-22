@@ -55,6 +55,7 @@ new trace capture可以抓取一段时间内的调用信息，先选择包，再
 a.     选择要截取的包名，然后在要截取的时机点Take Snapshot
 
 * 双击点击查看pixel history，找到对应的draw call ，分析shader, texture , vb, ib ,cb
+* 双击drawcall可以只draw到当前drawcall
 
 ![](http://tapd.oa.com/tfl/captures/2018-10/tapd_10124081_base64_1540286519_69.png)
 
@@ -71,6 +72,8 @@ a.     选择要截取的包名，然后在要截取的时机点Take Snapshot
 ![](../.gitbook/assets/image%20%28188%29.png)
 
 如果只有glactivetexture没有glbindTexture,那是opengl认为不需要切换贴图，可以查看以前的DC对应slot查看slot绑定的贴图
+
+可以查看gpu实时的shader代码，比较与本地差异
 
 
 

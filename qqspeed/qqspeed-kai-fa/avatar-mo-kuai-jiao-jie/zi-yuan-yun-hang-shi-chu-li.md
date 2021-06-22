@@ -16,18 +16,6 @@ PresentationSuspension:Init
 
 尾挂会在展示宠物后，变身为尾挂
 
-人物车内车外处理：
-
-setIsOutOfCar,  
-
-UpdateShrinkBottom\(PresentationAvatar avatar\)\(车内收缩下半身\)
-
-单局内合并DC
-
-FirePerformanceCombine
-
-combineRender会根据avatarpart是否visible合并mesh
-
 #### 卸载
 
 PresentationAvatarDataParts:ClearParts
@@ -51,6 +39,4 @@ Avatar,宝宝，检查骨头，检查TPose,资源不存在\(加载默认\)
 #### 大厅魔法套装
 
 会替换动画
-
-如果材质运行是换了shader，会导致材质上的keyword对shader收集不成功，因为运行时的这个shader时不知道材质上有这个变体的
 
