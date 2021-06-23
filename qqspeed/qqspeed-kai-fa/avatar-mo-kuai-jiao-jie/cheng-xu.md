@@ -66,7 +66,7 @@ AvatarAnimator, MotorAvatarAnimator,skateAvatarAnimator
 
 ![&#x52A0;&#x8F7D;&#x5806;&#x6808;](../../../.gitbook/assets/image%20%28190%29.png)
 
-Avatar切换渲染状态，
+Avatar切换渲染状态，shadow 与noshadow
 
 ![](../../../.gitbook/assets/image%20%28192%29.png)
 
