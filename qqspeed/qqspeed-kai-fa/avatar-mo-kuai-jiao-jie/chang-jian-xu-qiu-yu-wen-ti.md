@@ -30,9 +30,13 @@ AB包问题，因为索引的是公共贴图，套装AB与公共贴图是不同�
 
 最简单的是修改套装prefab，触发套装ab构建就行。
 
+### Shader变体收集失败问题
 
+Shader 变体没有生效可以通过snapdragon profier分析得到
 
+如果材质运行是换了shader，会导致材质上的keyword对shader收集不成功，因为运行时的这个shader时不知道材质上有这个变体的
 
+如果Shader在手机端有兼容性，如果安卓也有问题，可以通过安卓本地出包解决
 
 
 
