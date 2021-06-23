@@ -20,27 +20,23 @@ PresentationSuspension:Init
 
 Iavatar:SetIsOutOfCar
 
-PresentationAvatarAnim:UpdateShrinkBottom：处理骨骼和可见性
+PresentationAvatarAnim:UpdateShrinkBottom：车内收缩下半身，处理骨骼和可见性
 
 坐姿隐藏mesh：ShouldLoadExpandMesh
+
+#### 单局内合并DC
+
+FirePerformanceCombine
+
+combineRender会根据avatarpart是否visible合并mesh
+
+combineMesh-&gt;combineTextures-&gt;compressTexture
 
 套装，宝宝加载每一个Part后会骨架合并，重新蒙皮，单局内还会进一步合并模型和纹理
 
 宠物是一个整体，没有Part
 
 尾挂会在展示宠物后，变身为尾挂
-
-人物车内车外处理：
-
-
-
-UpdateShrinkBottom\(PresentationAvatar avatar\)\(车内收缩下半身\)
-
-单局内合并DC
-
-FirePerformanceCombine
-
-combineRender会根据avatarpart是否visible合并mesh
 
 #### 卸载
 

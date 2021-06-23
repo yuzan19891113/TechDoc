@@ -14,6 +14,12 @@ UIPlayer:InitAvatar
 
 PresetnationMgr:OnPresentationEvent\(处理AvatarInit等特效事件\)
 
+#### 局内
+
+Actor:CreateInGameAvatar：玩家，远程玩家会合并DC
+
+Actor:CreateInGameShowAvatar 开场舞玩家
+
 ### Presentation\(渲染对象\):
 
 #### 继承对象
