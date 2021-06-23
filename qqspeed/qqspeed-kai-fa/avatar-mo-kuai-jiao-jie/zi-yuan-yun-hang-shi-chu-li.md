@@ -1,36 +1,14 @@
 # 资源运行时处理
 
-## 加载
+#### 加载
 
-### Avatar
-
-PresentationAvatarDataPart:LoadAvatarPart:加载单个部件
-
-PresnetaionAvatarLoad:DoCombineAvatarParts:合并部件
-
-### Pet
+PresentationAvatarDataPart:LoadAvatarPart
 
 Pet:HandleInitSync
 
-### PresentationSuspension
-
 PresentationSuspension:Init
 
-### 人物上车下车处理
-
-Iavatar:SetIsOutOfCar
-
-PresentationAvatarAnim:UpdateShrinkBottom：车内收缩下半身，处理骨骼和可见性
-
-坐姿隐藏mesh：ShouldLoadExpandMesh
-
-#### 单局内合并DC
-
-FirePerformanceCombine
-
-combineRender会根据avatarpart是否visible合并mesh
-
-combineMesh-&gt;combineTextures-&gt;compressTexture
+套装单局坐姿隐藏：ShouldLoadExpandMesh
 
 套装，宝宝加载每一个Part后会骨架合并，重新蒙皮，单局内还会进一步合并模型和纹理
 
@@ -61,6 +39,4 @@ Avatar,宝宝，检查骨头，检查TPose,资源不存在\(加载默认\)
 #### 大厅魔法套装
 
 会替换动画
-
-如果材质运行是换了shader，会导致材质上的keyword对shader收集不成功，因为运行时的这个shader时不知道材质上有这个变体的
 

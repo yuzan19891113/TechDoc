@@ -4,12 +4,12 @@
 
 ### PresentationMgr（渲染管理器\):
 
+AvatarInitConfig Avatar:Init时的avatar质量配置
+
 #### 局外:
 
-UIPlayer:InitAvatar
+UIPlayer:CreatePresentations\_Avatar
 
-* PresentationMgr:CreateAvatar\(创建avatar\)
-* Avatar.Init\(\)
 * Avatar:ApplyDressUpInfo\(\) ：组装avatar part
 
 PresetnationMgr:OnPresentationEvent\(处理AvatarInit等特效事件\)
