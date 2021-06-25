@@ -10,7 +10,7 @@
 
 #### 混合需要线性
 
-![Top: Blending in linear color space produces expected blending results&amp;lt;br/&amp;gt;Bottom: Blending in gamma color space results in over-saturated and overly-bright blends](https://docs.unity3d.com/uploads/Main/LinearRendering-BlendingLinearGamma.jpg)up: gamma space blend. Right: linear space blend
+![Top: Blending in linear color space produces expected blending results&amp;lt;br/&amp;gt;Bottom: Blending in gamma color space results in over-saturated and overly-bright blends](https://docs.unity3d.com/uploads/Main/LinearRendering-BlendingLinearGamma.jpg)up: Linear space blend. Right: Gamma space blend
 
 #### 后期算法需要线性
 
@@ -27,11 +27,15 @@ LinearSpace时，除非对指定图片选择了bypass sRGB，否则所有纹理�
 
 第二张图：shader计算结果到写入color buffer。 所有计算应该发生在linear space，
 
-shader 线性\(没法兼容后期,只解决了光照线性）：计算结束后需GPU会将该像素颜色再次转换到gamma space，再写入colorbuffer
+### shader 线性\(没法兼容后期,只解决了光照线性）：
+
+计算结束后需GPU会将该像素颜色再次转换到gamma space，再写入colorbuffer
 
 ![](../.gitbook/assets/image%20%2897%29.png)
 
-全流程线性\(兼容后期）：写入colorbuffer仍旧为线性，然后通过后期处理，将经过混合和后期处理后的colorbuffer转换为gamma color buffer
+### 全流程线性\(兼容后期\)
+
+写入colorbuffer仍旧为线性，然后通过后期处理，将经过混合和后期处理后的colorbuffer转换为gamma color buffer
 
 ![](../.gitbook/assets/image%20%28102%29.png)
 
