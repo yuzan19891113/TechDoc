@@ -22,9 +22,15 @@ NMR Encoding:
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MMLAW2DZhkE5K1kqqvy%2F-MVFWcz7eQimidSk2rgv%2F-MVFgSHjZvgHmV-FRa8w%2Fimage.png?alt=media&token=e9efb846-3c1e-4485-86a1-4df8e41d7065)
 
+l
+
 NMR format:
 
 RGBA ASTC 4X4 能确保法线贴图的准确性
+
+**提高法线精度**
+
+octahedron PackNormal
 
 Decoding:
 
@@ -121,17 +127,21 @@ instance + shadowMask + lightmap + emision + alphaTest + alphaBlend + reflection
 
 11城
 
-![](https://iwiki.woa.com/download/attachments/799924214/image2021-6-24_16-24-29.png?version=1&modificationDate=1624523070000&api=v2)
+![](https://iwiki.woa.com/download/attachments/799924214/image2021-6-25_11-21-54.png?version=1&modificationDate=1624591314000&api=v2)
 
 AlphaCity
 
-![](https://iwiki.woa.com/download/attachments/799924214/image2021-6-24_15-30-9.png?version=1&modificationDate=1624519810000&api=v2)
+![](https://iwiki.woa.com/download/attachments/799924214/image2021-6-25_11-22-25.png?version=1&modificationDate=1624591346000&api=v2)
 
 ‌
 
 ### 高配
 
+‌
+
 模型： PBR\_Standard
+
+‌
 
 **Shader Feature:**
 
@@ -144,6 +154,8 @@ instance + shadowMask + lightmap + **DynamicShadow** + emision + alphaTest + alp
 | **PBR\_OPTIMIZE** |  |  |  |
 | **PBR\_Current** |  |  |  |
 
+‌
+
 **真机性能对比：**
 
 |  | **GPU时间** |
@@ -155,7 +167,7 @@ instance + shadowMask + lightmap + **DynamicShadow** + emision + alphaTest + alp
 
 **11城**
 
-‌![](https://iwiki.woa.com/download/attachments/799924214/image2021-6-24_16-26-24.png?version=1&modificationDate=1624523184444&api=v2)
+‌![](https://iwiki.woa.com/download/attachments/799924214/image2021-6-24_16-26-24.png?version=1&modificationDate=1624523184000&api=v2)
 
 **AlphaCity**
 
@@ -218,16 +230,4 @@ instance + shadowMask + lightmap + **3 \*3 Soft Shadow** + emision + alphaTest +
 ‌
 
 4 减少的宏的数量
-
-## 资源变化
-
- V26地图: 新地图新资源, 每份光图少了shadowMask贴图，每个模型如果不用occlusion则少一张贴图
-
-老地图中的PBR地图:需要删除贴图，增加贴图
-
-
-
-
-
-
 
