@@ -34,7 +34,10 @@ waitforpresent :gpu 等待时间， DC数， camera.onrender
 
 1.  overdarw,
 2.  shader负载度（填充率，fillrate\)
-3.  staticbatch会号内存，dynamic batche会耗cpu（动态顶点buffer\)
+3. 绘制顶点数，绘制像素数
+4.  staticbatch会号内存，dynamic batche会耗cpu（动态顶点buffer\)
+
+
 
 3 内存优化
 
