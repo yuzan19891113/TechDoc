@@ -27,6 +27,7 @@
   * [环境交互](tong-yong-xuan-ran-ji-shu/huan-jing-jiao-hu/README.md)
     * [植被的交互调研](tong-yong-xuan-ran-ji-shu/huan-jing-jiao-hu/zhi-bei-de-jiao-hu-tiao-yan.md)
 * [游戏通用相关](you-xi-luo-ji-xiang-guan/README.md)
+  * [内存问题](you-xi-luo-ji-xiang-guan/nei-cun-wen-ti.md)
   * [编码](you-xi-luo-ji-xiang-guan/bian-ma.md)
   * [动画回放工具](you-xi-luo-ji-xiang-guan/dong-hua-hui-fang-gong-ju.md)
   * [镜头交互动画](you-xi-luo-ji-xiang-guan/jing-tou-jiao-hu-dong-hua.md)
