@@ -7,6 +7,7 @@
   * [C\#](bian-cheng-yu-yan/c/README.md)
     * [for iterate delete](bian-cheng-yu-yan/c/for-iterate-delete.md)
 * [开发及调试工具](kai-fa-ji-tiao-shi-gong-ju/README.md)
+  * [build android and ios app](kai-fa-ji-tiao-shi-gong-ju/build-android-and-ios-app.md)
   * [XCode Instructment](kai-fa-ji-tiao-shi-gong-ju/xcode-instructment.md)
   * [Memory Profiler](kai-fa-ji-tiao-shi-gong-ju/memory-profiler.md)
   * [PerfDog](kai-fa-ji-tiao-shi-gong-ju/perfdog.md)
