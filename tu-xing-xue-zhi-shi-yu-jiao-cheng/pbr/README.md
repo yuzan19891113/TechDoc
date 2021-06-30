@@ -14,7 +14,7 @@
 
 4双向反射分布函数BRDF（反射方程 反射率函数fr，入射，反射能量比例, 描述材质属性\) ,
 
-5 Cook-Torrance BRDF 微面元 D\(法线分布函数NDF\), F\(fresnel效应，Schlick’近似\), G\(几何遮蔽效应\)
+5 Cook-Torrance BRDF 微面元 D\(法线分布函数NDF\), F\(fresnel效应，Schlick’近似\), G\(几何遮蔽效应,Smith G近似\)
 
 ![](../../.gitbook/assets/image%20%28200%29.png)
 
