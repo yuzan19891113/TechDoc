@@ -17,6 +17,7 @@
 * [图形学知识学习](tu-xing-xue-zhi-shi-yu-jiao-cheng/README.md)
   * [PBR](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/README.md)
     * [Direct Specular](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/direct-specular.md)
+    * [Direct Diffuse](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/direct-diffuse.md)
     * [PBR 材质分量](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/untitled.md)
     * [Indirect Specular](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/indirect-specular.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
