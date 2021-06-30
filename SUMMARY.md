@@ -18,7 +18,7 @@
     * [Snapdragon Profiler](kai-fa-ji-tiao-shi-gong-ju/tiao-shi-yu-profiler-gong-ju/snapdragon-profiler.md)
     * [XCode Instructment](kai-fa-ji-tiao-shi-gong-ju/tiao-shi-yu-profiler-gong-ju/xcode-instructment.md)
   * [移动平台通用优化](kai-fa-ji-tiao-shi-gong-ju/yi-dong-ping-tai-you-hua.md)
-* [图形学知识学习](tu-xing-xue-zhi-shi-yu-jiao-cheng.md)
+* [基础理论与数学](tu-xing-xue-zhi-shi-yu-jiao-cheng.md)
 * [通用游戏技术](tong-yong-xuan-ran-ji-shu/README.md)
   * [PBR](tong-yong-xuan-ran-ji-shu/pbr/README.md)
     * [PBR 材质分量](tong-yong-xuan-ran-ji-shu/pbr/untitled.md)
