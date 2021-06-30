@@ -33,7 +33,7 @@ cmd.ClearRenderTarget(true, false, Color.green);
 context.ExecuteCommandBuffer(cmd);
 ```
 
-![](../../../.gitbook/assets/image%20%28200%29.png)
+![](../../../.gitbook/assets/image%20%28201%29.png)
 
 _一个简单渲染管线示例_ 
 
@@ -235,7 +235,7 @@ context.DrawRenderers(cullResults.visibleRenderers,   ref drs, opaqueRange);
 context.Submit();
 ```
 
-![](../../../.gitbook/assets/image%20%28201%29.png)
+![](../../../.gitbook/assets/image%20%28202%29.png)
 
 ```text
 using System;    
