@@ -18,7 +18,7 @@
 
 ![](../../.gitbook/assets/image%20%28200%29.png)
 
-6 预计算BRDF（预过滤环境贴图\)
+6 预计算BRDF（预过滤环境贴图\) = 蒙特卡洛积分 + GGX重要性采样\(不同粗糙度\)= 不同粗糙度的mipmap level
 
 ![&#x524D;&#x534A;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x9884;&#x8BA1;&#x7B97;](../../.gitbook/assets/image%20%28203%29.png)
 
