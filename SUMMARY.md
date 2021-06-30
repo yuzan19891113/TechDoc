@@ -16,6 +16,7 @@
   * [RenderDoc](kai-fa-ji-tiao-shi-gong-ju/renderdoc-snapdragon-profiler-lian-jie-android.md)
 * [图形学知识学习](tu-xing-xue-zhi-shi-yu-jiao-cheng.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
+  * [毛发渲染](tong-yong-xuan-ran-ji-shu/mao-fa-xuan-ran.md)
   * [布料渲染](tong-yong-xuan-ran-ji-shu/bu-liao-xuan-ran.md)
   * [皮肤渲染](tong-yong-xuan-ran-ji-shu/pi-fu-xuan-ran.md)
   * [眼球渲染](tong-yong-xuan-ran-ji-shu/yan-qiu-xuan-ran.md)
