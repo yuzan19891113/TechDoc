@@ -22,7 +22,7 @@
 
 ![&#x524D;&#x534A;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x9884;&#x8BA1;&#x7B97;](../../.gitbook/assets/image%20%28204%29.png)
 
-7 BRDF积分贴图
+7 BRDF积分贴图\(LUT\)
 
 8 最常用BRDF模型 Lambert Diffuse,  L \* N， GGX Specular\(一种特殊的DFG函数,表现高光光晕更好\)
 
