@@ -32,6 +32,7 @@
     * [OIT渲染](tong-yong-xuan-ran-ji-shu/avatar-xiang-guan-xuan-ran-ji-shu/oit-xuan-ran.md)
     * [皮肤渲染](tong-yong-xuan-ran-ji-shu/avatar-xiang-guan-xuan-ran-ji-shu/pi-fu-xuan-ran.md)
     * [毛发渲染](tong-yong-xuan-ran-ji-shu/avatar-xiang-guan-xuan-ran-ji-shu/mao-fa-xuan-ran.md)
+  * [场景相关](tong-yong-xuan-ran-ji-shu/chang-jing-xiang-guan.md)
   * [OpenGL 3.0新特性](tong-yong-xuan-ran-ji-shu/opengl-3.0-xin-te-xing.md)
   * [法线矩阵变换](tong-yong-xuan-ran-ji-shu/fa-xian-ju-zhen-bian-huan.md)
   * [Z Fighting](tong-yong-xuan-ran-ji-shu/z-fighting.md)
