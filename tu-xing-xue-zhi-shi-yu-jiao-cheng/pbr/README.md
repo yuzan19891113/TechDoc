@@ -18,11 +18,11 @@
 
 ![](../../.gitbook/assets/image%20%28200%29.png)
 
-6 预计算BRDF（预过滤环境贴图\) = 蒙特卡洛积分 + GGX重要性采样\(不同粗糙度\)= 不同粗糙度的mipmap level
+6 Environment BRDF= Prefilter EnvironmentMap（预过滤环境贴图\) + BRDF积分贴图\(LUT\)
 
-![&#x524D;&#x534A;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x9884;&#x8BA1;&#x7B97;](../../.gitbook/assets/image%20%28204%29.png)
+蒙特卡洛积分 + GGX重要性采样\(不同粗糙度\)= 不同粗糙度的mipmap level
 
-7 BRDF积分贴图\(LUT\) vs 函数近似
+![&#x524D;&#x534A;&#x90E8;&#x5206;Prefilter EnvironmentMap,&#x540E;&#x534A;&#x90E8;&#x5206;BRDF&#x79EF;&#x5206;&#x8D34;&#x56FE;\(LUT\)](../../.gitbook/assets/image%20%28204%29.png)
 
 8 最常用BRDF模型 Lambert Diffuse,  L \* N / PI， GGX Specular\(一种特殊的DFG函数,表现高光光晕更好\)
 
