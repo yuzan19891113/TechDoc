@@ -6,5 +6,5 @@
 
 ### **Kajiya-Kay毛发渲染模型**
 
-pivot-based hair simulation
+### pivot-based hair simulation
 
