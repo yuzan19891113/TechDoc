@@ -30,5 +30,7 @@
 
 7其他反射分布，折射，次表面散射
 
+[https://www.cnblogs.com/timlly/p/10631718.html](https://www.cnblogs.com/timlly/p/10631718.html)
+
 
 
