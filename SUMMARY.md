@@ -22,7 +22,7 @@
 * [基础理论与数学](tu-xing-xue-zhi-shi-yu-jiao-cheng/README.md)
   * [Lab颜色空间](tu-xing-xue-zhi-shi-yu-jiao-cheng/lab-yan-se-kong-jian.md)
   * [法线矩阵变换](tu-xing-xue-zhi-shi-yu-jiao-cheng/fa-xian-ju-zhen-bian-huan.md)
-* [通用游戏技术](tong-yong-xuan-ran-ji-shu/README.md)
+* [游戏相关技术](tong-yong-xuan-ran-ji-shu/README.md)
   * [基础概念](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/README.md)
     * [OpenGL 3.0新特性](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/opengl-3.0-xin-te-xing.md)
     * [Unity , Unreal文档](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/zong-lan.md)
