@@ -20,6 +20,7 @@
     * [Direct Specular](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/direct-specular.md)
     * [Direct Diffuse](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/direct-diffuse.md)
     * [Indirect Specular](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/indirect-specular.md)
+    * [Indirect Diffuse](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/indirect-diffuse.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
   * [毛发渲染](tong-yong-xuan-ran-ji-shu/mao-fa-xuan-ran.md)
   * [布料渲染](tong-yong-xuan-ran-ji-shu/bu-liao-xuan-ran.md)
