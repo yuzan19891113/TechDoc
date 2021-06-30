@@ -24,7 +24,7 @@
 
 7 BRDF积分贴图\(LUT\)
 
-8 最常用BRDF模型 Lambert Diffuse,  L \* N， GGX Specular\(一种特殊的DFG函数,表现高光光晕更好\)
+8 最常用BRDF模型 Lambert Diffuse,  L \* N / PI， GGX Specular\(一种特殊的DFG函数,表现高光光晕更好\)
 
 [https://www.cnblogs.com/timlly/p/10631718.html](https://www.cnblogs.com/timlly/p/10631718.html)
 
