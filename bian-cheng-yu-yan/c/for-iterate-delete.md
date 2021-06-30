@@ -2,7 +2,7 @@
 
 reverse your order
 
-```text
+```csharp
 var list = new List<int>(Enumerable.Range(1, 10));
 for (int i = list.Count - 1; i >= 0; i--)
 {
