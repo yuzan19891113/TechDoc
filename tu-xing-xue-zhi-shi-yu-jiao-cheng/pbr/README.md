@@ -18,7 +18,7 @@
 
 ![](../../.gitbook/assets/image%20%28200%29.png)
 
-6 Environment BRDF= Prefilter EnvironmentMap（预过滤环境贴图\) + BRDF积分贴图\(LUT\)
+6 Environment BRDF= Prefilter EnvironmentMap（预过滤环境贴图\) + BRDF积分\(LUT or simpler function \)
 
 蒙特卡洛积分 + GGX重要性采样\(不同粗糙度\)= 不同粗糙度的mipmap level
 
