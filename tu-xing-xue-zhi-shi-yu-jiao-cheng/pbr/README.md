@@ -22,13 +22,7 @@
 
 ![&#x524D;&#x534A;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x9884;&#x8BA1;&#x7B97;](../../.gitbook/assets/image%20%28204%29.png)
 
-
-
-5Lambert Diffuse,  L \* N
-
-6 GGX Specular,
-
-7其他反射分布，折射，次表面散射
+7 最常用BRDF模型 Lambert Diffuse,  L \* N， GGX Specular,
 
 [https://www.cnblogs.com/timlly/p/10631718.html](https://www.cnblogs.com/timlly/p/10631718.html)
 
