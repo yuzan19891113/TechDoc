@@ -8,7 +8,7 @@ scriptable render pipeline:可编程渲染管线
 
 当使用SRP时，你需要定一个类，用于控制渲染；这就是你将要创建的渲染管线。入口点是一个对“Render”函数的调用，它需要两个参数，渲染上下文以及一个需要渲染的摄像机列表。
 
-```text
+```csharp
 public class BasicPipeInstance : RenderPipeline
 {
    public override void Render(ScriptableRenderContext context, Camera[] cameras){}
@@ -23,7 +23,7 @@ SRP渲染采用的是延迟执行的方式。用户要设置好需要执行的�
 
 举例来说，使用一个由渲染上下文执行的命令缓冲区清除一个渲染目标：
 
-```text
+```csharp
 //新建一个命令缓冲区
 //用于向渲染上下文发送命令
 var cmd = new CommandBuffer();
@@ -39,7 +39,7 @@ _一个简单渲染管线示例_
 
 下面有一个完整的渲染管线代码，仅仅用于清除屏幕。
 
-```text
+```csharp
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Experimental.Rendering;
@@ -122,7 +122,7 @@ public class BasicPipeInstance : RenderPipeline
 
 在SRP中，你通常会选择某个摄像机的视角执行对象渲染。这与Unity内置渲染所使用的摄像机对象是相同的。SRP提供了一系列API用于剔除操作。整个流程通常看起来像下面这样：
 
-```text
+```csharp
 //新建一个结构体，用于存储剔除参数
 ScriptableCullingParameters   cullingParams; 
 
@@ -170,7 +170,7 @@ CullResults.Cull(ref   cullingParams, context, ref cullResults);
 
 除了区域之外，标准的Unity图层也可以被用于过滤。这为通过SRP绘制对象时提供了额外的过滤能力。
 
-```text
+```csharp
 //获取不透明渲染过滤器设置
 
 var   opaqueRange = new FilterRenderersSettings();
@@ -196,7 +196,7 @@ opaqueRange.layerMask   = ~0;
 * 渲染标志 —— 用于进行批处理的算法，实例化 vs 非实例化
 * 着色器通道 —— 当前绘制调用应当使用哪个着色器通道   
 
-```text
+```csharp
  //新建绘制渲染设置
 //注意它需要输入一个着色器通道名
 
@@ -225,7 +225,7 @@ drs.sorting.flags   = SortFlags.CommonOpaque;
 
 要发送一个绘制调用，需要将我们已有的东西进行合并。
 
-```text
+```csharp
 //绘制所有渲染器
 
 context.DrawRenderers(cullResults.visibleRenderers,   ref drs, opaqueRange);
@@ -237,7 +237,7 @@ context.Submit();
 
 ![](../../../.gitbook/assets/image%20%28203%29.png)
 
-```text
+```csharp
 using System;    
 
 using UnityEngine;    
