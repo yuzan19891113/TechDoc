@@ -16,7 +16,7 @@
   * [RenderDoc](kai-fa-ji-tiao-shi-gong-ju/renderdoc-snapdragon-profiler-lian-jie-android.md)
 * [图形学知识学习](tu-xing-xue-zhi-shi-yu-jiao-cheng/README.md)
   * [PBR](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/README.md)
-    * [Indirect Specular](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/indirect-specular.md)
+    * [Indirect Specular = Environment BRDF](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/indirect-specular.md)
     * [PBR 材质分量](tu-xing-xue-zhi-shi-yu-jiao-cheng/pbr/untitled.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
   * [毛发渲染](tong-yong-xuan-ran-ji-shu/mao-fa-xuan-ran.md)
