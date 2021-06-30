@@ -15,6 +15,7 @@
   * [Snapdragon Profiler](kai-fa-ji-tiao-shi-gong-ju/snapdragon-profiler.md)
   * [RenderDoc](kai-fa-ji-tiao-shi-gong-ju/renderdoc-snapdragon-profiler-lian-jie-android.md)
 * [通用渲染技术](tong-yong-xuan-ran-ji-shu/README.md)
+  * [OpenGL 3.0新特性](tong-yong-xuan-ran-ji-shu/opengl-3.0-xin-te-xing.md)
   * [预过滤环境贴图](tong-yong-xuan-ran-ji-shu/yu-guo-lv-huan-jing-tie-tu.md)
   * [法线矩阵变换](tong-yong-xuan-ran-ji-shu/fa-xian-ju-zhen-bian-huan.md)
   * [Z Fighting](tong-yong-xuan-ran-ji-shu/z-fighting.md)
