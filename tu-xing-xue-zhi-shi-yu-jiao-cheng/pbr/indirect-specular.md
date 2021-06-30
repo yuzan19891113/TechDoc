@@ -1,4 +1,4 @@
-# Indirect Specular = Environment BRDF
+# Indirect Specular
 
 ## Equation
 
