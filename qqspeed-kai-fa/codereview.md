@@ -12,7 +12,7 @@
 
 直接使用数据库搞定，既cache每个特效数据状态，
 
-```text
+```csharp
 public class FxDataCache : ScriptableObject
 {
 
@@ -23,7 +23,7 @@ public class FxDataCache : ScriptableObject
 }
 ```
 
-```text
+```csharp
 public enum FXState
 {
     FX_NotCollected,//仅仅记录，没有收集
@@ -37,7 +37,7 @@ public enum FXState
 
 也cache每个数据的分析结果FXResult（算法不变）,
 
-```text
+```csharp
 
 [System.Serializable]
 public class FXInfo
