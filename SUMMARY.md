@@ -23,6 +23,7 @@
   * [Lab颜色空间](tu-xing-xue-zhi-shi-yu-jiao-cheng/lab-yan-se-kong-jian.md)
   * [法线矩阵变换](tu-xing-xue-zhi-shi-yu-jiao-cheng/fa-xian-ju-zhen-bian-huan.md)
 * [通用游戏技术](tong-yong-xuan-ran-ji-shu/README.md)
+  * [基础概念](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian.md)
   * [Unity基本知识](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/README.md)
     * [Unity 渲染顺序](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/unity-xuan-ran-shun-xu.md)
     * [BRP vs URP](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/brp-vs-urp/README.md)
