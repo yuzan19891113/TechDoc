@@ -235,7 +235,7 @@ context.DrawRenderers(cullResults.visibleRenderers,   ref drs, opaqueRange);
 context.Submit();
 ```
 
-![](../../../.gitbook/assets/image%20%28202%29.png)
+![](../../../.gitbook/assets/image%20%28203%29.png)
 
 ```text
 using System;    
