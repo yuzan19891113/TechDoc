@@ -3,6 +3,7 @@
 * [开发技术集锦](README.md)
 * [开发感悟](kai-fa-gan-wu.md)
 * [编程语言](bian-cheng-yu-yan/README.md)
+  * [C\# call c++](bian-cheng-yu-yan/c-call-c++.md)
   * [编码](bian-cheng-yu-yan/bian-ma.md)
   * [C\# Process deadlock](bian-cheng-yu-yan/c-process-deadlock.md)
   * [C\#](bian-cheng-yu-yan/c/README.md)
