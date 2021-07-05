@@ -28,7 +28,7 @@ PresentationAvatarAnim:UpdateShrinkBottom：车内收缩下半身，处理骨骼
 
 #### 单局内合并DC
 
-低配所有角色单局合并，其他配置只有AI合并
+低配所有角色单局合并，其他配置只有AI合并,合并要求材质支持
 
 FirePerformanceCombine
 
