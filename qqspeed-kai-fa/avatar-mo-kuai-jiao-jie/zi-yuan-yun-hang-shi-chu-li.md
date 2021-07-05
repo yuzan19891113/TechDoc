@@ -28,6 +28,8 @@ PresentationAvatarAnim:UpdateShrinkBottom：车内收缩下半身，处理骨骼
 
 #### 单局内合并DC
 
+低配所有角色单局合并，其他配置只有高配合并
+
 FirePerformanceCombine
 
 combineRender会根据avatarpart是否visible合并mesh
