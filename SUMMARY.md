@@ -113,7 +113,7 @@
   * [PBR](qqspeed-kai-fa/pbr/README.md)
     * [PBR新方案](qqspeed-kai-fa/pbr/pbr-xin-fang-an.md)
     * [PBR中低配](qqspeed-kai-fa/pbr/pbr-zhong-di-pei.md)
-  * [Avatar模块交接](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/README.md)
+  * [Avatar模块](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/README.md)
     * [Avatar技术实现细节](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/avatar-ji-shu-shi-xian-xi-jie/README.md)
       * [Avatar 玩法](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/avatar-ji-shu-shi-xian-xi-jie/avatar-wan-fa.md)
       * [Avatar动画](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/avatar-ji-shu-shi-xian-xi-jie/untitled.md)
