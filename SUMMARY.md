@@ -61,7 +61,7 @@
     * [AssetBundle\(AB\)](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/assetbundle-ab.md)
     * [静态合批vs 动态合批](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/jing-tai-he-pi-vs-dong-tai-he-pi.md)
     * [PVS（可烘培的遮挡裁减\)](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/zhe-dang-ti-chu-pvs.md)
-  * [Avatar相关渲染技术](tong-yong-xuan-ran-ji-shu/avatar-xiang-guan-xuan-ran-ji-shu/README.md)
+  * [Avatar相关技术](tong-yong-xuan-ran-ji-shu/avatar-xiang-guan-xuan-ran-ji-shu/README.md)
     * [眼球渲染](tong-yong-xuan-ran-ji-shu/avatar-xiang-guan-xuan-ran-ji-shu/yan-qiu-xuan-ran.md)
     * [布料渲染](tong-yong-xuan-ran-ji-shu/avatar-xiang-guan-xuan-ran-ji-shu/bu-liao-xuan-ran.md)
     * [OIT渲染](tong-yong-xuan-ran-ji-shu/avatar-xiang-guan-xuan-ran-ji-shu/oit-xuan-ran.md)
