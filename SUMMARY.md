@@ -114,6 +114,7 @@
     * [PBR新方案](qqspeed-kai-fa/pbr/pbr-xin-fang-an.md)
     * [PBR中低配](qqspeed-kai-fa/pbr/pbr-zhong-di-pei.md)
   * [Avatar模块交接](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/README.md)
+    * [Avatar技术实现细节](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/avatar-ji-shu-shi-xian-xi-jie.md)
     * [Avatar & baby & pet新规则](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/avatar-baby-pet-xin-gui-ze.md)
     * [程序设计](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/cheng-xu.md)
     * [资源结构与产出流程](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/zi-yuan-jie-gou-yu-chan-chu-liu-cheng.md)
