@@ -115,6 +115,7 @@
     * [PBR中低配](qqspeed-kai-fa/pbr/pbr-zhong-di-pei.md)
   * [Avatar模块交接](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/README.md)
     * [Avatar技术实现细节](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/avatar-ji-shu-shi-xian-xi-jie/README.md)
+      * [Avatar 玩法](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/avatar-ji-shu-shi-xian-xi-jie/avatar-wan-fa.md)
       * [Avatar动画](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/avatar-ji-shu-shi-xian-xi-jie/untitled.md)
       * [Avatar渲染](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/avatar-ji-shu-shi-xian-xi-jie/avatar-cai-zhi.md)
       * [Avatar物理](qqspeed-kai-fa/avatar-mo-kuai-jiao-jie/avatar-ji-shu-shi-xian-xi-jie/rou-ti-wu-li.md)
