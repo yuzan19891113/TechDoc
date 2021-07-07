@@ -90,6 +90,7 @@
     * [Anti\_Alising相关](tong-yong-xuan-ran-ji-shu/chang-jian-wen-ti/antialising-xiang-guan.md)
     * [Z Fighting](tong-yong-xuan-ran-ji-shu/chang-jian-wen-ti/z-fighting.md)
 * [调试与优化](kai-fa-ji-tiao-shi-gong-ju/README.md)
+  * [卡顿问题](kai-fa-ji-tiao-shi-gong-ju/ka-dun-wen-ti.md)
   * [内存问题](kai-fa-ji-tiao-shi-gong-ju/nei-cun-wen-ti.md)
   * [build android and ios app](kai-fa-ji-tiao-shi-gong-ju/build-android-and-ios-app.md)
   * [调试与Profiler 工具](kai-fa-ji-tiao-shi-gong-ju/tiao-shi-yu-profiler-gong-ju/README.md)
