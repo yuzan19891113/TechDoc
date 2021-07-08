@@ -89,6 +89,7 @@
     * [Anti\_Alising相关](tong-yong-xuan-ran-ji-shu/chang-jian-wen-ti/antialising-xiang-guan.md)
     * [Z Fighting](tong-yong-xuan-ran-ji-shu/chang-jian-wen-ti/z-fighting.md)
 * [调试与优化](kai-fa-ji-tiao-shi-gong-ju/README.md)
+  * [调试方法](kai-fa-ji-tiao-shi-gong-ju/tiao-shi-fang-fa.md)
   * [publish包查问题](kai-fa-ji-tiao-shi-gong-ju/publish-bao-cha-wen-ti.md)
   * [卡顿问题](kai-fa-ji-tiao-shi-gong-ju/ka-dun-wen-ti/README.md)
     * [安卓卡顿问题](kai-fa-ji-tiao-shi-gong-ju/ka-dun-wen-ti/an-zhuo-ka-dun-wen-ti.md)
