@@ -25,3 +25,47 @@ RenderDoc可以方便导出mesh, texture数据从而对游戏进行破解，本�
 
 ![RenderDoc](../../.gitbook/assets/image.png)
 
+
+
+### Renderdoc
+
+#### 软件介绍
+
+RenderDoc是一个基于frame-capture的图形调试器，目前可用于Vulkan、D3D11、D3D12、OpenGL以及windows7-10、Linux、Android、Stadia和任天堂交换机上的OpenGL ES开发。可集成到unity或Unreal引擎中。
+
+#### 软件安装
+
+官方下载地址：[https://renderdoc.org/](https://renderdoc.org/)
+
+#### 软件使用
+
+> 参考文档：[Renderdoc官方使用手册](https://renderdoc.org/docs/getting_started/quick_start.html)
+
+**apk准备**
+
+1. 准备好需要调试的apk
+   * Q飞-蓝盾流水线下载：[http://devops.oa.com/console/pipeline/speedmobile/pe12bc348783641c7aee6a56cd2747f72/history](http://devops.oa.com/console/pipeline/speedmobile/pe12bc348783641c7aee6a56cd2747f72/history)  
+
+     在“查看构件”中下载生成好的apk包
+2. pc端安装abd工具
+   * 下载 `\\tencent.com\tfs\跨部门项目\QQ飞车手游\构建归档\BuildTools\Windows` 文件目录下的 `android_sdk` 
+     * `adb.exe` 在 `\android_sdk\android_sdk\platform-tools` 下，需要将相应路径添加到系统变量的Path中，才可使用adb命令。
+3. 通过pc对手机进行apk包的安装
+   * win+r，输入cmd，打开“命令提示符”窗口
+   * adb devices 检查手机和电脑是否成功连接
+   * adb install -r（将apk安装包直接拖进cmd里的光标位置即可），点击回车键
+   * 在手机上点击“允许安装应用”
+
+**RenderDoc连接手机**
+
+1. 点击左下方图标，如图所示则连接成功。 ![image-20210630203647849](/tfl/pictures/202107/tapd_10124081_1625487996_53.png)
+2. 打开手机上的apk文件 ![image-20210625152918824.png](/tfl/pictures/202107/tapd_10124081_1625488055_25.png)
+3. 中间可能会有弹窗报错，此时要记得指定Android\_sdk和Java JDK的指定路径。 ![image-20210625152256238.png](/tfl/pictures/202107/tapd_10124081_1625488105_78.png)
+4. 此时还可能出现下图Warning，点击确认修复。 ![image-20210625152823426.png](/tfl/pictures/202107/tapd_10124081_1625488134_45.png)
+5. 安卓手机上会出现弹框，点击“继续安装”。
+6. 安装成功后，点击“Launch”，就可以成功连接手机。接下来就可对apk包进行截帧分析了。
+
+   ![image-20210625153539852.png](/tfl/pictures/202107/tapd_10124081_1625488229_59.png)
+
+> 如果遇到签名问题，可使用本项目中优化签名后的Renderdoc。 **使用方法：**在 `\android_sdk\android_sdk\platform-tools` 目录下创建 `KeyStore` 文件夹，并放入xxx.keystore 文件，以及存放对应密码的xxx.txt 文件。就可用指定的证书文件对apk进行签名。 如果找不到该文件夹，用户未指定签名证书的话，则会直接使用Renderdoc的自签名。
+
