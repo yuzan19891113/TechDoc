@@ -18,7 +18,9 @@ Unity2017.4.17 macOS 10.15.2 iPhone xr OS 13.3 XCode 11.2 苹果开发者账号
 
 由于unitychan crs是Unity5 的工程 ，转到2017之后需要把一些后处理脚本和shader删除掉才能兼容，导出xcode工程，注意Graphics API 要选择 Metal，编译到手机上之后就可以看到gpu相关的信息
 
-![](https://pic4.zhimg.com/80/v2-6f8ef11bf563521b8822112d841871df_hd.jpg)编译运行之后xcode显示实时profile信息
+编译运行之后xcode显示实时profile信息
+
+![](https://pic4.zhimg.com/80/v2-6f8ef11bf563521b8822112d841871df_hd.jpg)
 
 依次点击左上角的show debug navigator，FPS 就可以看到gpu的整体消耗，这里可以很方便的看到一些重要的初级信息，包括fps，每帧的cpu时间，gpu时间，当前帧的shader消耗排序。
 
@@ -26,23 +28,35 @@ Unity2017.4.17 macOS 10.15.2 iPhone xr OS 13.3 XCode 11.2 苹果开发者账号
 
 **Frame Graph**
 
-首先可以看一下整体的绘制流程和节点间的依赖关系![](https://pic1.zhimg.com/80/v2-903649d1ed6448e2ad3b9fcf8e4c5d30_hd.jpg)渲染一帧的Frame Graph
+首先可以看一下整体的绘制流程和节点间的依赖关系渲染一帧的Frame Graph
 
-包括每个相机的绘制顺序，内容，rt格式，dc数量，gpu耗时，比如场景中为实现大屏幕效果先进行的渲染。![](https://pic4.zhimg.com/80/v2-05ef3f030f47507e36454d4334d25307_hd.jpg)特写镜头相机绘制的概览，包括DC数，顶点数，RT格式，尺寸等
+![](https://pic1.zhimg.com/80/v2-903649d1ed6448e2ad3b9fcf8e4c5d30_hd.jpg)
+
+包括每个相机的绘制顺序，内容，rt格式，dc数量，gpu耗时，比如场景中为实现大屏幕效果先进行的渲染。特写镜头相机绘制的概览，包括DC数，顶点数，RT格式，尺寸等
+
+![](https://pic4.zhimg.com/80/v2-05ef3f030f47507e36454d4334d25307_hd.jpg)
 
 在左边的Draw call list 中可以选择当前场景中任何一个DC,中间绿色标出的就是当前绘制的内容，注意一下下面红框的内容，标出了vertex shader 和fragment shader 分别的耗时。
 
 ### 性能分析
 
-除了最简单总体gpu/cpu耗时，截帧之后的界面会将gpu耗时的统计展示出来，这样就可以快速定位gpu性能热点。![](https://pic4.zhimg.com/80/v2-e8749242f7dfe2a012fb0408f69bba8b_hd.jpg)每个shader的消耗统计
+除了最简单总体gpu/cpu耗时，截帧之后的界面会将gpu耗时的统计展示出来，这样就可以快速定位gpu性能热点。每个shader的消耗统计
 
-其次要看的就是整个渲染流程中每个阶段的耗时，这时候直接看左边Encounter![](https://pic3.zhimg.com/80/v2-2407ec105b5ef37cc38d1f4225d66dca_hd.jpg)Encounter中的Encode模式![](https://pic3.zhimg.com/80/v2-af5041a2190097ff4c7e7656af8d177e_hd.jpg)Encounter中的Draw模式
+![](https://pic4.zhimg.com/80/v2-e8749242f7dfe2a012fb0408f69bba8b_hd.jpg)
+
+其次要看的就是整个渲染流程中每个阶段的耗时，这时候直接看左边EncounterEncounter中的Encode模式Encounter中的Draw模式
+
+![](https://pic3.zhimg.com/80/v2-af5041a2190097ff4c7e7656af8d177e_hd.jpg)
+
+![](https://pic3.zhimg.com/80/v2-2407ec105b5ef37cc38d1f4225d66dca_hd.jpg)
 
 两种模式，Encoder模式看每个encoder的消耗，Draw模式看每个DC的消耗，可以发现，渲染小尺寸rt的话，顶点的消耗比较多，正式渲染场景的时候fragment消耗更多。
 
 再细一些，可以看到vertex shader 和fragment shader的分别耗时。
 
-performance 和pipeline statics里面还有很多有用的信息，比如shader指令数，采样数，texture cache miss 率等，对于性能分析还是很有用的。![](https://pic4.zhimg.com/80/v2-9c0636b50cb181da71b2a63e048cf15f_hd.jpg)当个DrawCall的Perfoamance统计
+performance 和pipeline statics里面还有很多有用的信息，比如shader指令数，采样数，texture cache miss 率等，对于性能分析还是很有用的。当个DrawCall的Perfoamance统计
+
+![](https://pic4.zhimg.com/80/v2-9c0636b50cb181da71b2a63e048cf15f_hd.jpg)
 
 但是如果是单个shader中需要精确定位消耗，是计算耗还是采样耗，cache不友好耗，还是贷款问题，之前是只能靠经验总结，或者“开关Test”，这样其实是非常不精确的，新版本的xcode解决了这个问题，消耗可以精确到shader中具体的每行代码！
 
