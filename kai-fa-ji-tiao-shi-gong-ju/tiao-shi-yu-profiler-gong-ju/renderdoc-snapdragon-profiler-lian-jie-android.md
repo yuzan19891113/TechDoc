@@ -2,6 +2,8 @@
 
 ## renderdoc
 
+可以调试debug, release包
+
  [https://renderdoc.org/docs/how/how\_android\_capture.html](https://renderdoc.org/docs/how/how_android_capture.html)  
 1 使用android studio下载手机对应版本的android sdk  
 2 使用android studio 下载对应的google usb driver，并手动从本地文件安装驱动  
