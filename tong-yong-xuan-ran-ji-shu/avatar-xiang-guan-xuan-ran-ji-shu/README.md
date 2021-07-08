@@ -1,2 +1,2 @@
-# Avatar相关渲染技术
+# Avatar相关技术
 
