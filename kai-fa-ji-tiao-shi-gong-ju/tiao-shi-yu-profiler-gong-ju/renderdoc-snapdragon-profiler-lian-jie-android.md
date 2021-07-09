@@ -2,7 +2,7 @@
 
 ## renderdoc
 
-可以调试debug, release包， 可以直接保存截帧文件.rdc，可以在本地使用local pc硬件replay，也可以使用remote devices\(手机\) replay
+可以调试debug, release包， 可以直接保存截帧文件.rdc，可以在本地使用local pc硬件replay，也可以使用remote devices\(手机\) replay,从而不需要每次截帧
 
  [https://renderdoc.org/docs/how/how\_android\_capture.html](https://renderdoc.org/docs/how/how_android_capture.html)  
 1 使用android studio下载手机对应版本的android sdk  
