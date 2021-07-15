@@ -4,7 +4,7 @@
 
 PresentationAvatarExpression:PlayExpression
 
-PresentationAvatarExpression:UpdateExpression
+PresentationAvatarExpression:UpdateExpressioin
 
 
 
