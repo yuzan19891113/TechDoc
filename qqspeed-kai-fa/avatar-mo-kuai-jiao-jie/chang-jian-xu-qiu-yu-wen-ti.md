@@ -40,6 +40,10 @@ Shader 变体没有生效可以通过snapdragon profier分析得到
 
 如果Shader在手机端有兼容性，如果安卓也有问题，可以通过安卓本地出包解决
 
+### 问题4 大量程序替换shader问题
+
+存在较大的兼容问题，特别是对于shader包含keyword时
+
 ## 常见的美术或者程序需求类型
 
 新shader需求

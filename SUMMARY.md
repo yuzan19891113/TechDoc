@@ -108,6 +108,7 @@
   * [UE4移动平台通用优化](kai-fa-ji-tiao-shi-gong-ju/yi-dong-ping-tai-you-hua.md)
 * [QQSpeed开发](qqspeed-kai-fa/README.md)
   * [职级晋升](qqspeed-kai-fa/zhi-ji-jin-sheng.md)
+  * [1.加日志取日志，ui界面调试开关](qqspeed-kai-fa/1.-jia-ri-zhi-qu-ri-zhi-ui-jie-mian-tiao-shi-kai-guan.md)
   * [热更工具xlua vs IFix](qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix/README.md)
     * [XLua热更步骤](qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix/xlua-re-geng-lu-cheng.md)
   * [Unity2019 外包编辑器](qqspeed-kai-fa/unity2019-wai-bao-bian-ji-qi.md)
