@@ -20,7 +20,7 @@ CombineParts：retarget sub mesh bones to skeleton bones.
 
 mPresentationAvatar.ApplyExpression\(\):触发表情动画
 
-InitMaterials：材质的处理\(包括变形与是否有阴影\)
+InitMaterials：材质的处理,shader的替换\(包括变形与是否有阴影\)
 
 CombineDrawCall：收集合并DC的数据，没有真正合并
 
