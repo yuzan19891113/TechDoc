@@ -30,6 +30,10 @@ PresentationAvatarAnim:UpdateShrinkBottom：车内收缩下半身，处理骨骼
 
 低配所有角色单局合并，其他配置只有AI合并,合并要求材质支持
 
+PresentationPartsCombiner.CombineDrawCall:加载需要合并的part，自己，观察的玩家，回放的角色脸不会合并\(需要表情\)
+
+PresentationPartsCombiner.SetupMeshRenderer:设置合并材质
+
 FirePerformanceCombine
 
 combineRender会根据avatarpart是否visible合并mesh
