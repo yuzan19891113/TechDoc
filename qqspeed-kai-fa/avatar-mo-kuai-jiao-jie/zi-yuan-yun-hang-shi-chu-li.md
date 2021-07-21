@@ -2,11 +2,27 @@
 
 ## 加载
 
-### Avatar
+### Avatar\(PresentationAvatar\)
 
-PresentationAvatarDataPart:LoadAvatarPart:加载单个部件
+#### mPresentationAvatarData:数据组件
 
-PresnetaionAvatarLoad:DoCombineAvatarParts:合并部件
+mPresentationAvatarDataPart：部件实体
+
+PresentationAvatarDataParam：部件配置参数
+
+#### PresentationAvatarDataPart:LoadAvatarPart:加载单个部件
+
+#### PresnetaionAvatarLoad:DoCombineAvatarParts:合并部件
+
+InitBonesAccordingToSex：加载男/女骨架
+
+CombineParts：retarget sub mesh bones to skeleton bones.
+
+mPresentationAvatar.ApplyExpression\(\):触发表情动画
+
+InitMaterials：材质的处理\(包括变形与是否有阴影\)
+
+CombineDrawCall：收集合并DC的数据，没有真正合并
 
 ### Pet
 
