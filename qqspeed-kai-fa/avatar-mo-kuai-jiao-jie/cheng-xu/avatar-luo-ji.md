@@ -1,4 +1,4 @@
-# 程序设计
+# Avatar逻辑
 
 ## 基本模块
 
@@ -64,17 +64,17 @@ AvatarAnimator, MotorAvatarAnimator,skateAvatarAnimator
 
 ### 等待房间加载
 
-![&#x52A0;&#x8F7D;&#x5806;&#x6808;](../../.gitbook/assets/image%20%28190%29.png)
+![&#x52A0;&#x8F7D;&#x5806;&#x6808;](../../../.gitbook/assets/image%20%28190%29.png)
 
 Avatar切换渲染状态，shadow 与noshadow
 
-![](../../.gitbook/assets/image%20%28192%29.png)
+![](../../../.gitbook/assets/image%20%28192%29.png)
 
 PresentationAvatarExpression: 2D 表情，通过贴图替换实现的
 
 表情是序列帧，每帧由Diffuse和皮肤Mask两张纹理组成， 皮肤Mask的用途是换肤色时防止眼睛变色
 
-![](../../.gitbook/assets/image%20%28194%29.png)
+![](../../../.gitbook/assets/image%20%28194%29.png)
 
 PresentationAvatar3DExpression: 捏脸
 
@@ -83,6 +83,4 @@ LOD控制: LODMgr.GetAvatarInitConfig AvatarLODController
 头发换颜色：
 
 PresentationAvatarMaterialData:TintHair
-
-
 
