@@ -12,6 +12,8 @@ PresentationAvatarDataParam：部件配置参数
 
 #### PresentationAvatarDataPart:LoadAvatarPart:加载单个部件
 
+PresentationUtils
+
 #### PresnetaionAvatarLoad:DoCombineAvatarParts:合并部件
 
 InitBonesAccordingToSex：加载男/女骨架
@@ -23,6 +25,8 @@ mPresentationAvatar.ApplyExpression\(\):触发表情动画
 InitMaterials：材质的处理,shader的替换\(包括变形与是否有阴影\)
 
 CombineDrawCall：收集合并DC的数据，没有真正合并
+
+PresentationAvatarParams.supportPart:部件相互配置隐藏，例如根据某一个头发决定是否隐藏脸
 
 ### Pet
 
