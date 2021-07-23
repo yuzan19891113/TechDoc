@@ -41,7 +41,7 @@ TempTransforms是更新的动画矩阵，bindPose是记录mesh相关的骨骼初
 ### **MeshSkinning**:DeformSkinnedMesh:
 
 {% hint style="info" %}
-真正的cpu skinning阶段\(job\)
+真正的cpu skinning阶段\(job\),发生在lateUpdate之后
 {% endhint %}
 
 ### 
