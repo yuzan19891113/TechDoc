@@ -19,6 +19,7 @@
     * [体素渲染](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/ti-su-xuan-ran.md)
     * [Mipmap](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/mipmap.md)
   * [Unity基本知识](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/README.md)
+    * [Unity 排查bug](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/unity-pai-cha-bug.md)
     * [Unity 2019 c\# call native engine c++](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/unity-2019-c-call-native-engine-c++.md)
     * [Unity 渲染顺序](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/unity-xuan-ran-shun-xu.md)
     * [BRP vs URP](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/brp-vs-urp/README.md)
