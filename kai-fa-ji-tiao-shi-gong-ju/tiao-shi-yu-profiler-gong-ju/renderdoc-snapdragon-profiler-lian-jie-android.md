@@ -53,3 +53,7 @@ RenderDoc可以方便导出mesh, texture数据从而对游戏进行破解，本�
 
 > 如果遇到签名问题，可使用本项目中优化签名后的Renderdoc。 **使用方法：**在 `\android_sdk\android_sdk\platform-tools` 目录下创建 `KeyStore` 文件夹，并放入xxx.keystore 文件，以及存放对应密码的xxx.txt 文件。就可用指定的证书文件对apk进行签名。 如果找不到该文件夹，用户未指定签名证书的话，则会直接使用Renderdoc的自签名。
 
+#### 查看constbuffer 
+
+![](../../.gitbook/assets/image%20%28219%29.png)
+
