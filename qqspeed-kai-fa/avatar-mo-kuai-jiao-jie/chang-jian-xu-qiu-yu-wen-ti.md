@@ -48,3 +48,7 @@ Shader 变体没有生效可以通过snapdragon profier分析得到
 
 新shader需求
 
+
+
+cpu,gpu,内存，带宽优化点
+
