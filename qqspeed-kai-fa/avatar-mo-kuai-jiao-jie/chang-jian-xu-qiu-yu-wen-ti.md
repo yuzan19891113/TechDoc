@@ -50,5 +50,5 @@ Shader 变体没有生效可以通过snapdragon profier分析得到
 
 
 
-cpu,gpu,内存，带宽优化点
+cpu,gpu,内存，带宽优化点，提高休闲区和单局的渲染质量和效果
 
