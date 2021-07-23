@@ -4,6 +4,8 @@
 
 [https://www.jianshu.com/p/de3a86cfb129](https://www.jianshu.com/p/de3a86cfb129)
 
+[https://zhuanlan.zhihu.com/p/49188230](https://zhuanlan.zhihu.com/p/49188230)
+
 每一个subMesh都包含若干了DynamicBone,每一个DynamicBone都包含一个骨骼链
 
 ![](../../../.gitbook/assets/image%20%28223%29.png)
