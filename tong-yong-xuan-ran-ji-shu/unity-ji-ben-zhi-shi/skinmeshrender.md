@@ -17,6 +17,15 @@ Schedule jobs to Job system
 SkinnedMeshRendererManager::CalculateSkinningMatrices
 
 ```text
+        PreparedRendererInfo& info = *m_PreparedInfos[renderer.m_Handle];
+        TransformHierarchy* hierarchy = info.hierarchy;
+```
+
+{% hint style="info" %}
+preparedRendererInfo来源于render，提供了层级的transform
+{% endhint %}
+
+```text
 Matrix4x4f* __restrict outPoses = skinnedPoses;
 for (int i = 0; i < size; ++i)
    outPoses[i] = float4x4ToMatrix4x4f(
