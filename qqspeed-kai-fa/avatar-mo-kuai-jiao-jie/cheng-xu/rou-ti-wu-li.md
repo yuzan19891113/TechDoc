@@ -2,6 +2,8 @@
 
 ## Dynamic Bone
 
+[https://www.jianshu.com/p/de3a86cfb129](https://www.jianshu.com/p/de3a86cfb129)
+
 每一个subMesh都包含若干了DynamicBone,每一个DynamicBone都包含一个骨骼链
 
 ![](../../../.gitbook/assets/image%20%28222%29.png)
