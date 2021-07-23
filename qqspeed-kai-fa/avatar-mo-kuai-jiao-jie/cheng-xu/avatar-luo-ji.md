@@ -34,9 +34,9 @@ PresentationAvatarHang,
 
 PresentationAvatarAni,
 
-PresentationAvatarBone,
+PresentationAvatarBone：性别独立的骨架
 
-PresentationAvatarExpression
+PresentationAvatarExpression：表情系统
 
 PresentationAvatarDress
 
