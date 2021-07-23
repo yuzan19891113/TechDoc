@@ -25,15 +25,23 @@ dynamicboneutility
 
 #### DynamicBoneUtility:DoJob\(run at PostLateUpdate\)
 
-ScheduleForEach: start dispatch jobs to jobsystem\(**Simulate**\)
-
 ApplyParticlesToTransforms: **FetchResults**
+
+ScheduleForEach: start dispatch jobs to jobsystem\(**start** **Simulate**\)
 
 #### DynamicBoneUtility:CustomLateUpdateAsJob
 
-create or modify DynamicBoneJobData
+create or modify DynamicBoneJobData,DynamicBoneJobData 包含collider,gravity\(**update render to dynamics**）
 
-DynamicBoneJobData 包含collider,gravity
+#### DynamicBoneUtility:UpdateDynamicBoneEachJob
+
+apply parent move offset to dynamicbones
+
+```text
+    *m_ObjectScale = Abs(m_RootTransform->GetWorldScaleLossy().x);
+    *m_ObjectMove = m_RootTransform->GetPosition() - *m_ObjectPrevPosition;
+    *m_ObjectPrevPosition = m_RootTransform->GetPosition();
+```
 
  
 
