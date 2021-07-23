@@ -1,5 +1,9 @@
 # Skinmeshrender
 
+## GPUSkinning
+
+因为移动端GPU的性能更吃紧，而CPU有更多的余力，所以skinning在手机端会放在CPU做
+
 ## CPU Skinning
 
 ### **SkinnedMeshRender:UpdateSkinnedMeshes/SkinMeshImmediate**
