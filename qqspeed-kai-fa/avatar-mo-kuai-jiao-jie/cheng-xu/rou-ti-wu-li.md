@@ -2,6 +2,10 @@
 
 ## Dynamic Bone
 
+每一个subMesh都包含若干了DynamicBone,每一个DynamicBone都包含一个骨骼链
+
+![](../../../.gitbook/assets/image%20%28219%29.png)
+
 ### Update monobehaviour
 
 ### Update As JobSystem
@@ -23,7 +27,13 @@ ScheduleForEach: start dispatch jobs to jobsystem\(**Simulate**\)
 
 ApplyParticlesToTransforms: **FetchResults**
 
+#### DynamicBoneUtility:CustomLateUpdateAsJob
 
+create or modify DynamicBoneJobData
+
+DynamicBoneJobData 包含collider,gravity
+
+ 
 
 
 
