@@ -2,11 +2,13 @@
 
 pbr中低配
 
-
+合并NMR,
 
 dynamicbone与cloth
 
 一种无锁的异步simulate dynamicbone方法
 
-simd
+simd优化
+
+[https://zhuanlan.zhihu.com/p/49188230](https://zhuanlan.zhihu.com/p/49188230)
 
