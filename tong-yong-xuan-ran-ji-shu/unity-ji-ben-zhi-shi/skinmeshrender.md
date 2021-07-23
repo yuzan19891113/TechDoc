@@ -2,7 +2,7 @@
 
 ## GPUSkinning
 
-因为移动端GPU的性能更吃紧，gpu skinning占用较多的GPU负载，而CPU有更多的余力，所以skinning在手机端会放在CPU做
+因为移动端GPU的性能更吃紧，gpu skinning占用较多的GPU负载，而CPU有更多的余力，所以skinning在手机端会放在CPU做，并且使用GPU skinning部分机型有兼容性问题
 
 ## CPU Skinning
 
