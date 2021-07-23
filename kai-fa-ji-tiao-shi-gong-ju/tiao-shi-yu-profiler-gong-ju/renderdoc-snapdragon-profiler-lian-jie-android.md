@@ -55,5 +55,5 @@ RenderDoc可以方便导出mesh, texture数据从而对游戏进行破解，本�
 
 #### 查看constbuffer 
 
-![](../../.gitbook/assets/image%20%28219%29.png)
+![](../../.gitbook/assets/image%20%28220%29.png)
 
