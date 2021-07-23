@@ -6,7 +6,7 @@
 
 每一个subMesh都包含若干了DynamicBone,每一个DynamicBone都包含一个骨骼链
 
-![](../../../.gitbook/assets/image%20%28222%29.png)
+![](../../../.gitbook/assets/image%20%28223%29.png)
 
 ### Update monobehaviour
 
@@ -35,7 +35,7 @@ create or modify DynamicBoneJobData,DynamicBoneJobData 包含collider,gravity\(*
 
 #### DynamicBoneUtility:UpdateDynamicBoneEachJob
 
-apply parent move offset to dynamicbones
+apply parent move each frame to dynamicbones
 
 ```text
     *m_ObjectScale = Abs(m_RootTransform->GetWorldScaleLossy().x);
