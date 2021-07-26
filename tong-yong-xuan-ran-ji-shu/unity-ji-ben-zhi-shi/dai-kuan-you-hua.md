@@ -8,7 +8,7 @@ Memory Bandwidth = Memory speed \* Memory Interface Width / 8
 
 [https://en.wikipedia.org/wiki/List\_of\_Qualcomm\_Snapdragon\_processors\#Snapdragon\_888\_5G\_\(2021](https://en.wikipedia.org/wiki/List_of_Qualcomm_Snapdragon_processors#Snapdragon_888_5G_%282021)\) [https://en.wikipedia.org/wiki/LPDDR](https://en.wikipedia.org/wiki/LPDDR)
 
-![&#x5404;&#x5E73;&#x53F0;&#x5E26;&#x5BBD;&#x6570;&#x636E;](../../.gitbook/assets/image%20%28224%29.png)
+![&#x5404;&#x5E73;&#x53F0;&#x5E26;&#x5BBD;&#x6570;&#x636E;](../../.gitbook/assets/image%20%28225%29.png)
 
 ## 带宽影响
 
@@ -53,6 +53,34 @@ Memory Bandwidth = Memory speed \* Memory Interface Width / 8
 * load, store \(mobile\) memoryless dontCare, clear
 
 ## 实现
+
+### 图形API底层
+
+![Load store in different API](../../.gitbook/assets/image%20%28218%29.png)
+
+loadOp:dontCare, load, clear 
+
+storeOp: dontCare, store, multisampleResolve …
+
+### Unity实现
+
+#### Unity提供的设置load, store方法 
+
+* CommandBuffer.SetRenderTarget\(…\) 
+* Graphics.SetRenderTarget\( RenderTargetSetup setup\) 
+* RenderTexture.memorylessMode
+* RenderTextureDescriptor. memorylessMode 
+* Clear\(\)
+
+#### RenderTextureMemoryless
+
+* None, 
+* Color, 
+* Depth, 
+* MSAA on-tile memory, 
+* redueces memory usage 
+
+note: can’t read or write to these render textures
 
 ## 工具
 

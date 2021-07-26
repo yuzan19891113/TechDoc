@@ -8,7 +8,7 @@
 
 每一个subMesh都包含若干了DynamicBone,每一个DynamicBone都包含一个骨骼链
 
-![](../../../.gitbook/assets/image%20%28226%29.png)
+![](../../../.gitbook/assets/image%20%28227%29.png)
 
 ### Update monobehaviour
 

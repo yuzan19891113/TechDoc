@@ -19,6 +19,7 @@
     * [体素渲染](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/ti-su-xuan-ran.md)
     * [Mipmap](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/mipmap.md)
   * [Unity基本知识](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/README.md)
+    * [Unity Player Loop Callbacks](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/unity-player-loop-callbacks.md)
     * [Unity 排查bug](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/unity-pai-cha-bug.md)
     * [Unity Execuation order](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/unity-execuation-order.md)
     * [Unity Engine Coding](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/unity-engine-coding.md)
