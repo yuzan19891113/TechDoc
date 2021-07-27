@@ -18,6 +18,8 @@ PresentationUtils
 
 InitBonesAccordingToSex：加载男/女骨架
 
+ReplaceReskinTypeBones:根据子部件是否有额外骨骼，附加到主骨架上去
+
 CombineParts：retarget sub mesh bones to skeleton bones.
 
 mPresentationAvatar.ApplyExpression\(\):触发表情动画
