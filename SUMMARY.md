@@ -83,6 +83,7 @@
     * [镜头交互动画](tong-yong-xuan-ran-ji-shu/dong-hua/jing-tou-jiao-hu-dong-hua.md)
     * [动画回放工具](tong-yong-xuan-ran-ji-shu/dong-hua/dong-hua-hui-fang-gong-ju.md)
   * [场景](tong-yong-xuan-ran-ji-shu/chang-jing-xiang-guan/README.md)
+    * [GPU Drived Rendering Pipeline](tong-yong-xuan-ran-ji-shu/chang-jing-xiang-guan/gpu-drived-rendering-pipeline.md)
     * [植被的交互调研](tong-yong-xuan-ran-ji-shu/chang-jing-xiang-guan/zhi-bei-de-jiao-hu-tiao-yan.md)
     * [场景优化](tong-yong-xuan-ran-ji-shu/chang-jing-xiang-guan/chang-jing-you-hua/README.md)
       * [遮挡剔除](tong-yong-xuan-ran-ji-shu/chang-jing-xiang-guan/chang-jing-you-hua/zhe-dang-ti-chu.md)
