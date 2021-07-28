@@ -10,9 +10,21 @@ mPresentationAvatarDataPart：部件实体
 
 PresentationAvatarDataParam：部件配置参数
 
-#### PresentationAvatarDataPart:LoadAvatarPart:加载单个部件
+### 
 
-PresentationUtils
+### ApplyDressUpInfo
+
+-&gt;HandleApplyDress
+
+-&gt;-&gt;SetPartsId\(资源ID绑定\)
+
+-&gt;-&gt;CombineAvatarParts
+
+-&gt;-&gt;-&gt;ReloadAllParts
+
+PresentationAvatarDataPart:LoadAvatarPart:加载单个部件
+
+#### ReloadAllParams
 
 #### PresnetaionAvatarLoad:DoCombineAvatarParts:合并部件
 
