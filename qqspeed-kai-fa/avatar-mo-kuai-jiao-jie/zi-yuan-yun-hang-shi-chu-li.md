@@ -10,8 +10,6 @@ mPresentationAvatarDataPart：部件实体
 
 PresentationAvatarDataParam：部件配置参数
 
-### 
-
 ### ApplyDressUpInfo
 
 -&gt;HandleApplyDress
@@ -22,23 +20,23 @@ PresentationAvatarDataParam：部件配置参数
 
 -&gt;-&gt;-&gt;ReloadAllParts
 
-PresentationAvatarDataPart:LoadAvatarPart:加载单个部件
+-&gt;-&gt;-&gt;-&gt;LoadAvatarPart:加载单个部件
 
-#### ReloadAllParams
+-&gt;-&gt;-&gt;ReloadAllParams
 
-#### PresnetaionAvatarLoad:DoCombineAvatarParts:合并部件
+-&gt;-&gt;-&gt;DoCombineAvatarParts
 
-InitBonesAccordingToSex：加载男/女骨架
+-&gt;-&gt;-&gt;-&gt;InitBonesAccordingToSex：加载男/女骨架
 
-ReplaceReskinTypeBones:根据子部件是否有额外骨骼，附加到主骨架上去
+-&gt;-&gt;-&gt;-&gt;ReplaceReskinTypeBones:根据子部件是否有额外骨骼，附加到主骨架上去
 
-CombineParts：retarget sub mesh bones to skeleton bones.
+-&gt;-&gt;-&gt;-&gt;CombineParts：retarget sub mesh bones to skeleton bones.
 
-mPresentationAvatar.ApplyExpression\(\):触发表情动画
+-&gt;-&gt;-&gt;-&gt;mPresentationAvatar.ApplyExpression\(\):触发表情动画
 
-InitMaterials：材质的处理,shader的替换\(包括变形与是否有阴影\)
+-&gt;-&gt;-&gt;-&gt;nitMaterials：材质的处理,shader的替换\(包括变形与是否有阴影\)
 
-CombineDrawCall：收集合并DC的数据，没有真正合并
+-&gt;-&gt;-&gt;-&gt;CombineDrawCall：收集合并DC的数据，没有真正合并
 
 PresentationAvatarParams.supportPart:部件相互配置隐藏，例如根据某一个头发决定是否隐藏脸
 
