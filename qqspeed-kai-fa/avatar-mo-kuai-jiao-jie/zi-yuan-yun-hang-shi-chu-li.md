@@ -34,7 +34,7 @@ PresentationAvatarDataParam：部件配置参数
 
 -&gt;-&gt;-&gt;-&gt;mPresentationAvatar.ApplyExpression\(\):触发表情动画
 
--&gt;-&gt;-&gt;-&gt;nitMaterials：材质的处理,shader的替换\(包括变形与是否有阴影\)
+-&gt;-&gt;-&gt;-&gt;InitMaterials：材质的处理,shader的替换\(包括变形与是否有阴影\)
 
 -&gt;-&gt;-&gt;-&gt;CombineDrawCall：收集合并DC的数据，没有真正合并
 
