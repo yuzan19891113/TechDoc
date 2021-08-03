@@ -18,6 +18,8 @@ PresentationAvatarDataParam：部件配置参数
 
 PresentationAvatarParams.supportPart:部件相互配置隐藏，例如根据某一个头发决定是否隐藏脸
 
+Tamodule.refreshDynamicShadow:切换avatar阴影相机的位置与相机size
+
 ### Pet
 
 Pet:HandleInitSync
