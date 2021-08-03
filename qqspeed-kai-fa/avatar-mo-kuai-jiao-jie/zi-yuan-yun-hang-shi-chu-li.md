@@ -12,31 +12,7 @@ PresentationAvatarDataParam：部件配置参数
 
 ### ApplyDressUpInfo
 
--&gt;HandleApplyDress
-
--&gt;-&gt;SetPartsId\(资源ID绑定\)
-
--&gt;-&gt;CombineAvatarParts
-
--&gt;-&gt;-&gt;ReloadAllParts
-
--&gt;-&gt;-&gt;-&gt;LoadAvatarPart:加载单个部件
-
--&gt;-&gt;-&gt;ReloadAllParams
-
--&gt;-&gt;-&gt;DoCombineAvatarParts
-
--&gt;-&gt;-&gt;-&gt;InitBonesAccordingToSex：加载男/女骨架
-
--&gt;-&gt;-&gt;-&gt;ReplaceReskinTypeBones:根据子部件是否有额外骨骼，附加到主骨架上去
-
--&gt;-&gt;-&gt;-&gt;CombineParts：retarget sub mesh bones to skeleton bones.
-
--&gt;-&gt;-&gt;-&gt;mPresentationAvatar.ApplyExpression\(\):触发表情动画
-
--&gt;-&gt;-&gt;-&gt;InitMaterials：材质的处理,shader的替换\(包括变形与是否有阴影\)
-
--&gt;-&gt;-&gt;-&gt;CombineDrawCall：收集合并DC的数据，没有真正合并
+![](../../.gitbook/assets/image%20%28233%29.png)
 
 PresentationAvatarParams.supportPart:部件相互配置隐藏，例如根据某一个头发决定是否隐藏脸
 
