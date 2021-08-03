@@ -12,6 +12,8 @@ PresentationAvatarDataParam：部件配置参数
 
 ### ApplyDressUpInfo
 
+{% file src="../../.gitbook/assets/applydressupinfo \(1\).7z" caption="ApplyDressUpInfo.xmind" %}
+
 ![](../../.gitbook/assets/image%20%28233%29.png)
 
 PresentationAvatarParams.supportPart:部件相互配置隐藏，例如根据某一个头发决定是否隐藏脸
