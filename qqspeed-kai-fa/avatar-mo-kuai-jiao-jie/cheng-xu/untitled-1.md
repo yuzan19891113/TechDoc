@@ -8,7 +8,7 @@ AvatarPart:Reskin:根据sub bone chain的骨骼名字 retarget bones to skeleton
 
 ## Avatar Expression
 
-PresentationAvatarExpression:PlayAnimWithExpression 动作的匹配表情，配置在新物品表
+PresentationAvatarExpression:PlayAnimWithExpression 动作的匹配表情\(例如结算表情\)，配置在新物品表
 
 ![](../../../.gitbook/assets/image%20%28234%29.png)
 
