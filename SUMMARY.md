@@ -97,7 +97,7 @@
     * [Anti\_Alising相关](tong-yong-xuan-ran-ji-shu/chang-jian-wen-ti/antialising-xiang-guan.md)
     * [Z Fighting](tong-yong-xuan-ran-ji-shu/chang-jian-wen-ti/z-fighting.md)
 * [调试与优化](kai-fa-ji-tiao-shi-gong-ju/README.md)
-  * [解决表现问题思路](kai-fa-ji-tiao-shi-gong-ju/jie-jue-biao-xian-wen-ti-si-lu.md)
+  * [解决移动端问题思路](kai-fa-ji-tiao-shi-gong-ju/jie-jue-biao-xian-wen-ti-si-lu.md)
   * [调试方法](kai-fa-ji-tiao-shi-gong-ju/tiao-shi-fang-fa/README.md)
     * [克隆账号](kai-fa-ji-tiao-shi-gong-ju/tiao-shi-fang-fa/ke-long-zhang-hao.md)
   * [publish包查问题](kai-fa-ji-tiao-shi-gong-ju/publish-bao-cha-wen-ti.md)
