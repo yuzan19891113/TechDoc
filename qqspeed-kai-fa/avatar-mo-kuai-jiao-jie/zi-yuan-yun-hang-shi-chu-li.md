@@ -36,19 +36,7 @@ PresentationAvatarAnim:UpdateShrinkBottom：车内收缩下半身，处理骨骼
 
 坐姿隐藏mesh：ShouldLoadExpandMesh
 
-局外创建
-
 ![](../../.gitbook/assets/image%20%28198%29.png)
-
-#### 局内创建
-
-Actormgr.CreateAllActor
-
---&gt;CreateInGameShowAvatar
-
---&gt;CreateInGameAvatar
-
-SetEnableHandlerEnable\(false）:关闭事件特效
 
 #### 单局内合并DC
 

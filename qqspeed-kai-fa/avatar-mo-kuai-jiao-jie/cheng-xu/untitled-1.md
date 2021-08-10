@@ -18,5 +18,5 @@ PresentationAvatarExpression:ApplyExpression 加载expressionConfig,确定有多
 
 PresentationAvatarExpression:UpdateExpressioin: 更新时间，选择表情的某一帧
 
-
+presentation common params 保存动画与表情的配置
 
