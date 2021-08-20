@@ -125,6 +125,8 @@
     * [修改资源](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/xiu-gai-zi-yuan.md)
     * [内存分析](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/nei-cun-fen-xi.md)
     * [Dump文件分析](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/dump-wen-jian-fen-xi.md)
+    * [GPU指令分析](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/gpu-zhi-ling-fen-xi.md)
+    * [Unity profiler](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/unity-profiler.md)
   * [职级晋升](qqspeed-kai-fa/zhi-ji-jin-sheng.md)
   * [1.加日志取日志，ui界面调试开关](qqspeed-kai-fa/1.-jia-ri-zhi-qu-ri-zhi-ui-jie-mian-tiao-shi-kai-guan.md)
   * [热更工具xlua vs IFix](qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix/README.md)
