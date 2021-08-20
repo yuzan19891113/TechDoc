@@ -14,9 +14,9 @@ Logger.DebugLog\("\[PracticeMgr\]\[tnqiang\]mOneKeyDownloadVideoLst: " + mOneKey
 
 Logger.log\(log.Hint\(""\[[ModuleName](https://iwiki.woa.com/pages/createpage.action?spaceKey=QSpeed&title=ModuleName&linkCreation=true&fromPageId=889945895)\]\[ClassName\]Log Description.""\)\)
 
-|  |
-| :--- |
-
+```text
+Logger.Log(Logger.Hint("[AvatarAiMdl][TrusteeshipComponent] TrusteeshipMainActor{0}.").Append(Actor.getname());
+```
 
 ### 增强日志\(调试分析，默认不输出\)
 
@@ -24,33 +24,33 @@ Logger.log\(log.Debug\(""\[[ModuleName](https://iwiki.woa.com/pages/createpage.a
 
 ![](https://iwiki.woa.com/download/attachments/889945895/image2021-8-20_11-20-9.png?version=1&modificationDate=1629429610000&api=v2)![](https://iwiki.woa.com/download/attachments/889945895/image2021-8-20_11-20-27.png?version=1&modificationDate=1629429628000&api=v2)
 
-|  |
-| :--- |
-
+```text
+ if(FixEnableMgr.EnableDebugLog)  Logger.Log(Logger.Debug("[PetUIMgr][Pet3DSceneMgr]CheckPetClick()")
+```
 
 ### 警告日志\(需要清理的报错\)
 
 Logger.log\(log.Warn\(""\[[ModuleName](https://iwiki.woa.com/pages/createpage.action?spaceKey=QSpeed&title=ModuleName&linkCreation=true&fromPageId=889945895)\]\[ClassName\]Log Description.""\)\)
 
-|  |
-| :--- |
-
+```text
+Logger.Log(Logger.Warn("[SkeletonRagdoll][SkeletonRagdoll]Can't call SetSkeletonPosition while Ragdoll is not active!")
+```
 
 ### 错误日志\(需要立即解决的报错\)
 
 Logger.log\(log.Error\(""\[[ModuleName](https://iwiki.woa.com/pages/createpage.action?spaceKey=QSpeed&title=ModuleName&linkCreation=true&fromPageId=889945895)\]\[ClassName\]Log Description.""\)\)
 
-|  |
-| :--- |
-
+```text
+Logger.Log(Logger.Error("[ActivityMdl][SuperInductionSystem] Can not find lottery task! taskid={0}").Append(taskId));
+```
 
 ### Xlua加日志\(适用于外网添加日志或者热填加日志\)
 
 CS.Logger.XXLog\("Log Description"..Param\)
 
-|  |
-| :--- |
-
+```text
+CS.Logger.ErrorLog("cfg day:"..cfg.dwDayIndex);
+```
 
 ## 提取日志
 
