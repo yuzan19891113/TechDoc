@@ -131,6 +131,7 @@
     * [Unity profiler](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/unity-profiler.md)
     * [AndroidStudio真机调试引擎源码](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/untitled.md)
     * [界面调试开关与Console指令\(待补充\)](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/jie-mian-tiao-shi-kai-guan-yu-console-zhi-ling-dai-bu-chong.md)
+  * [Unity2019升级复盘byMeiZhiLiu](qqspeed-kai-fa/unity2019-sheng-ji-fu-pan-bymeizhiliu.md)
   * [职级晋升](qqspeed-kai-fa/zhi-ji-jin-sheng.md)
   * [1.加日志取日志，ui界面调试开关](qqspeed-kai-fa/1.-jia-ri-zhi-qu-ri-zhi-ui-jie-mian-tiao-shi-kai-guan.md)
   * [热更工具xlua vs IFix](qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix/README.md)
