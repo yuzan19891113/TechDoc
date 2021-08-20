@@ -117,6 +117,7 @@
   * [UE4移动平台通用优化](kai-fa-ji-tiao-shi-gong-ju/yi-dong-ping-tai-you-hua.md)
 * [QQSpeed开发](qqspeed-kai-fa/README.md)
   * [基础能力培训](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/README.md)
+    * [新人入职手册](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/xin-ren-ru-zhi-shou-ce.md)
     * [代码规范](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/dai-ma-gui-fan.md)
     * [日志](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/ri-zhi.md)
     * [引擎构建与验证](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/yin-qing-gou-jian-yu-yan-zheng.md)
