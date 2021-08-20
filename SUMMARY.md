@@ -119,7 +119,7 @@
   * [基础能力培训](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/README.md)
     * [开发日记](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/kai-fa-ri-ji/README.md)
       * [分析大批量数据](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/kai-fa-ri-ji/codereview.md)
-      * [Unity2019升级复盘byMeiZhiLiu](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/kai-fa-ri-ji/unity2019-sheng-ji-fu-pan-bymeizhiliu.md)
+      * [升级复盘by刘美智](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/kai-fa-ri-ji/unity2019-sheng-ji-fu-pan-bymeizhiliu.md)
     * [新人入职手册](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/xin-ren-ru-zhi-shou-ce.md)
     * [代码规范](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/dai-ma-gui-fan.md)
     * [日志](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/ri-zhi.md)

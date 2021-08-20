@@ -1,6 +1,4 @@
-# Unity2019升级复盘byMeiZhiLiu
-
-Meizhiliu
+# 升级复盘by刘美智
 
 ## 渲染管线和引擎升级主要节点 <a id="%E6%B8%B2%E6%9F%93%E7%AE%A1%E7%BA%BF%E5%92%8C%E5%BC%95%E6%93%8E%E5%8D%87%E7%BA%A7%E4%B8%BB%E8%A6%81%E8%8A%82%E7%82%B9"></a>
 
