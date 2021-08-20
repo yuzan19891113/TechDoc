@@ -118,6 +118,7 @@
 * [QQSpeed开发](qqspeed-kai-fa/README.md)
   * [基础能力培训](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/README.md)
     * [日志](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/ri-zhi.md)
+    * [引擎构建与验证](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/yin-qing-gou-jian-yu-yan-zheng.md)
   * [职级晋升](qqspeed-kai-fa/zhi-ji-jin-sheng.md)
   * [1.加日志取日志，ui界面调试开关](qqspeed-kai-fa/1.-jia-ri-zhi-qu-ri-zhi-ui-jie-mian-tiao-shi-kai-guan.md)
   * [热更工具xlua vs IFix](qqspeed-kai-fa/re-geng-gong-ju-xlua-vs-ifix/README.md)
