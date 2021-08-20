@@ -2,7 +2,7 @@
 
 **引擎修改的一般步骤：**
 
-![](../../.gitbook/assets/image%20%28240%29.png)
+![](../../.gitbook/assets/image%20%28246%29.png)
 
 **具体步骤和链接如下：**
 
