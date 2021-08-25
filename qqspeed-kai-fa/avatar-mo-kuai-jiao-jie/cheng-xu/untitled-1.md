@@ -20,3 +20,9 @@ PresentationAvatarExpression:UpdateExpressioin: 更新时间，选择表情的�
 
 presentation common params 保存动画与表情的配置
 
+## AvatarPart Animation
+
+mPresentationAvatarAnim.PlayAvatarPartAnim
+
+mPresentaitonAvatarBone.mRootAnimation
+

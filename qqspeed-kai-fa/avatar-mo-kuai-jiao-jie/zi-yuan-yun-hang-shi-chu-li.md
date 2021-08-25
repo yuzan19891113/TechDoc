@@ -36,13 +36,9 @@ PresentationAvatarAnim:UpdateShrinkBottom：车内收缩下半身，处理骨骼
 
 坐姿隐藏mesh：ShouldLoadExpandMesh
 
-#### 局外创建
+局外创建
 
 ![](../../.gitbook/assets/image%20%28198%29.png)
-
-局内切换到房间列表：PresentationAvatar.SetVisible\(false\)
-
-局内切换到背包:InitAvatarPosition,移动角色位置
 
 #### 局内创建
 
