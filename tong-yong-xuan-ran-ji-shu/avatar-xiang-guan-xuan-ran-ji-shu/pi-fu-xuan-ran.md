@@ -6,3 +6,7 @@
 
 ### **BSSRDF**
 
+\*\*\*\*
+
+\*\*\*\*[**https://zhuanlan.zhihu.com/p/35628106**](https://zhuanlan.zhihu.com/p/35628106)\*\*\*\*
+
