@@ -87,5 +87,7 @@ surfaceReduction * gi.specular* FresnelLerpFast (specColor, grazingTerm, NV);
 
 ![](http://avocado.oa.com/fconv/files/201806/21f77d138a89f33621ce4e3f430f8659.files/doc_image_39_w252_h42.jpg)
 
+[https://zhuanlan.zhihu.com/p/70286099](https://zhuanlan.zhihu.com/p/70286099)
+
 
 
