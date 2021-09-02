@@ -89,5 +89,7 @@ surfaceReduction * gi.specular* FresnelLerpFast (specColor, grazingTerm, NV);
 
 [https://zhuanlan.zhihu.com/p/70286099](https://zhuanlan.zhihu.com/p/70286099)
 
+[https://www.unrealengine.com/zh-CN/blog/physically-based-shading-on-mobile](https://www.unrealengine.com/zh-CN/blog/physically-based-shading-on-mobile)
+
 
 
