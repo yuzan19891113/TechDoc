@@ -14,13 +14,13 @@
 
 normal使用octahedron encode normal 
 
-shadowmask合并贴图，内存，性能，低配上的性能优化
+shadowmask合并贴图，内存，性能，低配上的性能优化，低配走高配效果
 
 ## Avatar渲染与物理的设计与深入优化
 
-渲染：pbr cloth + hair + skin 手机平台的优化
+渲染：pbr cloth + hair + skin 手机平台的优化，
 
-物理：dynamicbone与cloth，优化与合入
+物理：dynamicbone与cloth，c++ && 并行优化 && 无锁设计
 
 优化:合并dc绘制，贴图合图与压缩
 
