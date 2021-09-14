@@ -9,7 +9,7 @@ PBR 4档配置
 ## _Motivation_
 
 1. LightMap + shadowMask在一盏主光源的时候合并成一张贴图，Normal + MRA贴图可以合并成NMR + Occlusion贴图，中低配由于不需要Occlusion可以降低一次采样
-2. Normal 的packing 精度问题
+2. Normal 的packing 精度问题, lightmap的packing精度问题
 3. 统一PBR各个档次的PBR模型，shader入口统一为vertstandard, frag\_standard, 模型统一为BRDF\_，通过配置不同的shader feature来控制不同质量等级。中低配上的pbr模型
 4. ReflectionProbe在中低配的性能与优化（八面体采样\)
 
