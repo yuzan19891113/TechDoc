@@ -15,6 +15,7 @@
   * [法线矩阵变换](tu-xing-xue-zhi-shi-yu-jiao-cheng/fa-xian-ju-zhen-bian-huan.md)
 * [游戏相关技术](tong-yong-xuan-ran-ji-shu/README.md)
   * [基础概念](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/README.md)
+    * [HSR vs earlyZ](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/hsr-vs-earlyz.md)
     * [OpenGL 3.0新特性](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/opengl-3.0-xin-te-xing.md)
     * [Unity , Unreal文档](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/zong-lan.md)
     * [线性与gamma空间](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/xian-xing-yu-gamma-kong-jian.md)
