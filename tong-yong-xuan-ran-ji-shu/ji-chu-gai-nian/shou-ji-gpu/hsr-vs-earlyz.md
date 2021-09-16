@@ -18,5 +18,5 @@ iOS TBDR架构的HSR确保遮挡像素肯定不会被draw
 
 hsr起作用的阶段是在光栅化生成所有fragment之后，（这个跟ealry-z相似），但是这个hsr会打断后面的着色流程（也就是说他会打断渲染管线，光栅化完成的图元不会马上进入fragmentShader阶段，而是会等待所有的图元全部光栅化完成），这个时候所有的fragment已经生成，并且里面通过插值都已经得到了深度值，hsr可以从里面筛选出实际有效的fragment，所以说hsr是可以彻底解决不透明物体的overdraw问题。
 
- TBDR 都是将Rasterize/PS的处理延后到了处理完所有VS之后，而不是像IMR一样VS后马上Rasterize/PS（还有一些中间步骤就省略了，不要缸）。**所以说TBR架构也是个延迟渲染架构。**
+ TBDR 都是将PS的处理延后到了处理完所有VS之后，而不是像IMR一样VS后马上PS**所以说TBR架构也是个延迟渲染架构。**
 
