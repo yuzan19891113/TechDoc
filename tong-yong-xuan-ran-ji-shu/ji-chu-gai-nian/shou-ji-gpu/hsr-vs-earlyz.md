@@ -20,3 +20,5 @@ hsr起作用的阶段是在光栅化生成所有fragment之后，（这个跟eal
 
  TBDR 都是将PS的处理延后到了处理完所有VS之后，而不是像IMR一样VS后马上PS**所以说TBR架构也是个延迟渲染架构。**
 
+HSR是怎么处理AlphaTest和AlphaBlend的。HSR在设计原理上高到飞起，但前提是假定了前面的物体会挡住后面的物体，因此对于AlphaTest和AlphaBlend物体都是没有作用的（但他俩仍然可以被EarlyZ拦住）。不仅没作用，反而会被其中断Defer流程，导致渲染性能降低。
+
