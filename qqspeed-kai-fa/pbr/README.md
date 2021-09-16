@@ -91,6 +91,8 @@ surfaceReduction * gi.specular* FresnelLerpFast (specColor, grazingTerm, NV);
 
 [https://zhuanlan.zhihu.com/p/143718157](https://zhuanlan.zhihu.com/p/143718157)
 
+[https://zhuanlan.zhihu.com/p/138078907](https://zhuanlan.zhihu.com/p/138078907)
+
 
 
 
