@@ -1,6 +1,8 @@
 # HSR vs earlyZ
 
+总结下，在PowerVR上渲染，因为有HSR的存在我们只需要把所有不透明物体放到一起扔给GPU画就行了；在其他移动GPU上，同样也是要把所有不透明物体放到一起，但是还要先做个排序再交给GPU。
 
+[https://zhuanlan.zhihu.com/p/112120206](https://zhuanlan.zhihu.com/p/112120206)
 
 #### earlyz
 
@@ -20,7 +22,7 @@ hsr起作用的阶段是在光栅化生成所有fragment之后，（这个跟eal
 
  TBDR 都是将PS的处理延后到了处理完所有VS之后，而不是像IMR一样VS后马上PS**所以说TBR架构也是个延迟渲染架构。**
 
-HSR是怎么处理AlphaTest和AlphaBlend的。HSR在设计原理上高到飞起，但前提是假定了前面的物体会挡住后面的物体，因此对于AlphaTest物体都是没有作用的（不仅没作用，反而会被其中断Defer流程，导致渲染性能降低。
+HSR是怎么处理AlphaTest和AlphaBlend的。HSR在设计原理上高到飞起，但前提是假定了前面的物体会挡住后面的物体，因此对于AlphaTest物体都是没有作用的（不仅没作用，反而会被其中断Defer流程，强制开始绘制, 导致渲染性能降低）
 
 相对应的AlphaBlend同样也要中断HSR的Defer，强制开始绘制，但是比AlphaTest好那么一点点的是他不影响后续图元并行地继续开始进行HSR处理
 
