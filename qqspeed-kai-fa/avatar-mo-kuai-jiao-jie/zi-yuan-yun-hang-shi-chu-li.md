@@ -40,11 +40,7 @@ PresentationAvatarAnim:UpdateShrinkBottom：车内收缩下半身，处理骨骼
 
 ![](../../.gitbook/assets/image%20%28198%29.png)
 
-局内切换到房间列表：
-
-lobbyavatarcmp:DeinitCallback
-
-PresentationAvatar.SetVisible\(false\)
+局内切换到房间列表：PresentationAvatar.SetVisible\(false\)
 
 局内切换到背包:InitAvatarPosition,移动角色位置
 
@@ -77,24 +73,6 @@ combineMesh-&gt;combineTextures-&gt;compressTexture
 宠物是一个整体，没有Part
 
 尾挂会在展示宠物后，变身为尾挂
-
-#### 特效播放和触发
-
-PresentationEventHandler
-
-OnEventStart
-
-DoEventEnd
-
-事件特效是否开启：SetEnableHandlerEnable
-
-SendAvatarInitEvent:触发角色默认特效
-
-
-
-
-
-
 
 #### 卸载
 

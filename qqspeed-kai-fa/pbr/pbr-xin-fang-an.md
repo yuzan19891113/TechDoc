@@ -53,6 +53,8 @@ Decoding:
 
 ## 统一PBR
 
+lightmap提高精度
+
 ### 低配
 
 **模型：** PBR\_Standard
