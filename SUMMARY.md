@@ -14,6 +14,7 @@
   * [Lab颜色空间](tu-xing-xue-zhi-shi-yu-jiao-cheng/lab-yan-se-kong-jian.md)
   * [法线矩阵变换](tu-xing-xue-zhi-shi-yu-jiao-cheng/fa-xian-ju-zhen-bian-huan.md)
 * [游戏相关技术](tong-yong-xuan-ran-ji-shu/README.md)
+  * [硬件兼容性](tong-yong-xuan-ran-ji-shu/ying-jian-jian-rong-xing.md)
   * [基础概念](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/README.md)
     * [手机GPU](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/shou-ji-gpu/README.md)
       * [HSR vs earlyZ](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/shou-ji-gpu/hsr-vs-earlyz.md)
