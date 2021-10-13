@@ -8,9 +8,7 @@
 
 ### **Kajiya-Kay毛发渲染模型**
 
-\*\*\*\*[**https://zhuanlan.zhihu.com/p/363829203**](https://zhuanlan.zhihu.com/p/363829203)\*\*\*\*
+****[**https://zhuanlan.zhihu.com/p/363829203**](https://zhuanlan.zhihu.com/p/363829203)****
 
 ### Pivot-based hair simulation
-
-
 

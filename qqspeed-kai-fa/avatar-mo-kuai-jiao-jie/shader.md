@@ -2,7 +2,7 @@
 
 ## 标准Shader
 
-![](../../.gitbook/assets/image%20%28177%29.png)
+![](<../../.gitbook/assets/image (177).png>)
 
 
 
@@ -17,16 +17,16 @@
 
 ## PBRshader
 
-![](../../.gitbook/assets/image%20%28178%29.png)
+![](<../../.gitbook/assets/image (178).png>)
 
 
 
 * CustomFace目录下是捏脸界面下超高模角色用到shader
 * 其他avatar PBRshader：
   * AvatarStandard 标准shader
-  * AvatarStandard\_Low 标准低配shader
+  * AvatarStandard_Low 标准低配shader
   * AvatarStandard\_2Pass 双pass半透标准shader
-  * AvatarStandard\_2Pass\_Low 双pass半透标准低配shade
+  * AvatarStandard\_2Pass_Low 双pass半透标准低配shade
 
 ### 支持光照模型
 
@@ -41,12 +41,13 @@
 
 ### 光源
 
-* 开启keyword：\_UNITED\_LIGHTING，光源为单局方向光，light prob和 reflection prob
-* 关闭则为相机方向光，material中烘焙的SH和material上赋的pre-filtered cubemap 现在**默认keyword为关闭**，这个宏是为将来统一游戏内光照做的准备
+* 开启keyword：\_UNITED_LIGHTING，光源为单局方向光，light prob和 reflection prob
+* 关闭则为相机方向光，material中烘焙的SH和material上赋的pre-filtered cubemap\
+  现在**默认keyword为关闭**，这个宏是为将来统一游戏内光照做的准备
 
 ## SH烘培工具
 
-![](../../.gitbook/assets/image%20%28182%29.png)
+![](<../../.gitbook/assets/image (182).png>)
 
 烘培SH到材质球
 
@@ -55,14 +56,13 @@
 老的shader通过不同名称的后缀支持功能,例如：
 
 * \_NoShadow不支持阴影
-* \_Spring\_Flatten支持压扁
+* \_Spring_Flatten支持压扁
 * ...
 
 比较新的shader例如PBRshader，通过keyword控制，例如：
 
 * SHADOW
-* \_AVATAR\_FLATTEN
+* \_AVATAR_FLATTEN
 * ...
 
 材质需求的开发方法与大概流程
-

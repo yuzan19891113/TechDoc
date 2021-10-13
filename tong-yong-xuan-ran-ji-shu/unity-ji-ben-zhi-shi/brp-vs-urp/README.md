@@ -33,9 +33,9 @@ cmd.ClearRenderTarget(true, false, Color.green);
 context.ExecuteCommandBuffer(cmd);
 ```
 
-![](../../../.gitbook/assets/image%20%28201%29.png)
+![](<../../../.gitbook/assets/image (201).png>)
 
-_一个简单渲染管线示例_ 
+_一个简单渲染管线示例 _
 
 下面有一个完整的渲染管线代码，仅仅用于清除屏幕。
 
@@ -235,7 +235,7 @@ context.DrawRenderers(cullResults.visibleRenderers,   ref drs, opaqueRange);
 context.Submit();
 ```
 
-![](../../../.gitbook/assets/image%20%28203%29.png)
+![](<../../../.gitbook/assets/image (203).png>)
 
 ```csharp
 using System;    
@@ -326,7 +326,7 @@ public override void Render(ScriptableRenderContext context, Camera[] cameras)
 
 这个示例可以进一步扩展，添加透明渲染：
 
-```text
+```
 using System;    
 
 using UnityEngine;    
@@ -423,5 +423,4 @@ public override void Render(ScriptableRenderContext context, Camera[] cameras)
 
 这里要重点注意的是，渲染透明时，渲染顺序会变为自后向前。
 
-![&#x56FE;&#x7247;](https://mmbiz.qpic.cn/mmbiz_png/mToLbH2dg6eUqkiaG1DT3J8b8MXZfegx9vnAQmJtibs2UWYNzEe9mcEjFd34YibC0QtuH9UvZZ7Y3x6PIZiabFSeIw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
+![图片](https://mmbiz.qpic.cn/mmbiz_png/mToLbH2dg6eUqkiaG1DT3J8b8MXZfegx9vnAQmJtibs2UWYNzEe9mcEjFd34YibC0QtuH9UvZZ7Y3x6PIZiabFSeIw/640?wx_fmt=png\&tp=webp\&wxfrom=5\&wx_lazy=1\&wx_co=1)

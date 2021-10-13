@@ -1,8 +1,8 @@
 # 性能分析
 
-**1. CPU**   
-CPU经常受限于需要渲染的**批次\(batches\)数量**。因为CPU每次需要为渲染准备以及收集数据，然后调用GPU图形处理接口，这个过程是相当耗时费力的。   
-因此Unity 提供了一个非常好用的工具——**Statistics Window面板**。   
+**1. CPU** \
+CPU经常受限于需要渲染的**批次(batches)数量**。因为CPU每次需要为渲染准备以及收集数据，然后调用GPU图形处理接口，这个过程是相当耗时费力的。 \
+因此Unity 提供了一个非常好用的工具——**Statistics Window面板**。 \
 可以通过 **Statistics面板** 检查正在渲染的 **batches**数量，如果数量过高，那么意味着CPU的消耗过高。
 
 * **DrawCalls**
@@ -13,15 +13,15 @@ CPU经常受限于需要渲染的**批次\(batches\)数量**。因为CPU每次�
 
 * **物理组件（Physics）**
 
-1.设置一个合适的Fixed Timestep。设置的位置如图：  
-  
+1.设置一个合适的Fixed Timestep。设置的位置如图：\
+\
 
 
-![](http://mmbiz.qpic.cn/mmbiz/KcTgPicibiaNTgicw38jVP98EGganMeSrps78pqWENSRQuleyxYZk6ibDcNTud7qibvUHUQELYvKBib79TfbXHZWBp0Rw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1)
+![](http://mmbiz.qpic.cn/mmbiz/KcTgPicibiaNTgicw38jVP98EGganMeSrps78pqWENSRQuleyxYZk6ibDcNTud7qibvUHUQELYvKBib79TfbXHZWBp0Rw/640?wx_fmt=png\&tp=webp\&wxfrom=5\&wx_lazy=1)
 
-  
-　　那何谓“合适”呢？首先我们要搞明白Fixed Timestep和物理组件的关系。物理组件，或者说游戏中模拟各种物理效果的组件，最重要的是什么呢？计算啊。对，需要通过计算才能将真实的物理效果展 现在虚拟的游戏中。那么Fixed Timestep这货就是和物理计算有关的啦。所以，若计算的频率太高，自然会影响到CPU的开销。同时，若计算频率达不到游戏设计时的要求，有会影响到 功能的实现，所以如何抉择需要各位具体分析，选择一个合适的值。  
-  
+\
+　　那何谓“合适”呢？首先我们要搞明白Fixed Timestep和物理组件的关系。物理组件，或者说游戏中模拟各种物理效果的组件，最重要的是什么呢？计算啊。对，需要通过计算才能将真实的物理效果展 现在虚拟的游戏中。那么Fixed Timestep这货就是和物理计算有关的啦。所以，若计算的频率太高，自然会影响到CPU的开销。同时，若计算频率达不到游戏设计时的要求，有会影响到 功能的实现，所以如何抉择需要各位具体分析，选择一个合适的值。\
+\
 　　2.就是不要使用网格碰撞器（mesh collider）：为啥？因为实在是太复杂了。网格碰撞器利用一个网格资源并在其上构建碰撞器。对于复杂网状模型上的碰撞检测，它要比应用原型碰撞器精 确的多。标记为凸起的（Convex ）的网格碰撞器才能够和其他网格碰撞器发生碰撞。各位上网搜一下mesh collider的图片，自然就会明白了。我们的手机游戏自然无需这种性价比不高的东西。
 
 * **GC**
@@ -44,7 +44,7 @@ CPU经常受限于需要渲染的**批次\(batches\)数量**。因为CPU每次�
 
 2.尽量不要使用foreach，而是使用for。foreach其实会涉及到迭代器的使用，而据传说每一次循环所产生的迭代器会带来24 Bytes的垃圾。那么循环10次就是240Bytes。
 
-3.不要直接访问gameobject的tag属性。比如if \(go.tag == “human”\)最好换成if \(go.CompareTag \(“human”\)\)。因为访问物体的tag属性会在堆上额外的分配空间。如果在循环中这么处理，留下的垃圾就可想而知了。
+3.不要直接访问gameobject的tag属性。比如if (go.tag == “human”)最好换成if (go.CompareTag (“human”))。因为访问物体的tag属性会在堆上额外的分配空间。如果在循环中这么处理，留下的垃圾就可想而知了。
 
 4.使用“池”，以实现空间的重复利用。
 
@@ -52,7 +52,7 @@ CPU经常受限于需要渲染的**批次\(batches\)数量**。因为CPU每次�
 
 * **代码使用问题**
 
-1.以物体的Transform组件为例，我们应该只访问一次，之后就将它的引用保留，而非每次使用都去访问。这里有人做过一个小实验，就是对比通过 方法GetComponent&lt;Transform&gt;\(\)获取Transform组件, 通过MonoBehavor的transform属性去取，以及保留引用之后再去访问所需要的时间：  
+1.以物体的Transform组件为例，我们应该只访问一次，之后就将它的引用保留，而非每次使用都去访问。这里有人做过一个小实验，就是对比通过 方法GetComponent\<Transform>()获取Transform组件, 通过MonoBehavor的transform属性去取，以及保留引用之后再去访问所需要的时间：\
 
 
 * GetComponent = 619ms
@@ -60,38 +60,37 @@ CPU经常受限于需要渲染的**批次\(batches\)数量**。因为CPU每次�
 * CachedMB = 8ms
 * Manual Cache = 3ms
 
-  
-　　2.如上所述，最好不要频繁使用GetComponent，尤其是在循环中。  
-  
-　　3.善于使用OnBecameVisible\(\)和OnBecameVisible\(\),来控制物体的update\(\)函数的执行以减少开销。  
-  
-　　4.使用内建的数组，比如用Vector3.zero而不是new Vector\(0, 0, 0\);  
-  
+\
+　　2.如上所述，最好不要频繁使用GetComponent，尤其是在循环中。\
+\
+　　3.善于使用OnBecameVisible()和OnBecameVisible(),来控制物体的update()函数的执行以减少开销。\
+\
+　　4.使用内建的数组，比如用Vector3.zero而不是new Vector(0, 0, 0);\
+\
 　　5.对于方法的参数的优化：善于使用ref关键字。值类型的参数，是通过将实参的值复制到形参，来实现按值传递到方法，也就是我们通常说的按值传递。 复制嘛，总会让人感觉很笨重。比如Matrix4x4这样比较复杂的值类型，如果直接复制一份新的，反而不如将值类型的引用传递给方法作为参数。
 
 
 
-**2. GPU**   
-GPU往往受限于在渲染时像素的填充率以及现存带宽的使用。   
-如何来检查并定位Unity给出的针对填充率是这样检查的：   
-Lower the display resolution and run the game. If a lower display resolution makes the game run faster, you may be limited by fillrate on the GPU.   
-降低游戏的分辨率然后运行，如果在低分辨率的情况下，游戏的运行非常流畅，那么可能在GPU上受到的像素填充率的影响。   
+**2. GPU** \
+GPU往往受限于在渲染时像素的填充率以及现存带宽的使用。 \
+如何来检查并定位Unity给出的针对填充率是这样检查的： \
+Lower the display resolution and run the game. If a lower display resolution makes the game run faster, you may be limited by fillrate on the GPU. \
+降低游戏的分辨率然后运行，如果在低分辨率的情况下，游戏的运行非常流畅，那么可能在GPU上受到的像素填充率的影响。 \
 Unity同样也提供了一个很好用的工具，来便于我们进行优化—— **FrameDebugger**。
 
-**二、不常见的问题及检查方法：**   
-1. **CPU**   
-如果在渲染时CPU需要处理太多的**顶点\(vertex\)**，情况如处理**skinned meshes**\(蒙皮网格：用于骨骼动画等\)、**cloth simulation**\(布料仿真\)、**particles system**\(粒子系统\)以及一些游戏里面的**gameObject**和**网格**\(Mesh\)。   
-针对于上面的情况，通常在不影响游戏的质量的情况下，尽量保持定点数越低越好，这样才能尽可能的保持CPU的流畅性。针对于此，后面文章会介绍。   
-2. **GPU**   
-如果在渲染时，GPU也要去处理太多的顶点数据\(Vetex Data\)。   
-此时在确保游戏的流畅性的情况下，可以接受的顶点数据的总数，取决于**GPU性能和顶点着色器\(Vertex Shader\)的复杂性**。   
-为此Unity给出的Tips：   
-针对于**移动设备**，尽量当前每帧渲染**顶点数不要超过十万个**。   
-针对于**PC设备**,尽管PC设备的性能优于移动设备，也能更好的处理顶点数据，甚至能同时处理几百万个，但是仍然可以通过优化这个，然后仍然可以获得一个非常好的额实际性能效果。   
-3. **Garbage Collection\(GC 垃圾回收\)或者Physics**   
+**二、不常见的问题及检查方法：** \
+1\. **CPU** \
+如果在渲染时CPU需要处理太多的**顶点(vertex)**，情况如处理**skinned meshes**(蒙皮网格：用于骨骼动画等)、**cloth simulation**(布料仿真)、**particles system**(粒子系统)以及一些游戏里面的**gameObject**和**网格**(Mesh)。 \
+针对于上面的情况，通常在不影响游戏的质量的情况下，尽量保持定点数越低越好，这样才能尽可能的保持CPU的流畅性。针对于此，后面文章会介绍。 \
+2\. **GPU** \
+如果在渲染时，GPU也要去处理太多的顶点数据(Vetex Data)。 \
+此时在确保游戏的流畅性的情况下，可以接受的顶点数据的总数，取决于**GPU性能和顶点着色器(Vertex Shader)的复杂性**。 \
+为此Unity给出的Tips： \
+针对于**移动设备**，尽量当前每帧渲染**顶点数不要超过十万个**。 \
+针对于**PC设备**,尽管PC设备的性能优于移动设备，也能更好的处理顶点数据，甚至能同时处理几百万个，但是仍然可以通过优化这个，然后仍然可以获得一个非常好的额实际性能效果。 \
+3\. **Garbage Collection(GC 垃圾回收)或者Physics** \
 如果渲染时，通过检查定位，发现其实影响性能的并非是因为CPU的Batches或者GPU引起的，那么，这个问题可能出GC或者Physics（物理计算）。
 
 
 
-###  <a id="cpu&#x51CF;&#x5C11;draw-call"></a>
-
+###  <a href="cpu-jian-shao-drawcall" id="cpu-jian-shao-drawcall"></a>

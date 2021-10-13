@@ -1,16 +1,16 @@
 # bake light mapping
 
-A Meta Pass is a **Shader** pass that provides albedo and emission values to the Progressive **Lightmapper**  
+A Meta Pass is a **Shader** pass that provides albedo and emission values to the Progressive **Lightmapper**\
  , so that they can correctly compute indirect lighting from that **GameObject,**For a **GameObject** to work with [lightmapping](https://docs.unity3d.com/Manual/Lightmappers.html), the GameObject must use a Material that has a Meta Pass in its Shader.
 
-The Meta Pass provides albedo and emission values in texture space. These values are separate from those used in real-time **rendering,** meaning that you can use the Meta Pass to control how a GameObject looks from the point of view of the lighting baking system without affecting its appearance at runtime. An example of when this would be useful is if you wanted the green moss on a cliff to generate exaggerated green indirect light in your **lightmaps**, but you didn’t want to recolor the **terrain**  
+The Meta Pass provides albedo and emission values in texture space. These values are separate from those used in real-time **rendering, **meaning that you can use the Meta Pass to control how a GameObject looks from the point of view of the lighting baking system without affecting its appearance at runtime. An example of when this would be useful is if you wanted the green moss on a cliff to generate exaggerated green indirect light in your **lightmaps**, but you didn’t want to recolor the **terrain**\
  in the real-time pass of shader.
 
-All of Unity’s built-in Materials have a Meta Pass, and the **Standard Shader** contains a Meta pass. If you are using these, you do not need to do anything to enable the Meta Pass. If you are using a custom Shader, you can add your own Meta Pass.
+All of Unity’s built-in Materials have a Meta Pass, and the **Standard Shader **contains a Meta pass. If you are using these, you do not need to do anything to enable the Meta Pass. If you are using a custom Shader, you can add your own Meta Pass.
 
 **烘培的 lightmap需要考虑abedo**
 
-```text
+```
 Shader "Custom/metaPassShader"{
 Properties {
     _Color ("Color", Color)=(1,1,1,1)
@@ -94,4 +94,3 @@ FallBack "Diffuse"
 ```
 
 }
-
