@@ -1,24 +1,36 @@
 # Instance
 
-Unity Material Instance
+## Unity Material Instance
 
-#### 使用constant buffer用来填充instancebuffer
+### ForwardRenderLoop.cpp
 
-InstancingBatcher:RenderInstance
+batchrender:负责动态合批与instancing
 
-#### 使用jobsystem填充instancebuffer
+InstanceBatcher:真正的instance render
 
-InstancingBatcher::FillInstanceBufferWithJob
+### instance count
 
-#### InstanceBuffer来源于ShareMaterialData
+InstancingBatcher::BuildFrom  决定instance 的数量m_BatchSize
 
-batchRenderer:ApplyShaderPass
+可以通过m_UseFlexibleArraySize， gMaxFlexibleArrayBatchSize来限制
 
-#### ForwardRenderLoop.cpp来收集每个Pass的Instance
+### Instance收集
 
-ForwardRenderLoop.batchRenderer:ApplyShaderPass
+ForwardRenderLoop.ForwardRenderLoopJob
 
-derLoop..batchRenderer.Add(instance);
+伪代码
+
+```
+//instance collect
+for each pass do
+   if batch breaks
+     batchrender.flush()
+   end
+   batchrender.ApplyShaderPass();
+   batchRenderer.add(instance)
+end
+batchRenderer.EndLoopFlush();
+```
 
 同时lightmap, SH也进入到了instance
 
@@ -32,9 +44,39 @@ derLoop..batchRenderer.Add(instance);
                 PushVector4fToBatchInstanceDataArray(m_BatchInstances, &builtins.GetVectorParam(kShaderVecUnityLightmapST), kLightmapTypeCount);
 ```
 
-#### Instance打断的原因
+### Instance绘制
 
-ForwardRenderLoopJob.
+InstancingBatcher:RenderInstance
+
+使用常量Buffer来存储instancebuffer
+
+```
+MapConstantBuffers();
+FillInstanceBufferWithJob();
+UnMapConstanceBuffer();
+```
+
+使用jobsystem填充instancebuffer
+
+InstancingBatcher::FillInstanceBufferWithJob
+
+#### 伪代码
+
+```
+//拷贝built in props, etc lightmapST, SH, worldmatrix
+memcpy dest_instancebuffer src_instancedata
+//拷贝材质shader相关的 props(share material data,)
+memcpy dest_instancebuffer src_instanceMaterial
+    memcpy dest_instancebuffer src_instanceMaterial_defaultProps(材质share部分)
+    memcpy dest_instancebuffer src_instanceMaterial_NodeProps(材质不share部分)
+end
+```
+
+
+
+
+
+
 
 
 
