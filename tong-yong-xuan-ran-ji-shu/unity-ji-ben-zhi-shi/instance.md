@@ -24,12 +24,12 @@ ForwardRenderLoop.ForwardRenderLoopJob
 //instance collect
 for each pass do
    if batch breaks
-     batchrender.flush()
+     batchrender.flush()//render instance
    end
    batchrender.ApplyShaderPass();
    batchRenderer.add(instance)
 end
-batchRenderer.EndLoopFlush();
+batchRenderer.EndLoopFlush();//render instance
 ```
 
 同时lightmap, SH也进入到了instance
@@ -45,6 +45,10 @@ batchRenderer.EndLoopFlush();
 ```
 
 ### Instance绘制
+
+BatchRenderer:Flush
+
+BatchRenderer:RenderBatch
 
 InstancingBatcher:RenderInstance
 
@@ -65,7 +69,7 @@ InstancingBatcher::FillInstanceBufferWithJob
 ```
 //拷贝built in props, etc lightmapST, SH, worldmatrix
 memcpy dest_instancebuffer src_instancedata
-//拷贝材质shader相关的 props(share material data,)
+//拷贝材质shader相关的 props
 memcpy dest_instancebuffer src_instanceMaterial
     memcpy dest_instancebuffer src_instanceMaterial_defaultProps(材质share部分)
     memcpy dest_instancebuffer src_instanceMaterial_NodeProps(材质不share部分)
