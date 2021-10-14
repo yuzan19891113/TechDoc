@@ -76,6 +76,22 @@ memcpy dest_instancebuffer src_instanceMaterial
 end
 ```
 
+### J3差异
+
+instance收集方式并没有变化
+
+InstancedPropInfo::RenderVaInstances
+
+使用VBO bufferqueue,除了支持instance数量更大，还有没有其他优势
+
+unity2019使用jobs去填充instancedata，j3没有实现
+
+填充的instancedata unity2019已经包含sh, lightmapst，lodfad
+
+J3的instanceData包含有dynamicLOD，，需要取当前lod的materialinfo,每个节点有多个lod nodeinfo
+
+###  计划：
+
 
 
 
