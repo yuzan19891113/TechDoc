@@ -24,6 +24,7 @@
     * [体素渲染](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/ti-su-xuan-ran.md)
     * [Mipmap](tong-yong-xuan-ran-ji-shu/ji-chu-gai-nian/mipmap.md)
   * [Unity基本知识](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/README.md)
+    * [Reset Animation](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/reset-animation.md)
     * [Instance](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/instance.md)
     * [Prefab](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/prefab-1.md)
     * [Animation](tong-yong-xuan-ran-ji-shu/unity-ji-ben-zhi-shi/animation.md)
