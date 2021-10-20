@@ -12,7 +12,7 @@
 
 统一不同输入的pack, normal, metallic, roughness
 
-normal使用octahedron encode normal 
+normal使用octahedron encode normal&#x20;
 
 shadowmask合并贴图，内存，性能，低配上的性能优化，低配走高配效果
 
@@ -28,7 +28,10 @@ shadowmask合并贴图，内存，性能，低配上的性能优化，低配走�
 
 一种无锁的异步simulate dynamicbone方法
 
-simd优化
+simd优化[https://zhuanlan.zhihu.com/p/49188230](https://zhuanlan.zhihu.com/p/49188230)
 
-[https://zhuanlan.zhihu.com/p/49188230](https://zhuanlan.zhihu.com/p/49188230)
+## 外包美术工具流
 
+发布，同步，清理流水线的设计
+
+一种CP与内网美术无感知的交互方案
