@@ -4,11 +4,11 @@
 
 Snapdragon profiler  url：[https://developer.qualcomm.com/software/snapdragon-profiler](https://developer.qualcomm.com/software/snapdragon-profiler)
 
-       ADB url：[https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)
+&#x20;      ADB url：[https://developer.android.com/studio/releases/platform-tools](https://developer.android.com/studio/releases/platform-tools)
 
-       高通的手机：一加5
+&#x20;      高通的手机：一加5
 
-       PC： windows 10
+&#x20;      PC： windows 10
 
 Snapdragon 配置
 
@@ -16,7 +16,7 @@ Snapdragon 配置
 
 需要关闭Unity等影响adb接口的软件
 
-### 介绍：  
+### 介绍： &#x20;
 
 ![](http://tapd.oa.com/tfl/captures/2018-10/tapd\_10124081\_base64\_1540286455\_61.png)
 

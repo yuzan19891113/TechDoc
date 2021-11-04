@@ -1,15 +1,15 @@
 # 远景Imposter调研
 
-#### 原理及应用场景      
+#### 原理及应用场景     &#x20;
 
-       Imposter是一种表达复杂3D 模型的简化方法，最经典的例子是用公告板去表示一颗树，通过拍摄烘培模型的渲染结果，然后映射到公告板上，从而达到使用简单公告板表示复杂几何模型的目的。
+&#x20;      Imposter是一种表达复杂3D 模型的简化方法，最经典的例子是用公告板去表示一颗树，通过拍摄烘培模型的渲染结果，然后映射到公告板上，从而达到使用简单公告板表示复杂几何模型的目的。
 
-         Imposter的渲染层级一般在模型最低Lod以下的一个层级，用来表示极远处模型的简化表示，在这个层级的实例模型一般因为限制加载距离的原因而被卸载或者在流式下载的情况尚未加载到。使用一个公告板表示整个模型，既能极大地降低渲染消耗，也不需要加大加载距离以便于看到远处的物件，从而降低游戏的加载内存。
+&#x20;        Imposter的渲染层级一般在模型最低Lod以下的一个层级，用来表示极远处模型的简化表示，在这个层级的实例模型一般因为限制加载距离的原因而被卸载或者在流式下载的情况尚未加载到。使用一个公告板表示整个模型，既能极大地降低渲染消耗，也不需要加大加载距离以便于看到远处的物件，从而降低游戏的加载内存。
 
-        例如在天涯明月刀ol游戏当中，存在大量使用Imposter的场合，下图中红色是在线烘培的Imposter,绿色是离线烘培的Imposter。[http://km.oa.com/group/29321/articles/show/371290?kmref=search\&from_page=1\&no=3](http://km.oa.com/group/29321/articles/show/371290?kmref=search\&from_page=1\&no=3)
+&#x20;       例如在天涯明月刀ol游戏当中，存在大量使用Imposter的场合，下图中红色是在线烘培的Imposter,绿色是离线烘培的Imposter。[http://km.oa.com/group/29321/articles/show/371290?kmref=search\&from\_page=1\&no=3](http://km.oa.com/group/29321/articles/show/371290?kmref=search\&from\_page=1\&no=3)
 
-       值得特别注意的，模型的法线和材质等信息也可以烘培起来，以让Imposter能够支持完全的光照，还有巧妙地利用雾效，可以在一定程度上掩盖Imposter带来的视觉瑕疵问题。[\
-![1564024516\_71\_w564\_h322.png](http://km.oa.com/files/photos/captures/201907/1564024516\_71\_w564\_h322.png)](http://km.oa.com/group/29321/articles/show/371290?kmref=search\&from_page=1\&no=3)\
+&#x20;      值得特别注意的，模型的法线和材质等信息也可以烘培起来，以让Imposter能够支持完全的光照，还有巧妙地利用雾效，可以在一定程度上掩盖Imposter带来的视觉瑕疵问题。[\
+![1564024516\_71\_w564\_h322.png](http://km.oa.com/files/photos/captures/201907/1564024516\_71\_w564\_h322.png)](http://km.oa.com/group/29321/articles/show/371290?kmref=search\&from\_page=1\&no=3)\
 
 
 #### 具体方法：
@@ -18,7 +18,7 @@
 
 ![1564044557\_99\_w476\_h293.png](http://km.oa.com/files/photos/captures/201907/1564044557\_99\_w476\_h293.png)
 
-       如果模型位于很远的地方，且模型具有对称的结构，那就是说，不同的朝向，模型的渲染结果相似，那么我们可以用一个单方向的公告板来表示，这种情况建议使用离线烘培一个低分辨率的拍照结果，通过这种方式，仅需绘制一个公告板，就实现对原始模型的替代，因为视距比较远且对视角变化不敏感，远景效果在视觉上尚能接受。
+&#x20;      如果模型位于很远的地方，且模型具有对称的结构，那就是说，不同的朝向，模型的渲染结果相似，那么我们可以用一个单方向的公告板来表示，这种情况建议使用离线烘培一个低分辨率的拍照结果，通过这种方式，仅需绘制一个公告板，就实现对原始模型的替代，因为视距比较远且对视角变化不敏感，远景效果在视觉上尚能接受。
 
 ![1564044675\_6\_w473\_h340.png](http://km.oa.com/files/photos/captures/201907/1564044675\_6\_w473\_h340.png)
 
@@ -28,9 +28,9 @@
 
 无论是离线烘培还是在线烘培的问题，都容易产生明显的视觉瑕疵，一般采用Dithered transition(old fade out，new fade in,应该是用alpha test的方式）的方法实现物件效果的平滑过渡。
 
-* Box Imposter [ ](https://tomforsyth1000.github.io/papers/gem_imp_filt.html)[https://tomforsyth1000.github.io/papers/gem_imp_filt.html](https://tomforsyth1000.github.io/papers/gem_imp_filt.html)
+* Box Imposter [ ](https://tomforsyth1000.github.io/papers/gem\_imp\_filt.html)[https://tomforsyth1000.github.io/papers/gem\_imp\_filt.html](https://tomforsyth1000.github.io/papers/gem\_imp\_filt.html)
 
-        由于基于Quad的Imposter的深度只有一层value,当靠近其他的物体的时候，公告板可能会被深度剔除，从而导致显示不完整。
+&#x20;       由于基于Quad的Imposter的深度只有一层value,当靠近其他的物体的时候，公告板可能会被深度剔除，从而导致显示不完整。
 
 ![1564140769\_66\_w918\_h579.png](http://km.oa.com/files/photos/captures/201907/1564140769\_66\_w918\_h579.png)
 
@@ -87,7 +87,7 @@ Unity 插件(Amplify Imposters)
 
 ![1564110295\_26\_w506\_h256.png](http://km.oa.com/files/photos/captures/201907/1564110295\_26\_w506\_h256.png)
 
-3.Serious sams4的大地形植被里的Forest Imposter.[http://km.oa.com/articles/show/411192?kmref=search\&from_page=1\&no=9](http://km.oa.com/articles/show/411192?kmref=search\&from_page=1\&no=9)
+3.Serious sams4的大地形植被里的Forest Imposter.[http://km.oa.com/articles/show/411192?kmref=search\&from\_page=1\&no=9](http://km.oa.com/articles/show/411192?kmref=search\&from\_page=1\&no=9)
 
 * 使用八方向的capture textures
 * 朝向相机的公告板

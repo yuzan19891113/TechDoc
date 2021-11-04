@@ -7,20 +7,20 @@ Unity 使用的是CSM(cascade shadowmapping)
 
 1. updatedepthtexture, 渲染主相机的深度
 2. shadows.RenderShadowMap:render几个不同视锥裁剪面的depthrt,会保存为texuturearray
-3.  screen space 的shadowcollect pass:通过主相机的depth texture恢复wpos,与shadowmap depth进行比较,得到**shadowmask**, 如果是cascade shadowmap,通过wpos来确定坐标采样哪一个textureArray中哪一个shadowmap, 如果有pcf blur也在这个流程中
+3. &#x20;screen space 的shadowcollect pass:通过主相机的depth texture恢复wpos,与shadowmap depth进行比较,得到**shadowmask**, 如果是cascade shadowmap,通过wpos来确定坐标采样哪一个textureArray中哪一个shadowmap, 如果有pcf blur也在这个流程中
 4. 采样shadowmap，得到shadow factor进行pixel light shading
 
 Unity开启流程：
 
 1. graphics settings: cascade shadows on, screen space shadows, cascaded shadows off, native shadow mapping.
 2. project settings: lighting开启shadow，设置shadowditance,设定为shadowmask(distance范围内静态使用bake shadow, 动态使用realtime shadow),distanceshadowmask（distance范围内所有对象都是realtime shadow),**注意如果没有shadowmask,静态物件也会走实时阴影,即静态物件的uv一定要存在于shadowmask的uv中,所以如果改变静态动态，需要删掉lightmapdata, bakery light,重新bake,**
-3.  light settings:使用shadowmask mode, 
-4.  light 组件使用mixed lighing mode,开启 shadow
+3. &#x20;light settings:使用shadowmask mode,&#x20;
+4. &#x20;light 组件使用mixed lighing mode,开启 shadow
 5. 静态阴影投射到动态对象上要bake light probe
 6. \_CameraDepthTexture和\_CameraDepthNormalsTexture是unity提供的内置纹理，将摄像机的depthTextureMode设置为Depth或DepthNormals即可以渲染这两张纹理。
 7. 只要保证你的shader拥有一个ShadowCaster pass即可渲染到\_CameraDepthTexture
 8. Custom shader要先加入一个LightMode为ShadowCaster的pass，例如：
-9.   可以使用shadow screen是否开启了屏幕阴影宏
+9.  &#x20;可以使用shadow screen是否开启了屏幕阴影宏
 
     ```
     // Pass to render object as a shadow caster
@@ -108,12 +108,12 @@ Pass
 得到的atten 就是shadow值。
 
 unity中基本会影响阴影的基本设置：\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200505012141805.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow\_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2pzMDkwNw==,size\_16,color_FFFFFF,t\_70)\
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200505012141805.png?x-oss-process=image/watermark,type\_ZmFuZ3poZW5naGVpdGk,shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2pzMDkwNw==,size\_16,color\_FFFFFF,t\_70)\
 
 
 1.ForwardBase Pass中只处理平行光阴影，LightMap等，其他的灯光需要在ForwordAdd Pass中进行处理。
 
-2.在顶点着色器中加入顶点变换的话，接受阴影需要使用UNITY_LIGHT_ATTENUATION(atten, i, i.worldPos);因为在设置阴影坐标的时候是把v.vertex变换到灯光空间，位移之后除非改动v.vertex，否则阴影坐标计算的是顶点变换前的。
+2.在顶点着色器中加入顶点变换的话，接受阴影需要使用UNITY\_LIGHT\_ATTENUATION(atten, i, i.worldPos);因为在设置阴影坐标的时候是把v.vertex变换到灯光空间，位移之后除非改动v.vertex，否则阴影坐标计算的是顶点变换前的。
 
 3.PC平台和移动平台对阴影的默认设置不一样，比如PC平台默认是Cascaded Shadow开启，那如果物体想仅接收阴影，也必须写Shadowcaster Pass，因为使用的屏幕空间的Cascaded Shadow Map， 移动平台默认是关闭Cascaded Shadow，仅接收阴影不用写Shadowcaster Pass；具体可参见unity5.0更新说明，Shadowcaster实际是用来收集CameraDepthTexture：
 
