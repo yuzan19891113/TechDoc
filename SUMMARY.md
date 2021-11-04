@@ -129,6 +129,7 @@
 * [QQSpeed开发](qqspeed-kai-fa/README.md)
   * [逆向分析](qqspeed-kai-fa/ni-xiang-fen-xi.md)
   * [开发日记](qqspeed-kai-fa/kai-fa-ri-ji/README.md)
+    * [Instance Batcher](qqspeed-kai-fa/kai-fa-ri-ji/instance-batcher.md)
     * [分析大批量数据](qqspeed-kai-fa/kai-fa-ri-ji/codereview.md)
     * [升级复盘by刘美智](qqspeed-kai-fa/kai-fa-ri-ji/unity2019-sheng-ji-fu-pan-bymeizhiliu.md)
   * [基础能力培训](qqspeed-kai-fa/ji-chu-neng-li-pei-xun/README.md)
